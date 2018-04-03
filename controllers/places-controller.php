@@ -28,4 +28,12 @@ class PlacesController extends MainController {
         // lógica para remover
         $this->goto_page(HOME_URI. '/places/index');
     }
+
+    public function edit() {
+        $this->ensure_is_logged();
+        $this->title = 'Editing ISE';
+        $this->model = new stdClass();
+        $this->model->description = 'ISE';
+        $this->load_page('places/edit.php');
+    }
 }

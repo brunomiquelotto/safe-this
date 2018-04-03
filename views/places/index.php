@@ -16,6 +16,7 @@
                 <td>ISE</td>
                 <td>1</td>
                 <td>
+                    <a href="<?=HOME_URI?>/places/edit/1">Editar</a>
                     <a href="<?=HOME_URI?>/places/delete/1">Excluir</a>
                 </td>
             </tr>
@@ -23,6 +24,7 @@
                 <td>Central</td>
                 <td>1</td>
                 <td>
+                    <a href="<?=HOME_URI?>/places/edit/2">Editar</a>
                     <a href="<?=HOME_URI?>/places/delete/2">Excluir</a>
                 </td>
             </tr>
@@ -30,6 +32,7 @@
                 <td>Farmácia</td>
                 <td>1</td>
                 <td>
+                    <a href="<?=HOME_URI?>/places/edit/3">Editar</a>
                     <a href="<?=HOME_URI?>/places/delete/3">Excluir</a>
                 </td>
             </tr>
