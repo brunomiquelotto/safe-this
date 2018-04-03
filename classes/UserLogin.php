@@ -12,7 +12,7 @@ class UserLogin
             $userdata['post'] = false;
         }
 
-        if (isset($_POST['userdata']) && ! empty($_POST['userdata']) && is_array($_POST['userdata'])) {
+        if (isset($_POST['userdata']) && !empty($_POST['userdata']) && is_array($_POST['userdata'])) {
             $userdata = $_POST['userdata'];
             $userdata['post'] = true;
         }

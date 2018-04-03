@@ -6,7 +6,7 @@ class LoginController extends MainController
 
     public function index() {
         if ($this->logged_in) {
-            header('Location: ' . HOME_URI . '/home');
+            header('Location: ' . HOME_URI . '/admin');
         }
         $this->title = 'Login';
         $parameters = ( func_num_args() >= 1 ) ? func_get_arg(0) : array();

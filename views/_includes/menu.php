@@ -7,6 +7,12 @@
             <a href="<?=HOME_URI?>/home">Home</a>
         </li>
         <li>
+            <a href="<?=HOME_URI?>/admin">Administrativo</a>
+        </li>
+        <li>
+            <a href="<?=HOME_URI?>/places">Locais</a>
+        </li>
+        <li>
             <a href="<?=HOME_URI?>/vaidar404">404 =(</a>
         </li>
     </ul>

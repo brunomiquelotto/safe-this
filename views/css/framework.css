@@ -103,9 +103,17 @@
     height: 35px;
     border: none;
     padding: 5px;
+    padding-top: 8px;
     cursor: pointer;
     transition: box-shadow 0.4s;
-    min-width: 100px;;
+    min-width: 100px;
+    display: inline-block;
+}
+
+a.button {
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
 }
 
 .button:hover, .button:active, .button:focus {
@@ -179,6 +187,34 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table thead tr th, .table > tr th {
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+    text-align: left;
+    height: 40px;
+}
+
+.table tbody {
+    margin-top: 15px;
+}
+
+.table tbody tr {
+    height: 40px;
+}
+
+.table tbody tr td {
+    padding-left: 10px;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: rgba(0,0,0,.05);
 }
 
 .mg-t-10 { margin-top: 10px; }
