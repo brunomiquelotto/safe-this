@@ -1,6 +1,29 @@
 # mvc-example
 PHP MVC Boilerplate
 
+### Instalando o projeto:
+
+##### Requisitos
+- MySQL
+- Xampp (ou similiar)
+
+##### Configurando
+Abrir o arquivo config.php e alterar os seguintes dados:
+
+	define('HOME_URI', 'http://127.0.0.1:81/safethis');
+Definir para a url configurada no seu apache
+
+Alterar as variáveis a seguir para a conexão com o seu banco de dados
+	// Nome do DB
+	define('DB_NAME', 'safethis');
+ 
+	// Usuário do DB
+	define('DB_USER', 'root');
+ 
+	// Senha do DB
+	define('DB_PASSWORD', '');
+
+
 ### Configurations:
 
 	define('ABSPATH', dirname( __FILE__ ) ); // Define o diretório absoluto da aplicação

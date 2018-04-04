@@ -4,7 +4,7 @@
 <aside class="sidebar">
     <ul>
         <li>
-            <a href="<?=HOME_URI?>/home">Home</a>
+            <a href="<?=HOME_URI?>/admin">Home</a>
         </li>
         <li>
             <a href="<?=HOME_URI?>/vaidar404">404 =(</a>

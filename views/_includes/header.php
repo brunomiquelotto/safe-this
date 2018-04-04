@@ -14,7 +14,7 @@
 
 <header class="header">
     <h3>
-        <a href="<?=HOME_URI?>/home">Safe This</a>
+        <a href="<?=HOME_URI?>/admin">Safe This</a>
     </h3>
     <div>
         <?php if($this->logged_in):?>
