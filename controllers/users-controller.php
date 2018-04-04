@@ -2,10 +2,6 @@
 
 class UsersController extends MainController {
 
-    public function __construct() {
-        $this->title = "Usuários";
-    }
-
     public function index() {
         $this->ensure_is_logged();
 
