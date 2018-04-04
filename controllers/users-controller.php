@@ -1,11 +1,6 @@
 <?php 
 
 class UsersController extends MainController {
-
-    public function __construct() {
-        $this->title = "Usuários";
-    }
-
     public function index() {
         $this->ensure_is_logged();
 
@@ -20,20 +15,20 @@ class UsersController extends MainController {
 
     public function create() {
         $this->ensure_is_logged();
-
+        $this->title = "Novo Responsável";
         $this->load_page('users/create.php');
     }
 
     public function delete() {
         $this->ensure_is_logged();
 
-        $this->goto_page('users/index');
+        $this->goto_page(HOME_URI . '/users/index');
     }
 
     public function save() {
         $this->ensure_is_logged();
 
-        $this->goto_page('users/index');
+        $this->goto_page(HOME_URI . '/users/index');
     }
 }
 
