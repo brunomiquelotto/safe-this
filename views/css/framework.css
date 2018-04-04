@@ -59,7 +59,7 @@
 }
 
 .form-group {
-    display: inline-block;
+    display: block;
     padding-top: 10px;
     margin-top: 10px;
 }
