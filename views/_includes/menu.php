@@ -10,6 +10,9 @@
             <a href="<?=HOME_URI?>/admin">Administrativo</a>
         </li>
         <li>
+            <a href="<?=HOME_URI?>/admin">Relatórios</a>
+        </li>
+        <li>
             <a href="<?=HOME_URI?>/places">Locais</a>
         </li>
         <li>
