@@ -10,7 +10,6 @@ class PlacesController extends MainController {
 
     public function create() {
         $this->ensure_is_logged();
-        $this->title = "Lugares";
         $this->load_page('places/create.php');
     }
 
