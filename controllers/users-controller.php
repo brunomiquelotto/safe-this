@@ -3,7 +3,7 @@
 class UsersController extends MainController {
     public function index() {
         $this->ensure_is_logged();
-
+        $this->title = "Usuários";
         $this->load_page('users/index.php');
     }
 

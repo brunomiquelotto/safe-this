@@ -10,8 +10,8 @@
         </div>
         <div class="form-group">
             <select class="form-control">
-                <option>Técnico</option>
-                <option>Responsável</option>
+                <option>Administrador</option>
+                <option>Moderador</option>
             </select>
         </div>
         <div class="form-group">
