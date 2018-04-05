@@ -51,7 +51,7 @@
     padding-left: 25px;
 }
 .main-content {
-    padding: 10px 5px 5px 10px;
+    padding: 10px 25px 5px 25px;
     float:left;
     width: 80%;
     height: calc(100vh - 53px);
@@ -234,7 +234,7 @@ a.button {
 }
 
 .table tbody tr td {
-    padding-left: 10px;
+    text-align: left;
 }
 
 .table tbody tr:nth-child(even) {
@@ -242,5 +242,7 @@ a.button {
 }
 
 .mg-t-10 { margin-top: 10px; }
+
+.mg-t-50 { margin-top: 50px; }
 
 .display-block { display: block; }

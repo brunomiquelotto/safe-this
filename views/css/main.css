@@ -20,7 +20,7 @@
     padding: 0;
     padding: 15px 10px 30px 10px;
     margin-bottom: 10px;
-    width : 25vw;
+    width : 24vw;
     display: inline-block;
     overflow: hidden;
     border-radius: 5px;
@@ -75,4 +75,8 @@
 
 .card-count:hover > div > i{
     font-size: 5.5em;
+}
+
+.bolder{
+    font-weight: bold;
 }
