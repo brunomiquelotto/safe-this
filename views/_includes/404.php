@@ -9,23 +9,11 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <div class="content">
-        <h1>Desculpe, mas o endereço solicitado não foi encontrado :(</h1>
-    </div>
+<figure>
+    <img src="" alt="Imagem de página não encontrada" title="Imagem 404"/>
+</figure>
 </body>
 <style>
-    body {
-        background-color: #82e9de;
-    }
-    * {
-        margin: 0;
-        padding: 0;
-    }
-    .content {
-        display: flex;
-        height: 100vh;
-        justify-content: center;
-        align-items: center;
-    }
+    
 </style>
 </html>
