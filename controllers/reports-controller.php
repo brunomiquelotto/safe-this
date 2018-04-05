@@ -1,6 +1,7 @@
 <?php
 
 class ReportsController extends MainController {
+    
     public function index() {
         $this->ensure_is_logged();
         $this->title = "Relatórios administrativos";
