@@ -28,6 +28,7 @@
     padding-top: 10px;
     height: calc(100vh - 50px);
     box-shadow: 1px 5px 10px 1px #ddd;
+    position: relative;
 }
 
 .sidebar ul {
@@ -51,13 +52,16 @@
     padding-left: 25px;
 }
 .main-content {
-    padding: 10px 25px 5px 25px;
     float:left;
     width: 80%;
-    height: calc(100vh - 53px);
-    overflow-y: scroll;
-}
 
+}
+.main-inner{
+    width: 100%;
+    float: left;
+    padding: 10px 25px 5px 25px;
+
+}
 .form-group {
     display: block;
     padding-top: 10px;
@@ -246,3 +250,16 @@ a.button {
 .mg-t-50 { margin-top: 50px; }
 
 .display-block { display: block; }
+
+.footer{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    float: left;
+    position: absolute;
+    bottom:0;
+}
+
+.footer > p > span{
+    font-weight: bold;
+}
