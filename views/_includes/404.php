@@ -9,11 +9,12 @@
     <script src="main.js"></script>
 </head>
 <body>
-<figure>
-    <img src="" alt="Imagem de página não encontrada" title="Imagem 404"/>
-</figure>
+    <center>
+        <img src="\safe-this\views\_includes\images\404_image.jpg" alt="Página não encontrada" width="75%">
+    </center>
 </body>
 <style>
-    
+  
+
 </style>
 </html>
