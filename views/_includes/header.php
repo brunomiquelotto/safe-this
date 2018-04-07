@@ -14,9 +14,9 @@
 <body>
 
 <header class="header">
-    <h3>
-        <a href="<?=HOME_URI?>/home">Safe This</a>
-    </h3>
+    <a href="<?=HOME_URI?>/admin">
+        <img src="\safe-this\views\_includes\images\Logo.png" alt="Logotipo">
+    </a>
     <div>
         <?php if($this->logged_in):?>
         <h4>
