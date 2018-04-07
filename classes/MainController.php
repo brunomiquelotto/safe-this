@@ -15,6 +15,7 @@ class MainController extends UserLogin
         $this->parameters = $parameters;
         $this->phpass = new PasswordHash(8, false);
         $this->check_user_login();
+        $this->model = (object)array(); 
     }
  
     public function load_model($model_name = false) {
@@ -46,6 +47,7 @@ class MainController extends UserLogin
 
     protected function throw_404() {
         $this->load_view('_includes/404.php');
+        exit;
     }
     
     protected function ensure_is_logged() {

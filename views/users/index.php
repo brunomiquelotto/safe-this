@@ -9,35 +9,19 @@
                 <th>Nome</th>
                 <th>Email</th>
                 <th>Função</th>
-                <th></th>
+                <th>Ações</th>
             </tr>
         </thead>
+        <?php foreach ($this->model->users as $user) { ?>
         <tr>
-            <td>Bruno Miquelotto</td>
-            <td>brunomiquelotto@gmail.com</td>
-            <td>Administrador</td>
+            <td><?=$user['user']?></td>
+            <td><?=$user['email']?></td>
+            <td>MOCADO</td>
             <td>
-                <a href="<?=HOME_URI?>/users/edit/1">Editar</a>
-                <a href="<?=HOME_URI?>/users/delete/1">Excluir</a>
+                <a href="<?=HOME_URI?>/users/edit/<?=$user['user_id']?>">Editar</a>
+                <a href="<?=HOME_URI?>/users/delete/<?=$user['user_id']?>">Excluir</a>
             </td>
         </tr>
-        <tr>
-            <td>Robert de Jesus</td>
-            <td>robert_jesusaz@outlook.com</td>
-            <td>Administrador</td>
-            <td>
-                <a href="<?=HOME_URI?>/users/edit/2">Editar</a>
-                <a href="<?=HOME_URI?>/users/delete/2">Excluir</a>
-            </td>
-        </tr>
-        <tr>
-            <td>Silas Caxias</td>
-            <td>atiradorsilas@outlook.com</td>
-            <td>Administrador</td>
-            <td>
-                <a href="<?=HOME_URI?>/users/edit/2">Editar</a>
-                <a href="<?=HOME_URI?>/users/delete/2">Excluir</a>
-            </td>
-        </tr> 
+        <?php } ?>
     </table>
 </div>

@@ -12,12 +12,12 @@ class DB
         $last_id = null;
 
     function __construct($host = null, $db_name = null, $password = null,$user = null, $charset = null, $debug = null) {
-        $this->host     = defined('HOSTNAME') ? HOSTNAME : $this->host;
-        $this->db_name  = defined('DB_NAME') ? DB_NAME : $this->db_name;
+        $this->host = defined('HOSTNAME') ? HOSTNAME : $this->host;
+        $this->db_name = defined('DB_NAME') ? DB_NAME : $this->db_name;
         $this->password = defined('DB_PASSWORD') ? DB_PASSWORD : $this->password;
-        $this->user     = defined('DB_USER') ? DB_USER : $this->user;
-        $this->charset  = defined('DB_CHARSET') ? DB_CHARSET : $this->charset;
-        $this->debug    = defined('DEBUG') ? DEBUG : $this->debug;
+        $this->user = defined('DB_USER') ? DB_USER : $this->user;
+        $this->charset = defined('DB_CHARSET') ? DB_CHARSET : $this->charset;
+        $this->debug = defined('DEBUG') ? DEBUG : $this->debug;
         $this->connect();
     }
     
@@ -28,7 +28,7 @@ class DB
         try {
             $this->pdo = new PDO($pdo_details, $this->user, $this->password);
             if ($this->debug === true) {
-                $this->pdo->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
+                $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
             }
             unset($this->host);
             unset($this->db_name);
@@ -37,19 +37,19 @@ class DB
             unset($this->charset);
         }
         catch (PDOException $e) {
-            if ( $this->debug === true) {
+            if ($this->debug === true) {
                 echo "Erro: " . $e->getMessage();
             }
             die();
         }
     }
     public function query( $stmt, $data_array = null) {
-        $query      = $this->pdo->prepare( $stmt);
-        $check_exec = $query->execute( $data_array);
+        $query = $this->pdo->prepare($stmt);
+        $check_exec = $query->execute($data_array);
         if ($check_exec) {
             return $query; 
         }
-        $error       = $query->errorInfo();
+        $error = $query->errorInfo();
         $this->error = $error[2];
         return false;
     }
@@ -74,11 +74,16 @@ class DB
                 $values[] = $val;
                 $j = $i;
             }
-            $place_holders = substr( $place_holders, 0, strlen( $place_holders) - 2);
+            $place_holders = substr($place_holders, 0, strlen($place_holders) - 2);
         }
         $cols = implode(', ', $cols);
         $stmt = "INSERT INTO `$table` ($cols) VALUES $place_holders) ";
-        $insert = $this->query( $stmt, $values);
+        try {
+            $insert = $this->query($stmt, $values);
+        }
+        catch (Exception $ex) {
+            echo $ex;
+        }
         if ($insert) {
             if (method_exists($this->pdo, 'lastInsertId') && $this->pdo->lastInsertId()) {
                 $this->last_id = $this->pdo->lastInsertId();
