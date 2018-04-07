@@ -2,15 +2,14 @@
 
 class UserModel extends BaseModel {
     protected static $table = "Users";
-    protected static $primaryKey = "User_Id";
-
-    function __construct() {
-
-    }
-    
-    function __destruct() {
-
-    }
+    protected static $primaryKey = "user_id";
+    protected $fields = array(
+        'user_name',
+        'user_id',
+        'user',
+        'user_password',
+        'email'
+    );
 }
 
 ?>

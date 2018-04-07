@@ -3,15 +3,15 @@
 <div style="width:50%">
     <form action="<?=HOME_URI?>/users/save" method="post">
         <div class="form-group">
-            <input type="text" name="name" class="form-control large" placeholder="Nome">
+            <input type="text" name="user" class="form-control large" placeholder="Nome">
         </div>
         <div class="form-group">
             <input type="email" name="email" class="form-control large" placeholder="E-mail">
         </div>
         <div class="form-group">
-            <select class="form-control">
-                <option>Administrador</option>
-                <option>Moderador</option>
+            <select class="form-control" name="profile_id">
+                <option value="1">Administrador</option>
+                <option value="2">Moderador</option>
             </select>
         </div>
         <div class="form-group">

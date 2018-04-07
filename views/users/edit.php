@@ -1,17 +1,17 @@
 <a href="<?=HOME_URI?>/users" class="button warning ripple mg-t-10">Voltar</a>
 <h2>Editar responsável</h2>
 <div style="width:50%">
-    <form action="<?=HOME_URI?>/users/save" method="post">
+    <form action="<?=HOME_URI?>/users/save/<?=$this->model->user['user_id']?>" method="post">
         <div class="form-group">
-            <input type="text" name="name" class="form-control large" placeholder="Nome">
+            <input type="text" name="user" class="form-control large" placeholder="Nome" value="<?=$this->model->user['user']?>">
         </div>
         <div class="form-group">
-            <input type="email" name="email" class="form-control large" placeholder="E-mail">
+            <input type="email" name="email" class="form-control large" placeholder="E-mail" value="<?=$this->model->user['email']?>">
         </div>
         <div class="form-group">
             <select class="form-control">
-                <option>Administrador</option>
-                <option>Moderador</option>
+                <option value="1">Administrador</option>
+                <option value="2">Moderador</option>
             </select>
         </div>
         <div class="form-group">
