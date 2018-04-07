@@ -6,6 +6,12 @@
     border-radius: 3px;
 }
 
+.displayIB{
+    display:inline-block;
+}
+.w33{
+    width: 33%;
+}
 .container-main{
     display:flex;
     justify-content: space-around;
