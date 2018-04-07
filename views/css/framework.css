@@ -3,14 +3,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    color: #666;
     font-weight: 100;
+    color: #887a7a;
 }
 
 .header {
     height: 50px;
-    background-color: #fafafa;
-    box-shadow: 0px 1px 3px 1px #ddd;
+    background-color: #136b49;
+    box-shadow: 0px 1px 3px 1px #5d917d;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,13 +21,20 @@
 .header a {
     text-decoration: none;
 }
-
+.header a{
+    color: white;
+}
+.header img{
+    width: 200px;
+    height: 80px;
+    padding-top: 10px;
+}
 .sidebar {
     float: left;
     width: 20%;
     padding-top: 10px;
     height: calc(100vh - 50px);
-    box-shadow: 1px 5px 10px 1px #ddd;
+    box-shadow: 1px 5px 10px 1px #136b49;
 }
 
 .sidebar ul {
@@ -35,7 +42,7 @@
 }
 
 .sidebar li {
-    background: #fafafa;
+    background: #136b49;
     padding: 10px;
     transition: 0.4s;
 }
@@ -43,10 +50,11 @@
 .sidebar a {
     text-decoration: none;
     display: block;
+    color: #cfdece;
 }
 
 .sidebar li.active, .sidebar li:hover {
-    background: #ddd;
+    background: #136b49d1;
     cursor: pointer;
     padding-left: 25px;
 }
@@ -125,13 +133,14 @@
 
 .button {
     height: 35px;
-    border: none;
+    border-radius: 1000px;
     padding: 5px;
     padding-top: 8px;
     cursor: pointer;
     transition: box-shadow 0.4s;
     min-width: 100px;
     display: inline-block;
+    text-shadow: 2px 2px #136b49;
 }
 
 a.button {
@@ -141,7 +150,7 @@ a.button {
 }
 
 .button:hover, .button:active, .button:focus {
-    box-shadow: 0px 2px 3px 1px #ddd;
+    box-shadow: 0px 2px 3px 1px #136b49;
     outline: none;
 }
 
@@ -165,7 +174,7 @@ a.button {
     color: white;
 }
 .button.success {
-    background:#1faa00;
+    background:#158e0d;
     color:white;
 }
 
