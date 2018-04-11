@@ -37,20 +37,42 @@
                 return;
             }
 
+            $controllerName = $this->controller;
             $this->controller = new $this->controller($this->parameters);
+            
+            $action = $this->action ? $this->action : 'index';
 
-            if (method_exists($this->controller, $this->action)) {
-                $this->controller->{$this->action}($this->parameters);
-                return;
+            if ($this->controller->use_permission_system && !$this->has_permission($controllerName, $action)) {
+                echo 'voce n tem permissao bb';
+                //require_once ABSPATH . $this->permission_denied;
+                exit;
             }
             
-            if (!$this->action && method_exists($this->controller, 'index')) {
-                $this->controller->index($this->parameters);
+            if (method_exists($this->controller, $action)) {
+                consolelog('Controller -> ' . $controllerName . ' Action -> ' . $action);
+                $this->controller->{$action}($this->parameters);
                 return;
             }
-
+            // Não tem metodo index no controller
             require_once ABSPATH . $this->not_found_page;
-            return;
+        }
+
+        private function has_permission($controller, $action) {
+            if (isset($_SESSION['userdata']) && !empty($_SESSION['userdata']) && is_array($_SESSION['userdata']) && !isset($_POST['userdata'])) { 
+                $userdata = $_SESSION['userdata'];
+            } else return false;
+            $user_id = $userdata['User_Id'];
+            $db = new DB();
+            $query = $db->query('SELECT * FROM VW_USER_PROFILES WHERE User_Id = ? ', array($user_id));
+            $result = $query->fetch(PDO::FETCH_ASSOC);
+            if (!empty($result) && $result['FullAccess'] == 1) {
+                return true;
+            }
+            $params = array($user_id, $controller, $action);
+            $query = $db->query('SELECT * FROM VW_USER_PERMISSION WHERE User_Id = ? AND Controller = ? AND Action = ? LIMIT 1', $params);
+            if ($query) {
+                return count($query->fetchAll()) > 0;
+            }
         }
 
         public function get_url_data () {

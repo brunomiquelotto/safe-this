@@ -7,8 +7,8 @@ class MainController extends UserLogin
     public $title;
     public $login_required = false;
     public $logged_in = false;
-    public $permission_required = 'any';
     public $parameters = array();
+    public $use_permission_system = false;
 
     public function __construct ( $parameters = array() ) {
         $this->db = new DB();

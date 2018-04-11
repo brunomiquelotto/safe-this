@@ -3,7 +3,7 @@
 class LoginController extends MainController
 {
     public $login_error = null;
-
+    public $use_permission_system = false;
     public function index() {
         if ($this->logged_in) {
             header('Location: ' . HOME_URI . '/admin');

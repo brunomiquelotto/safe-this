@@ -22,12 +22,7 @@ class UserLogin
             return;
         }
 
-        if ($userdata['post'] === true) {
-            $post = true;
-        } else {
-            $post = false;
-        }
-
+        $post = $userdata['post'] ? true : false;
         unset($userdata['post']);
 
         if (empty($userdata)) {
@@ -37,30 +32,33 @@ class UserLogin
             return;
         }
 
-        extract($userdata);
-        if (! isset($user) || ! isset($user_password)) {
+        $email = $userdata['Email'];
+        $password = $userdata['Password'];
+
+        if (empty($email) || empty($password)) {
             $this->logged_in = false;
             $this->login_error = null;
             $this->logout();
             return;
         }
-        $query = $this->db->query('SELECT * FROM users WHERE user = ? LIMIT 1', array($user));
+        $query = $this->db->query('SELECT * FROM TB_USERS WHERE Email = ? LIMIT 1', array($email));
         if (!$query) {
             $this->logged_in = false;
-            $this->login_error = 'Internal error.';
+            $this->login_error = 'Erro, tente novamente mais tarde.';
             $this->logout();
             return;
         }
         $fetch = $query->fetch(PDO::FETCH_ASSOC);
-        $user_id = (int) $fetch['user_id'];
-        if (empty($user_id)){
+        $user_id = (int)$fetch['User_Id'];
+        if (empty($user_id) || $user_id == 0){
             $this->logged_in = false;
             $this->login_error = 'Usuário não encontrado';
             $this->logout();
             return;
         }
-        if ($this->phpass->CheckPassword($user_password, $fetch['user_password'])) {
-            if (session_id() != $fetch['user_session_id'] && ! $post) { 
+
+        if ($this->phpass->CheckPassword($password, $fetch['Password'])) {
+            if (session_id() != $fetch['Session'] && !$post) { 
                 $this->logged_in = false;
                 $this->login_error = 'Problema com a sessão do usuário';
                 $this->logout();
@@ -70,11 +68,10 @@ class UserLogin
                 session_regenerate_id();
                 $session_id = session_id();
                 $_SESSION['userdata'] = $fetch;
-                $_SESSION['userdata']['user_password'] = $user_password;
-                $_SESSION['userdata']['user_session_id'] = $session_id;
-                $query = $this->db->query('UPDATE users SET user_session_id = ? WHERE user_id = ?',array($session_id, $user_id));
+                $_SESSION['userdata']['Password'] = $password;
+                $_SESSION['userdata']['Session'] = $session_id;
+                $query = $this->db->query('UPDATE TB_USERS SET `Session` = ?, Last_Activity = CURRENT_TIMESTAMP WHERE User_Id = ?', array($session_id, $user_id));
             }
-            $_SESSION['userdata']['user_permissions'] = unserialize($fetch['user_permissions']);
             $this->logged_in = true;
             $this->userdata = $_SESSION['userdata'];
             if (isset($_SESSION['goto_url'])) {
@@ -90,6 +87,7 @@ class UserLogin
             $this->logout();
             return;
         }
+
     }
     protected function logout($redirect = false) {
         $_SESSION['userdata'] = array();
@@ -117,17 +115,6 @@ class UserLogin
             echo '<meta http-equiv="Refresh" content="0; url=' . $page_uri . '">';
             echo '<script type="text/javascript">window.location.href = "' . $page_uri . '";</script>';
             return;
-        }
-    }
-    
-    final protected function check_permissions($required = 'any', $user_permissions = array('any')) {
-        if (! is_array($user_permissions)) {
-            return;
-        }
-        if (! in_array($required, $user_permissions)) {
-            return false;
-        } else {
-            return true;
         }
     }
 }

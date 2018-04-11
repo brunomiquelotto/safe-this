@@ -2,6 +2,8 @@
 
 class AdminController extends MainController
 {
+    public $use_permission_system = true;
+
     public function index() {
         $this->ensure_is_logged();
         $this->title = 'Admin Panel';

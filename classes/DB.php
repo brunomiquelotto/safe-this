@@ -53,6 +53,7 @@ class DB
         $this->error = $error[2];
         return false;
     }
+    
     public function insert( $table) {
         $cols = array();
         $place_holders = '(';

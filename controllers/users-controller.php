@@ -1,9 +1,9 @@
 <?php 
 
 class UsersController extends MainController {
-
     public function __construct() {
         parent::__construct();
+        $this->use_permission_system = true;
         $this->ensure_is_logged();
         $this->load_model('UserModel');
     }
@@ -47,9 +47,11 @@ class UsersController extends MainController {
         $data = $_POST;
         $id = $parameters[0];
         if ($id) {
-            $data['user_id'] = $id;
+            $data['User_Id'] = $id;
         }
-        $data['user_password'] = $this->phpass->HashPassword('admin');
+        if (!isset($data['Password'])) {
+            $data['Password'] = $this->phpass->HashPassword('123456');
+        }
         $user = new UserModel($data);
         $results = $user->save();
         $this->goto_page(HOME_URI . '/users/index');

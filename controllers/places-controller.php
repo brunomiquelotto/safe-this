@@ -1,6 +1,7 @@
 <?php
 
 class PlacesController extends MainController {
+    public $use_permission_system = false;
     public function index() {
         $this->ensure_is_logged();
         

@@ -8,12 +8,12 @@
             <?php } ?>
             <div class="center-all">
                 <div class="form-group">
-                    <input type="text" name="userdata[user]" class="form-control" placeholder="Preencha seu usuário aqui"/>
+                    <input type="text" name="userdata[Email]" class="form-control" placeholder="Preencha seu usuário aqui"/>
                 </div>
             </div>
             <div class="center-all">
                 <div class="form-group">
-                    <input type="password" name="userdata[user_password]" class="form-control" placeholder="Senha"/>
+                    <input type="password" name="userdata[Password]" class="form-control" placeholder="Senha"/>
                 </div>
             </div>
             <div></div>

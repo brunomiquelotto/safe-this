@@ -14,5 +14,14 @@
         }
         include $path;
     });
+
+    function consolelog($content) {
+        $debugFileName = ABSPATH . '/log/log.txt';
+        $debugFile = fopen($debugFileName, "a");
+        fwrite($debugFile, "<==== DEBUG ====>\r\n");
+        fwrite($debugFile, $content);
+        fwrite($debugFile, "\r\n<==== END DEBUG ====>\r\n");
+        fclose($debugFile);
+    }
     
 ?>
