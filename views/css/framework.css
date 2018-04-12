@@ -255,3 +255,39 @@ a.button {
 .mg-t-50 { margin-top: 50px; }
 
 .display-block { display: block; }
+
+.form-control[type="radio"], .form-control[type="checkbox"] {
+    display:none;
+}
+ 
+.form-control[type="radio"] + label, .form-control[type="checkbox"] + label {
+    cursor: pointer;
+    user-select: none;
+    margin-top: 5px;
+}
+.form-control[type="radio"] + label:before, .form-control[type="checkbox"] + label:before {
+    content: "\00a0";
+    display: inline-block;
+    font: 16px/1em sans-serif;
+    height: 16px;
+    padding:0;
+    vertical-align: top;
+    width: 16px;
+    border: 2px solid #5a5a5a;
+    margin-left: 10px;
+    transition: 0.4s;
+    margin-right: 4px;
+}
+
+.form-control[type="radio"]:checked + label:before, .form-control[type="checkbox"]:checked + label:before {
+    border: 2px solid #136b49;
+    background: #136b49;
+    color: #FFF;
+    content: "\2713";
+    text-align: center;
+    font-weight: bold;
+}
+ 
+.form-control[type="radio"]:checked + label:after, .form-control[type="checkbox"]:checked + label:after {
+    font-weight: bold;
+}
