@@ -23,8 +23,13 @@ class UsersController extends MainController {
         if (!$user) {
             $this->throw_404();
         }
+        $user->permissions = $this->getUserPermissions($id);
         $this->model->user = $user;
         $this->load_page('users/edit.php');
+    }
+
+    private function getUserPermissions($userId) {
+        
     }
 
     public function create() {
