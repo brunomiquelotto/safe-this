@@ -38,6 +38,11 @@ class BaseModel implements ArrayAccess
         return $db->query('SELECT * FROM ' . static::$table)->fetchAll();
     }
 
+    public static function where($conditions) {
+        $db = new DB();
+        return $db->query('SELECT * FROM ' . static::$table . ' WHERE ' . $conditions)->fetchAll();
+    }
+
     public static function find($id) {
         $db = new DB();
         $result = $db->query('SELECT * FROM ' . static::$table . ' WHERE ' . static::$primaryKey . ' = ' . $id)->fetchAll();

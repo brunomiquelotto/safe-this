@@ -6,6 +6,8 @@ class UsersController extends MainController {
         $this->use_permission_system = true;
         $this->ensure_is_logged();
         $this->load_model('UserModel');
+        $this->load_model('ProfilePermissionModel');
+        $this->load_model('PermissionModel');
     }
     public function index() {
         $this->title = "Usuários";
@@ -23,13 +25,26 @@ class UsersController extends MainController {
         if (!$user) {
             $this->throw_404();
         }
-        $user->permissions = $this->getUserPermissions($id);
+        $profileId = $user['Profile_Id'];
+        $user['Permissions'] = $this->getUserPermissions($profileId);
         $this->model->user = $user;
         $this->load_page('users/edit.php');
     }
 
-    private function getUserPermissions($userId) {
-        
+    private function getUserPermissions($profileId) {
+        if (!$profileId) {
+            return array();
+        }
+
+        $allPermissions = PermissionModel::all();
+        $profilePermissions = ProfilePermissionModel::where('Profile_Id = ' . $profileId);
+        for ($i = 0; $i < count($allPermissions); $i++) {
+            $found = array_filter($profilePermissions, function($perm) use ($allPermissions, $i) {
+                return $perm['Permission_Id'] == $allPermissions[$i]['Permission_Id'];
+            });
+            $allPermissions[$i]['Checked'] = count($found) > 0;
+        }
+        return $allPermissions;
     }
 
     public function create() {
