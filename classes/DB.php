@@ -118,14 +118,14 @@ class DB
     }
     
     public function delete( $table, $where_field, $where_field_value) {
-        if ( empty($table) || empty($where_field) || empty($where_field_value) ) {
+        if (empty($table) || empty($where_field) || empty($where_field_value) ) {
             return;
         }
-        $stmt = " DELETE FROM `$table` ";
+        $stmt = "DELETE FROM `$table` ";
         $where = " WHERE `$where_field` = ? ";
         $stmt .= $where;
-        $values = array( $where_field_value);
-        $delete = $this->query( $stmt, $values);
+        $values = array($where_field_value);
+        $delete = $this->query($stmt, $values);
         if ($delete) {
             return $delete;
         }

@@ -7,7 +7,7 @@
         </div>
         <?php foreach($this->model->profile['Permissions'] as $permission) { ?>
             <div class="form-group">
-                <input id="<?=$permission['Permission_Id']?>" type="checkbox" class="form-control" />
+                <input id="<?=$permission['Permission_Id']?>" name="Permissions[]" value="<?=$permission['Permission_Id']?>" type="checkbox" class="form-control" <?=$permission['Checked'] ? 'checked' : '' ?>/>
                 <label for="<?=$permission['Permission_Id']?>"><?=$permission['Description']?></label>
             </div>
         <?php } ?>

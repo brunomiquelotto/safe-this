@@ -19,6 +19,9 @@
             <a href="<?=HOME_URI?>/users">Usuários</a>
         </li>
         <li>
+            <a href="<?=HOME_URI?>/profiles">Perfis</a>
+        </li>
+        <li>
             <a href="<?=HOME_URI?>/vaidar404">404 =(</a>
         </li>
     </ul>

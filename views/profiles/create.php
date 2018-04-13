@@ -1,7 +1,7 @@
 <a href="<?=HOME_URI?>/profiles" class="button warning ripple mg-t-10">Voltar</a>
 <h2>Criar Perfil</h2>
 <div style="width:50%">
-    <form action="<?=HOME_URI?>/profiles/save?>" method="post">
+    <form action="<?=HOME_URI?>/profiles/save" method="post">
         <div class="form-group">
             <input type="text" name="Description" class="form-control large" placeholder="Descrição">
         </div>

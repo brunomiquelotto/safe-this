@@ -6,13 +6,24 @@ class UsersController extends MainController {
         $this->use_permission_system = true;
         $this->ensure_is_logged();
         $this->load_model('UserModel');
-        $this->load_model('ProfilePermissionModel');
-        $this->load_model('PermissionModel');
+        $this->load_model('ProfileModel');
     }
     public function index() {
         $this->title = "Usuários";
-        $this->model->users = UserModel::all();
+        $this->model->users = $this->include_profile(UserModel::all());
         $this->load_page('users/index.php');
+    }
+    
+    private function include_profile($users) {
+        $profiles = ProfileModel::all();
+        $indexedList = array();
+        foreach ($profiles as $profile) {
+            $indexedList[$profile['Profile_Id']] = $profile['Description'];
+        }
+        for($i = 0; $i < count($users); $i++) {
+            $users[$i]['Profile'] = $indexedList[$users[$i]['Profile_Id']];
+        }
+        return $users;
     }
 
     public function edit() {
@@ -26,29 +37,14 @@ class UsersController extends MainController {
             $this->throw_404();
         }
         $profileId = $user['Profile_Id'];
-        $user['Permissions'] = $this->getUserPermissions($profileId);
         $this->model->user = $user;
+        $this->model->profiles = ProfileModel::all();
         $this->load_page('users/edit.php');
-    }
-
-    private function getUserPermissions($profileId) {
-        if (!$profileId) {
-            return array();
-        }
-
-        $allPermissions = PermissionModel::all();
-        $profilePermissions = ProfilePermissionModel::where('Profile_Id = ' . $profileId);
-        for ($i = 0; $i < count($allPermissions); $i++) {
-            $found = array_filter($profilePermissions, function($perm) use ($allPermissions, $i) {
-                return $perm['Permission_Id'] == $allPermissions[$i]['Permission_Id'];
-            });
-            $allPermissions[$i]['Checked'] = count($found) > 0;
-        }
-        return $allPermissions;
     }
 
     public function create() {
         $this->title = "Novo Responsável";
+        $this->model->profiles = ProfileModel::all();
         $this->load_page('users/create.php');
     }
 

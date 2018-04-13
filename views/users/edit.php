@@ -10,8 +10,12 @@
         </div>
         <div class="form-group">
             <select class="form-control" name="Profile_Id">
-                <option value="1">Administrador</option>
-                <option value="2">Moderador</option>
+                    <option value="0">Selecione um perfil</option>
+                <?php foreach($this->model->profiles as $profile) { ?>
+                    <option value="<?=$profile['Profile_Id']?>" <?=$this->model->user['Profile_Id'] == $profile['Profile_Id'] ? 'selected' : '' ?>>
+                        <?=$profile['Description']?>
+                    </option>
+                <?php } ?>
             </select>
         </div>
         <div class="form-group">

@@ -56,7 +56,12 @@ class BaseModel implements ArrayAccess
         $db = new DB();
         $db->delete(static::$table, static::$primaryKey, $id);
     }
-    
+
+    public static function delete_where($condition, $values) {
+        $db = new DB();
+        $db->query("DELETE FROM " . static::$table . " WHERE $condition", $values);
+    }
+
     public function save() {
         $fields = $this->fields;
         $values = array();
@@ -67,17 +72,25 @@ class BaseModel implements ArrayAccess
         }
         $db = new DB();
         if (array_key_exists(static::$primaryKey, $values) && $values[static::$primaryKey] > 0) {
-            return $this->update($values, $db);
+            return (object)array(
+                'message' => $this->update($values, $db),
+                'id' => false
+            );
         } else {
-            return $this->insert($values, $db);
+            return (object)array(
+                'message' => $this->insert($values, $db),
+                'id' => $db->last_id
+            );
         }
     }
+
     private function insert($values, $db) {
         if (!$db->insert(static::$table, $values)) {
             return $db->error;
         }
         return "Success";
     }
+
     private function update($values, $db) {
         if (!$db->update(static::$table, static::$primaryKey, $values[static::$primaryKey], $values)) {
             return $db->error;

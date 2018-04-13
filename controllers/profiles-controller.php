@@ -62,6 +62,7 @@ class ProfilesController extends MainController {
             $this->throw_404();
         }
         $id = $parameters[0];
+        ProfilePermissionModel::delete_where('Profile_Id = ?', array($id));
         ProfileModel::delete($id);
         $this->goto_page(HOME_URI . '/profiles/index');
     }
@@ -74,17 +75,27 @@ class ProfilesController extends MainController {
             $data['Profile_Id'] = $id;
         }
         $profile = new ProfileModel($data);
-        $profilePermissions = $data['Permission'];
         $results = $profile->save();
+        if ($results->id) {
+            $id = $results->id;
+        }
+        if (array_key_exists('Permissions', $data)) {
+            $profilePermissions = $data['Permissions'];
+            ProfilePermissionModel::delete_where('Profile_Id = ? ', array($id));
+            $this->save_permissions($profilePermissions, $id);
+        }
+        $this->goto_page(HOME_URI . '/profiles/index');
+    }
+
+    private function save_permissions($profilePermissions, $id) {
         for($i = 0; $i < count($profilePermissions); $i++) {
             $profileData = array(
                 'Permission_Id' => $profilePermissions[$i],
-                'Profile_Id' => 9
+                'Profile_Id' => $id
             );
             $profile = new ProfilePermissionModel($profileData);
             $profile->save();
         }
-        $this->goto_page(HOME_URI . '/profiles/index');
     }
 }
 

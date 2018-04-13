@@ -16,7 +16,7 @@
         <tr>
             <td><?=$user['Name']?></td>
             <td><?=$user['Email']?></td>
-            <td><?=$user['Profile_Id']?></td>
+            <td><?=$user['Profile']?></td>
             <td>
                 <a href="<?=HOME_URI?>/users/edit/<?=$user['User_Id']?>">Editar</a>
                 <a href="<?=HOME_URI?>/users/delete/<?=$user['User_Id']?>">Excluir</a>
