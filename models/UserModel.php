@@ -12,5 +12,4 @@ class UserModel extends BaseModel {
         'Last_Activity'
     );
 }
-
 ?>

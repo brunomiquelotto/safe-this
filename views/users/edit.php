@@ -14,14 +14,6 @@
                 <option value="2">Moderador</option>
             </select>
         </div>
-        <div>
-        <?php foreach($this->model->user['Permissions'] as $permission) { ?>
-            <div class="mg-t-10">
-                <input name="Permissions[]" id="permission<?=$permission['Permission_Id']?>" class="form-control" type="checkbox" <?=$permission['Checked'] ? 'checked' : ''?> />
-                <label for="permission<?=$permission['Permission_Id']?>"><?=$permission['Description']?></label>
-            </div>
-        <?php } ?>
-        </div>
         <div class="form-group">
             <input type="submit" value="Salvar" class="button success ripple"/>
         </div>
