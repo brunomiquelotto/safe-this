@@ -27,31 +27,55 @@ class PlacesController extends MainController {
         $parameters = (func_num_args() >= 1 ) ? func_get_arg(0) : array();
         $id = $parameters[0];
         $data = $_POST;
+        if ($id) {
+            $data['Sector_Id'] = $id;
+            $this->update($data);
+        } else {
+            $this->insert($data);
+        }
+        $this->goto_page(HOME_URI . '/places/index');
+    }
+
+    private function insert($data) {
+        $sector = new PlaceModel($data);
+        $results = $sector->save();
+        if (!$results) {
+            return;
+        }
+        $this->save_files($results->id);
+    }
+
+    private function update($data) {
+        $sector = new PlaceModel($data);
+        $results = $sector->save();
+        if (!$results) return;
+        if (!$_FILES['Image']) return;
+
+        $files = PlaceFileModel::where('Sector_Id = ' . $data['Sector_Id']);
+        foreach($files as $file) {
+            $fileName = UP_ABSPATH . '/' . $file['FileName'];
+            if(!file_exists($fileName)) continue;
+            unlink($fileName);
+        }
+        PlaceFileModel::delete_where('Sector_Id = ?', array($data['Sector_Id']));
+        $this->save_files($data['Sector_Id']);
+    }
+
+    private function save_files($id) {
         $uniq = uniqid();
         $exploded = explode('.', $_FILES['Image']['name']);
         $extension = $exploded[count($exploded) - 1];
         $uploadFileName = $uniq . '.' .$extension;
         $upload_file = UP_ABSPATH . '/'. $uploadFileName;
-        if (!move_uploaded_file($_FILES['Image']['tmp_name'], $upload_file)) {
-            $this->goto_page(HOME_URI . '/places/create');
-            exit;
-        }
-        if ($id) {
-            $data['Sector_Id'] = $id;
-        }
-        $sector = new PlaceModel($data);
-        $results = $sector->save();
-        if ($results) {
-            $sector_id = $results->id;
-            $fileData = array(
-                'Title' => 'Imagem do Setor',
-                'FileName' => $uploadFileName,
-                'Sector_Id' => $sector_id
-            );
-            $file = new PlaceFileModel($fileData);
-            $file->save();
-        }
-        $this->goto_page(HOME_URI . '/places/index');
+        if (!move_uploaded_file($_FILES['Image']['tmp_name'], $upload_file)) return;
+        $sector_id = $id;
+        $fileData = array(
+            'Title' => 'Imagem do Setor',
+            'FileName' => $uploadFileName,
+            'Sector_Id' => $sector_id
+        );
+        $file = new PlaceFileModel($fileData);
+        $file->save();
     }
 
     public function delete() {
@@ -61,6 +85,10 @@ class PlacesController extends MainController {
         if (!$id) {
             $this->throw_404();
             exit;
+        }
+        $files = PlaceFileModel::where('Sector_Id = ' . $id);
+        foreach($files as $file) {
+            unlink(UP_ABSPATH . '/' . $file['FileName']);
         }
         PlaceFileModel::delete_where('Sector_Id = ?', array($id));
         PlaceModel::delete($id);
