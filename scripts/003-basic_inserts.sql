@@ -34,3 +34,5 @@ INSERT INTO TB_PROFILE_PERMISSIONS (Permission_Id, Profile_Id, Granted) VALUES (
 
 
 INSERT INTO TB_OCURRENCE_STATUSES (Description) VALUES ('Aguardando Análise'), ('Rejeitado'), ('Aceito'), ('Em andamento'), ('Finalizado');
+
+INSERT INTO TB_OCURRENCE_PRIORITIES (Description) VALUES ('Baixa'), ('Média'), ('Alta');
