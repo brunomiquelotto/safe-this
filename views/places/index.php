@@ -8,34 +8,22 @@
             <tr>
                 <th>Descrição</th>
                 <th>Em aberto</th>
+                <th>Última ocorrência</th>
                 <th></th>
             </tr>
         </thead>
         <tbody>
+            <?php foreach($this->model->places as $place) { ?>
             <tr>
-                <td>ISE</td>
-                <td>1</td>
+                <td><?=$place['Name']?></td>
+                <td><?=$place['Open_Ocurrences']?></td>
+                <td><?=$place['Last_Ocurrence'] ?? 'Não há' ?></td>
                 <td>
-                    <a href="<?=HOME_URI?>/places/edit/1">Editar</a>
-                    <a href="<?=HOME_URI?>/places/delete/1">Excluir</a>
+                    <a href="<?=HOME_URI?>/places/edit/<?=$place['Sector_Id']?>">Editar</a>
+                    <a href="<?=HOME_URI?>/places/delete/<?=$place['Sector_Id']?>">Excluir</a>
                 </td>
             </tr>
-            <tr>
-                <td>Central</td>
-                <td>1</td>
-                <td>
-                    <a href="<?=HOME_URI?>/places/edit/2">Editar</a>
-                    <a href="<?=HOME_URI?>/places/delete/2">Excluir</a>
-                </td>
-            </tr>
-            <tr>
-                <td>Farmácia</td>
-                <td>1</td>
-                <td>
-                    <a href="<?=HOME_URI?>/places/edit/3">Editar</a>
-                    <a href="<?=HOME_URI?>/places/delete/3">Excluir</a>
-                </td>
-            </tr>
+            <?php } ?>
         </tbody>
     </table>
 </div>

@@ -291,3 +291,8 @@ a.button {
 .form-control[type="radio"]:checked + label:after, .form-control[type="checkbox"]:checked + label:after {
     font-weight: bold;
 }
+
+.image-picture {
+    width: 100%;
+    border: 4px dashed #136b49;
+}

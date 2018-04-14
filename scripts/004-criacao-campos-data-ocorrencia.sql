@@ -1,0 +1,6 @@
+ALTER TABLE `tb_ocurrences` 
+ADD COLUMN `Opening_Date` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP AFTER `Ocurrence_Priority_Id`,
+ADD COLUMN `Closing_Date` DATETIME NULL AFTER `Opening_Date`;
+
+ALTER TABLE `tb_ocurrence_updates` 
+ADD COLUMN `Update_Date` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP AFTER `Ocurrence_Status_Id`;

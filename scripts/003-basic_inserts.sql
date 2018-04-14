@@ -31,3 +31,6 @@ INSERT INTO TB_PROFILE_PERMISSIONS (Permission_Id, Profile_Id, Granted) VALUES (
 INSERT INTO TB_PROFILE_PERMISSIONS (Permission_Id, Profile_Id, Granted) VALUES (11, 2, 0);
 INSERT INTO TB_PROFILE_PERMISSIONS (Permission_Id, Profile_Id, Granted) VALUES (12, 2, 0);
 INSERT INTO TB_PROFILE_PERMISSIONS (Permission_Id, Profile_Id, Granted) VALUES (13, 2, 0);
+
+
+INSERT INTO TB_OCURRENCE_STATUSES (Description) VALUES ('Aguardando Análise'), ('Rejeitado'), ('Aceito'), ('Em andamento'), ('Finalizado');
