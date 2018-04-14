@@ -7,6 +7,9 @@
             <a href="<?=HOME_URI?>/admin">Home</a>
         </li>
         <li>
+            <a href="<?=HOME_URI?>/ocurrences">Registro de Ocorrências</a>
+        </li>
+        <li>
             <a href="<?=HOME_URI?>/admin">Administrativo</a>
         </li>
         <li>
