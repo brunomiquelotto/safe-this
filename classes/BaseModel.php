@@ -97,4 +97,12 @@ class BaseModel implements ArrayAccess
         }
         return "Success";
     }
+
+    public static function has_required_fields($data) {
+        foreach (static::$requiredFields as $field) {
+            if (!array_key_exists($field, $data)) return false;
+            if ($data[$field] == 0) return false;
+        }
+        return true;
+    }
 }

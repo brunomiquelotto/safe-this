@@ -13,6 +13,10 @@ class OcurrencesModel extends BaseModel {
         'Opening_Date',
         'Closing_Date'
     );
+    protected static $requiredFields = array(
+        'Sector_Id',
+        'Ocurrence_Priority_Id'
+    );
 }
 
 ?>
