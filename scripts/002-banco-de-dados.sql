@@ -97,9 +97,9 @@ ENGINE = InnoDB;
 -- Table `safe_this_dev`.`TB_OCURRENCE_STATUSES`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `safe_this_dev`.`TB_OCURRENCE_STATUSES` (
-  `Ocurrence_Status_ Id` INT NOT NULL AUTO_INCREMENT,
+  `Ocurrence_Status_Id` INT NOT NULL AUTO_INCREMENT,
   `Description` VARCHAR(45) NOT NULL,
-  PRIMARY KEY (`Ocurrence_Status_ Id`),
+  PRIMARY KEY (`Ocurrence_Status_Id`),
   UNIQUE INDEX `Description_UNIQUE` (`Description` ASC))
 ENGINE = InnoDB;
 
@@ -129,7 +129,7 @@ CREATE TABLE IF NOT EXISTS `safe_this_dev`.`TB_OCURRENCE_UPDATES` (
     ON UPDATE NO ACTION,
   CONSTRAINT `FK_TB_OCURRENCE_UPDATES_TB_OCURRENCE_STATUSES`
     FOREIGN KEY (`Ocurrence_Status_Id`)
-    REFERENCES `safe_this_dev`.`TB_OCURRENCE_STATUSES` (`Ocurrence_Status_ Id`)
+    REFERENCES `safe_this_dev`.`TB_OCURRENCE_STATUSES` (`Ocurrence_Status_Id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
