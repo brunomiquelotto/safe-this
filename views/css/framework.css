@@ -32,9 +32,10 @@
 .sidebar {
     float: left;
     width: 20%;
-    padding-top: 10px;
     height: calc(100vh - 50px);
-    box-shadow: 1px 5px 10px 1px #136b49;
+    padding-top: 10px;
+    box-shadow: 1px 5px 10px 1px #999;
+    background-color: #136b49d1;
 }
 
 .sidebar ul {
@@ -45,6 +46,7 @@
     background: #136b49;
     padding: 10px;
     transition: 0.4s;
+    margin-bottom: 5px;
 }
 
 .sidebar a {
@@ -57,6 +59,9 @@
     background: #136b49d1;
     cursor: pointer;
     padding-left: 25px;
+    box-shadow: 0 3px 3px 1px rgba(0,0,0, .3);
+    z-index: 1000000000;
+
 }
 .main-content {
     padding: 10px 25px 5px 25px;
@@ -133,24 +138,25 @@
 
 .button {
     height: 35px;
-    border-radius: 1000px;
+    border-radius: 35px;
+    border: none;
     padding: 5px;
-    padding-top: 8px;
     cursor: pointer;
     transition: box-shadow 0.4s;
     min-width: 100px;
     display: inline-block;
-    text-shadow: 2px 2px #136b49;
+    font-size: 14px;
 }
 
 a.button {
     align-items: center;
     text-align: center;
     text-decoration: none;
+    padding-top: 10px;
 }
 
 .button:hover, .button:active, .button:focus {
-    box-shadow: 0px 2px 3px 1px #136b49;
+    box-shadow: 0px 2px 2px 1px #999;
     outline: none;
 }
 
