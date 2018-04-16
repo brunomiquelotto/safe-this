@@ -25,6 +25,10 @@
             <a href="<?=HOME_URI?>/profiles">Perfis</a>
         </li>
     </ul>
+    <footer class="footer">
+        <p><span>&copy; Safe this</span> - Todos os direitos reservados 2018 <span>&copy;</span></p>
+    </footer> 
 </aside>
 <section class="main-content">
+   
 <?php endif; ?>
