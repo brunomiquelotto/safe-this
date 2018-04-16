@@ -9,15 +9,17 @@ class MainController extends UserLogin
     public $logged_in = false;
     public $parameters = array();
     public $use_permission_system = false;
+    public $message = null;
 
     public function __construct ( $parameters = array() ) {
         $this->db = new DB();
         $this->parameters = $parameters;
         $this->phpass = new PasswordHash(8, false);
         $this->check_user_login();
-        $this->model = (object)array(); 
+        $this->model = (object)array();
+        $this->check_messages();
     }
- 
+
     public function load_model($model_name = false) {
         if (!$model_name) return;
         $model_name =  strtolower($model_name);
@@ -61,4 +63,27 @@ class MainController extends UserLogin
             mkdir($dir, 0777, true);
         }
     }
+
+    protected function set_message($text, $type = 'Info', $data = null) {
+        if (!$type) {
+            $type = 'Info';
+        }
+        if (!$data) {
+            $data = (object)array();
+        }
+        $_SESSION['message'] = array(
+            'Text' => $text,
+            'Type' => $type,
+            'Data' => $data
+        );
+    }
+
+    private function check_messages() {
+        if (array_key_exists('message', $_SESSION) && $_SESSION['message']) {
+            $message = $_SESSION['message'];
+            $this->message = (object)$message;
+            $_SESSION['message'] = null;
+        }
+    }
+ 
 } 

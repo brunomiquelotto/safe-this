@@ -70,6 +70,7 @@ class UsersController extends MainController {
         }
         $user = new UserModel($data);
         $results = $user->save();
+        $this->set_message('Salvo com sucesso');
         $this->goto_page(HOME_URI . '/users/index');
     }
 }
