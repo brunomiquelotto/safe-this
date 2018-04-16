@@ -1,4 +1,5 @@
 <?php if (!defined('ABSPATH')) exit; ?>
+
 <!-- Menu para usuários logados -->
 <?php if ($this->logged_in): ?>
 <aside class="sidebar">
@@ -27,4 +28,7 @@
     </ul>
 </aside>
 <section class="main-content">
-<?php endif; ?>
+    <?php if ($this->message): ?>
+        <p><?=$this->message->Text?></p>
+    <?php endif ?>
+<?php endif ?>
