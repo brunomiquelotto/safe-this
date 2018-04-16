@@ -33,9 +33,14 @@
     float: left;
     width: 20%;
     height: calc(100vh - 50px);
+<<<<<<< HEAD
     padding-top: 10px;
     box-shadow: 1px 5px 10px 1px #999;
     background-color: #136b49d1;
+=======
+    box-shadow: 1px 5px 10px 1px #ddd;
+    position: relative;
+>>>>>>> feature/footer-layout
 }
 
 .sidebar ul {
@@ -64,13 +69,16 @@
 
 }
 .main-content {
-    padding: 10px 25px 5px 25px;
     float:left;
     width: 80%;
-    height: calc(100vh - 53px);
-    overflow-y: scroll;
-}
 
+}
+.main-inner{
+    width: 100%;
+    float: left;
+    padding: 10px 25px 5px 25px;
+
+}
 .form-group {
     display: block;
     padding-top: 10px;

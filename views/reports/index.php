@@ -19,22 +19,6 @@
                     </option>
                 <?php } ?>
             </select>
-            <select class="form-control small" name="Ocurrence_Id">
-                <option value="0">Data de abertura</option>
-                <?php foreach($this->model->ocurrence as $date) { ?>
-                    <option value="<?=$date['Ocurrence_Id']?>">
-                        <?=$date['Opening_Date'];?>
-                    </option>
-                <?php } ?>
-            </select>
-            <select class="form-control small" name="Ocurrence_Id">
-                <option value="0">Data de Encerramento</option>
-                <?php foreach($this->model->ocurrence as $date) { ?>
-                    <option value="<?=$date['Ocurrence_Id']?>">
-                        <?=$date['Closing_Date'];?>
-                    </option>
-                <?php } ?>
-            </select>
         </div>
         <a href="<?=HOME_URI?>/reports/view" class="button info ripple mg-t-10">Gerar Relatorio</a>
         <a href="<?=HOME_URI?>/reports/download" class="button info ripple mg-t-10">Gerar PDF</a>

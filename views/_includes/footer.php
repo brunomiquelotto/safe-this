@@ -1,3 +1,3 @@
-        </section>
-    </body>
+</section>
+</body>
 </html>
