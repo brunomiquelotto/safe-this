@@ -9,11 +9,13 @@ class OcurrencesController extends MainController {
         $this->load_model('OcurrenceUpdateModel');
         $this->load_model('OcurrenceStatusModel');
         $this->load_model('OcurrenceFileModel');
+        $this->load_model('VwOcurrencesModel');
     }
 
     public function index() {
         $this->title = 'Registro de Ocorrências';
-        $this->model->ocurrences = OcurrencesModel::all();
+
+        $this->model->ocurrences = VwOcurrencesModel::all();
         $this->load_page('ocurrences/index.php');
     }
 
