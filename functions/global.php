@@ -23,5 +23,12 @@
         fwrite($debugFile, "\r\n<==== END DEBUG ====>\r\n");
         fclose($debugFile);
     }
+
+
+    function debug_variable($var) {
+        echo '<pre>';
+        var_dump($var);
+        echo '</pre>';
+    }
     
 ?>

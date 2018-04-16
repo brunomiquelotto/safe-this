@@ -1,19 +1,7 @@
-<script>
-    function formatar(mask, doc){
-    var i = doc.value.length;
-    var output = mask.substring(0,1);
-    var str = mask.substring(i)
-    
-    if (str.substring(0,1) != output)
-    doc.value += str.substring(0,1);   
-    
-    }
-</script>
-
 <a href="<?=HOME_URI?>/ocurrences" class="button warning ripple mg-t-10">Voltar</a>
 <h2>Registrar nova ocorrência</h2>
 <div style="width:50%">
-    <form action="<?=HOME_URI?>/ocurrences/save" method="post">       
+    <form action="<?=HOME_URI?>/ocurrences/save" method="post" enctype="Multipart/form-data">       
         <select class="form-control small" name="Sector_Id">
             <option value="0">Selecione um Local</option>
             <?php foreach($this->model->ocurrences as $place) { ?>
@@ -39,10 +27,10 @@
             <input type="email" name="Reporter_Email" class="form-control large" placeholder="Informe seu E-mail (opcional)">
         </div>
         <div class="form-group">
-            <input type="text" name="Reporter_CPF" class="form-control large" maxlength="14" OnKeyPress="formatar('###.###.###-##', this)" placeholder="Informe seu CPF (opcional)" >
+            <input type="text" name="Reporter_CPF" class="form-control large" maxlength="14" OnKeyPress="GeneralFunctions.Format('###.###.###-##', this)" placeholder="Informe seu CPF (opcional)" >
         </div>
         <div class="form-group" id="Images">
-            <input type="file" name="Image[]" id="Image_1" class="form-control-file">
+            <input type="file" name="Image[]" id="Image_1" accept="image/png, image/jpeg" class="form-control-file">
             <label for="Image_1" class="display-block">Anexar arquivo</label>
         </div>
         <div class="form-group">
@@ -53,6 +41,8 @@
 
 <script>
     var added = 1;
+    var Image_1 = document.getElementById('Image_1');
+    Image_1.addEventListener('change', onAddedFile);
     function onAddedFile() {
         var divImages = document.getElementById('Images');
         var convertedElement = getTemplate(++added);
@@ -63,6 +53,6 @@
     }
 
     function getTemplate(id) {
-        return createElementsFromHTML('<input type="file" name="Image[]" id="Image_' + id + '" class="form-control-file"><label class=" display-block mg-t-10" for="Image_' + id + '">Anexar arquivo</label>');
+        return createElementsFromHTML('<input type="file" name="Image[]" id="Image_' + id + '" accept="image/png, image/jpeg" class="form-control-file"><label class=" display-block mg-t-10" for="Image_' + id + '">Anexar arquivo</label>');
     }
 </script>

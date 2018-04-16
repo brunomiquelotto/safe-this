@@ -55,4 +55,10 @@ class MainController extends UserLogin
             $this->goto_login();
         }
     }
+
+    protected function create_dir_if_no_exists($dir) {
+        if (!file_exists($dir)) {
+            mkdir($dir, 0777, true);
+        }
+    }
 } 

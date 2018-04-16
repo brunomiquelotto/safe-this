@@ -1,6 +1,5 @@
 var Components = Components || {};
 Components.FormControlFile = {};
-
 Components.FormControlFile.OnChangeHandler = function(value) {
 	var file = this.files.length ? this.files[0] : null;
 	if (!file) return;
@@ -14,6 +13,17 @@ Components.FormControlFile.PrepareInputFiles = function() {
         elements[i].addEventListener('change', Components.FormControlFile.OnChangeHandler);
     }
 };
+
+var GeneralFunctions = {};
+GeneralFunctions.Format = function(mask, input) {
+    var inputLength = input.value.length;
+    var output = mask.substring(0, 1);
+    var str = mask.substring(inputLength);
+    
+    if (str.substring(0,1) != output) {
+    	input.value += str.substring(0,1);   	
+    }
+}
 
 
 window.onload = function() {
