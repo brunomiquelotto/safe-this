@@ -71,7 +71,7 @@ class UsersController extends MainController {
         }
         $user = new UserModel($data);
         $results = $user->save();
-        $this->set_message('Usuário Salvo Com Sucesso.');
+        $this->set_message('Salvo com sucesso', 'success');
         $this->goto_page(HOME_URI . '/users/index');
     }
 }
