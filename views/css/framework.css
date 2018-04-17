@@ -36,6 +36,17 @@
     padding-top: 10px;
     box-shadow: 1px 5px 10px 1px #999;
     background-color: #136b49d1;
+    position: relative;
+}
+
+.footer{
+    text-align: center;
+    bottom:10px;
+    position: absolute;
+}
+
+.footer p, p span {
+    color: #FFFFFF;
 }
 
 .sidebar ul {
