@@ -55,6 +55,7 @@ class UsersController extends MainController {
         }
         $id = $parameters[0];
         UserModel::delete($id);
+        $this->set_message('Usuário Deletado');
         $this->goto_page(HOME_URI . '/users/index');
     }
 
