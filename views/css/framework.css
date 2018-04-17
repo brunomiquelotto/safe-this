@@ -315,8 +315,15 @@ a.button {
 
 .alert {
     margin: 10px 0px;
-    padding: 12px; 
+    padding: 12px;
+    display: flex;
+    align-items: center;
 }
+
+.alert span {
+    margin-left: 15px;
+}
+
 .alert.success {
     color: #4F8A10;
     background-color: #DFF2BF;

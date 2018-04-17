@@ -29,6 +29,8 @@
 </aside>
 <section class="main-content">
     <?php if ($this->message): ?>
-        <p><?=$this->message->Text?></p>
+        <div class="alert <?=$this->message->Type?>">
+            <span><?=$this->message->Text?></span>
+        </div>
     <?php endif ?>
 <?php endif ?>
