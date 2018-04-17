@@ -20,7 +20,7 @@
                 <td><?= date('d/m/Y H:i:s', strtotime($place['Last_Ocurrence'])) ?? 'Não há' ?></td>
                 <td>
                     <a href="<?=HOME_URI?>/places/edit/<?=$place['Sector_Id']?>" class="button success small">Editar</a>
-                    <a href="<?=HOME_URI?>/places/delete/<?=$place['Sector_Id']?>" class="button success small">Excluir</a>
+                    <a href="<?=HOME_URI?>/places/delete/<?=$place['Sector_Id']?>" class="button danger small">Excluir</a>
                 </td>
             </tr>
             <?php } ?>
