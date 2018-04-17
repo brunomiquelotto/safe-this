@@ -17,7 +17,7 @@
             <tr>
                 <td><?=$place['Name']?></td>
                 <td><?=$place['Open_Ocurrences']?></td>
-                <td><?=$place['Last_Ocurrence'] ?? 'Não há' ?></td>
+                <td><?=date('d/m/Y H:i:s', strtotime($place['Last_Ocurrence'])) ?? 'Não há' ?></td>
                 <td>
                     <a href="<?=HOME_URI?>/places/edit/<?=$place['Sector_Id']?>">Editar</a>
                     <a href="<?=HOME_URI?>/places/delete/<?=$place['Sector_Id']?>">Excluir</a>
