@@ -64,7 +64,7 @@ class ProfilesController extends MainController {
         $id = $parameters[0];
         ProfilePermissionModel::delete_where('Profile_Id = ?', array($id));
         ProfileModel::delete($id);
-        $this->set_message('Perfil Deletado');
+        $this->set_message('Perfil deletado', 'warning');
         $this->goto_page(HOME_URI . '/profiles/index');
     }
 
@@ -85,7 +85,7 @@ class ProfilesController extends MainController {
             ProfilePermissionModel::delete_where('Profile_Id = ? ', array($id));
             $this->save_permissions($profilePermissions, $id);
         }
-        $this->set_message('Perfil Salvo');
+        $this->set_message('Salvo com sucesso','success');
         $this->goto_page(HOME_URI . '/profiles/index');
     }
 
