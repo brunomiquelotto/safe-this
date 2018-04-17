@@ -1,6 +1,7 @@
 <?php 
 
 class OcurrencesController extends MainController {
+
     public function __construct() {
         parent::__construct();
         $this->load_model('VwSectorListInfoModel');
@@ -14,7 +15,7 @@ class OcurrencesController extends MainController {
 
     public function index() {
         $this->title = 'Registro de Ocorrências';
-
+        $this->model->edit_url = HOME_URI . '/Ocurrences/Edit/';
         $this->model->ocurrences = VwOcurrencesModel::stmt_limit('Order By Opening_Date DESC',5);
         $this->load_page('ocurrences/index.php');
     }
