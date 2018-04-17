@@ -20,11 +20,16 @@
 		<tbody>
 			<?php foreach ($this->model->ocurrences as $ocurrence): ?>
 				<tr>
-					<td><?=$ocurrence['Ocurrence_Id']?></td>
-					<td><?=$ocurrence['Sector_Id']?></td>
-					<td><?=$ocurrence['Ocurrence_Priority_Id']?></td>
-					<td><?=$ocurrence['Ocurrence_Date']?></td>
-					<td><?=$ocurrence['Ocurrence_Id']?></td>
+					<td><?=$ocurrence['Id']?></td>
+					<td><?=$ocurrence['Place']?></td>
+					<td><?=$ocurrence['Priority']?></td>
+					<td><?=$ocurrence['Opening_Date']?></td>
+					<td><?=$ocurrence['Files']?></td>
+					<?php if ($this->logged_in): ?>
+					<td>
+						<a href="/Ocurrences/Edit/<?=$ocurrence['Id']?>" class="button success small">Editar</a>
+					</td>
+					<?php endif ?>
 				</tr>
 			<?php endforeach ?>
 		</tbody>

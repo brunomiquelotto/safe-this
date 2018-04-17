@@ -81,6 +81,8 @@ class DB
         $stmt = "INSERT INTO `$table` ($cols) VALUES $place_holders) ";
         try {
             $insert = $this->query($stmt, $values);
+            debug_variable($stmt);
+            debug_variable($values);
         }
         catch (Exception $ex) {
             echo $ex;

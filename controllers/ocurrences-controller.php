@@ -15,7 +15,7 @@ class OcurrencesController extends MainController {
     public function index() {
         $this->title = 'Registro de Ocorrências';
 
-        $this->model->ocurrences = VwOcurrencesModel::all();
+        $this->model->ocurrences = VwOcurrencesModel::stmt_limit('Order By Opening_Date DESC',5);
         $this->load_page('ocurrences/index.php');
     }
 
@@ -52,7 +52,6 @@ class OcurrencesController extends MainController {
         );
         $initial_status = new OcurrenceUpdateModel($statusData);
         $initial_status_result = $initial_status->save();
-
         if (!$initial_status_result->id) {
           $this->goto_page(HOME_URI . '/ocurrences/create');
         }
@@ -62,7 +61,6 @@ class OcurrencesController extends MainController {
         for ($i = 0; $i < count($_FILES['Image']['name']); $i++) {
             $this->save_file($initial_status_result->id, $_FILES['Image']['name'][$i], $_FILES['Image']['tmp_name'][$i], $dirToSavePics);
         }
-
         $this->goto_page(HOME_URI . '/ocurrences');
     }
 
