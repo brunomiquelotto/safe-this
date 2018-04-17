@@ -64,9 +64,9 @@ class MainController extends UserLogin
         }
     }
 
-    protected function set_message($text, $type = 'Info', $data = null) {
+    protected function set_message($text, $type = 'info', $data = null) {
         if (!$type) {
-            $type = 'Info';
+            $type = 'info';
         }
         if (!$data) {
             $data = (object)array();
