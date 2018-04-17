@@ -9,6 +9,9 @@ class BaseModel implements ArrayAccess
     public $parameters;
     public $userdata;
 
+    private $querySql;
+    private $limit;
+
     public function offsetSet($offset, $value) {
         if (is_null($offset)) {
             $this->container[] = $value;
@@ -36,6 +39,17 @@ class BaseModel implements ArrayAccess
     public static function all() {
         $db = new DB();
         return $db->query('SELECT * FROM ' . static::$table)->fetchAll();
+    }
+
+    public static function stmt_limit($stmt, $number, $skip = false) {
+        if ($skip) {
+            $limit = 'LIMIT ' . $skip . ', ' . $number;
+        } else {
+           $limit = 'LIMIT ' . $number; 
+        }
+        
+        $db = new DB();
+        return $db->query('SELECT * FROM ' . static::$table . ' ' . $stmt . ' ' . $limit)->fetchAll();
     }
 
     public static function where($conditions) {

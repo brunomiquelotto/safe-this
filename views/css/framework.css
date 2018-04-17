@@ -205,6 +205,14 @@ a.button {
     color:white;
 }
 
+.button.small {
+    height: 25px;
+    padding-top: 4px;
+    min-width: 70px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
 .ripple {
     position: relative;
     overflow: hidden;
