@@ -15,8 +15,7 @@ INSERT INTO TB_PERMISSIONS(Controller, Action, Description) VALUES ('UsersContro
 INSERT INTO TB_PROFILES (Description, FullAccess) VALUES('Administrador', 1);
 INSERT INTO TB_PROFILES (Description, FullAccess) VALUES('Moderador', 0);
 
-INSERT INTO TB_USERS(Name, Email, Password, Profile_Id) VALUES ('Administrador', 'admin@safethis.com', '123456789', 1);
-INSERT INTO TB_USERS(Name, Email, Password, Profile_Id) VALUES ('Moderador', 'moderador@safethis.com', '123456789', 2);
+INSERT INTO TB_USERS(Name, Email, Password, Profile_Id) VALUES ('Administrador', 'admin@safethis.com', '$2a$08$2sGQinTFe3GF/YqAYQ66auL9o6HeFCQryHdqUDvuEVN0J1vdhimii', 1);
 
 INSERT INTO TB_PROFILE_PERMISSIONS (Permission_Id, Profile_Id, Granted) VALUES (1, 2, 1);
 INSERT INTO TB_PROFILE_PERMISSIONS (Permission_Id, Profile_Id, Granted) VALUES (2, 2, 1);
