@@ -1,8 +1,19 @@
-<h1>Registro de Ocorrências </h1>
+<h1>Últimas ocorrências</h1>
 <h3 class="mg-t-10">Para criar uma ocorrência, clique em novo!</h3>
+
 <a href="<?=HOME_URI?>/ocurrences/create" class="button success ripple mg-t-10">Novo</a>
 
-<div class="center-all">
+<div class="mg-t-10">
+	<label>Quantidade a exibir</label>
+	<select class="form-control small">
+		<option value="5">5</option>
+		<option value="5">10</option>
+		<option value="5">25</option>
+		<option value="5">50</option>
+	</select>
+</div>
+
+d<div class="center-all">
 	<table class="table">
 		<thead>
 			<tr>
