@@ -5,15 +5,15 @@
 
 <div class="mg-t-10">
 	<label>Quantidade a exibir</label>
-	<select class="form-control small">
-		<option value="5">5</option>
-		<option value="5">10</option>
-		<option value="5">25</option>
-		<option value="5">50</option>
+	<select class="form-control small" id="itemsToShow" onchange="changeUrl()">
+		<option value="5" <?=$this->model->limit == 5 ? 'selected' : ''?>>5</option>
+		<option value="10" <?=$this->model->limit == 10 ? 'selected' : ''?>>10</option>
+		<option value="25" <?=$this->model->limit == 25 ? 'selected' : ''?>>25</option>
+		<option value="50" <?=$this->model->limit == 50 ? 'selected' : ''?>>50</option>
 	</select>
 </div>
 
-d<div class="center-all">
+<div class="center-all">
 	<table class="table">
 		<thead>
 			<tr>
@@ -46,3 +46,10 @@ d<div class="center-all">
 		</tbody>
 	</table>
 </div>
+
+<script>
+	function changeUrl() {
+		var number = document.getElementById('itemsToShow').value;
+		window.location = '<?=HOME_URI?>/ocurrences/index/' + number;
+	}
+</script>
