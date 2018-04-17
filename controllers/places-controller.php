@@ -33,6 +33,7 @@ class PlacesController extends MainController {
         } else {
             $this->insert($data);
         }
+        $this->set_message('Ocorrência Salva');
         $this->goto_page(HOME_URI . '/places/index');
     }
 
@@ -40,6 +41,7 @@ class PlacesController extends MainController {
         $sector = new PlaceModel($data);
         $results = $sector->save();
         if (!$results) {
+            $this->set_message('Falha Ao Salvar');
             return;
         }
         $this->save_files($results->id);
@@ -48,7 +50,10 @@ class PlacesController extends MainController {
     private function update($data) {
         $sector = new PlaceModel($data);
         $results = $sector->save();
-        if (!$results) return;
+        if (!$results){
+            $this->set_message('Falha Ao Salvar');
+            return;
+        }
         if (!$_FILES['Image']) return;
 
         $files = PlaceFileModel::where('Sector_Id = ' . $data['Sector_Id']);
@@ -92,6 +97,7 @@ class PlacesController extends MainController {
         }
         PlaceFileModel::delete_where('Sector_Id = ?', array($id));
         PlaceModel::delete($id);
+        $this->set_message('Ocorrência Deletada');
         $this->goto_page(HOME_URI. '/places/index');
     }
 

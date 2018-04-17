@@ -55,6 +55,7 @@ class UsersController extends MainController {
         }
         $id = $parameters[0];
         UserModel::delete($id);
+        $this->set_message('Usuário Deletado');
         $this->goto_page(HOME_URI . '/users/index');
     }
 
@@ -70,7 +71,7 @@ class UsersController extends MainController {
         }
         $user = new UserModel($data);
         $results = $user->save();
-        $this->set_message('Salvo com sucesso');
+        $this->set_message('Usuário Salvo Com Sucesso.');
         $this->goto_page(HOME_URI . '/users/index');
     }
 }
