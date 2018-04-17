@@ -16,7 +16,7 @@ class OcurrencesController extends MainController {
     public function index() {
         $parameters = (func_num_args() >= 1 ) ? func_get_arg(0) : array();
         $this->model->limit = 10;
-        if (count($parameters)) {
+        if ($parameters) {
             $this->model->limit = $parameters[0];
         }
         $this->title = 'Registro de Ocorrências';
