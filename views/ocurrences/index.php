@@ -34,7 +34,7 @@ d<div class="center-all">
 					<td><?=$ocurrence['Id']?></td>
 					<td><?=$ocurrence['Place']?></td>
 					<td><?=$ocurrence['Priority']?></td>
-					<td><?=$ocurrence['Opening_Date']?></td>
+					<td><?=date('d/m/Y H:i:s', strtotime($ocurrence['Opening_Date']))?></td>
 					<td><?=$ocurrence['Files']?></td>
 					<?php if ($this->logged_in): ?>
 					<td>
