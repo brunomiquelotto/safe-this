@@ -14,9 +14,14 @@ class OcurrencesController extends MainController {
     }
 
     public function index() {
+        $parameters = (func_num_args() >= 1 ) ? func_get_arg(0) : array();
+        $this->model->limit = 10;
+        if (count($parameters)) {
+            $this->model->limit = $parameters[0];
+        }
         $this->title = 'Registro de Ocorrências';
         $this->model->edit_url = HOME_URI . '/Ocurrences/Edit/';
-        $this->model->ocurrences = VwOcurrencesModel::stmt_limit('Order By Opening_Date DESC',5);
+        $this->model->ocurrences = VwOcurrencesModel::stmt_limit('Order By Opening_Date DESC', $this->model->limit);
         $this->load_page('ocurrences/index.php');
     }
 
