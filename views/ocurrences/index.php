@@ -27,7 +27,7 @@
 					<td><?=$ocurrence['Files']?></td>
 					<?php if ($this->logged_in): ?>
 					<td>
-						<a href="/Ocurrences/Edit/<?=$ocurrence['Id']?>" class="button success small">Editar</a>
+						<a href="<?=$this->model->edit_url . $ocurrence['Id']?>" class="button success small">Editar</a>
 					</td>
 					<?php endif ?>
 				</tr>
