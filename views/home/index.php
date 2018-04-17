@@ -43,7 +43,7 @@
         <tbody>
             <tr>
                 <td>Bruno Miquelotto</td>
-                <td>HIHIHIHI PROBLEMINHA</td>
+                <td>Testou</td>
                 <td>Centralzão Meu pau na sua mão</td>
                 <td>Em Andamento</td>
                 <td>Alto</td>
