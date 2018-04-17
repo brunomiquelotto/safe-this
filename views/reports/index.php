@@ -19,6 +19,8 @@
                     </option>
                 <?php } ?>
             </select>
+            <input type="Date" class="form-control small" name="Opening_Date">
+            <input type="Date" class="form-control small" name="Closing_Date">
         </div>
         <a href="<?=HOME_URI?>/reports/view" class="button info ripple mg-t-10">Gerar Relatorio</a>
         <a href="<?=HOME_URI?>/reports/download" class="button info ripple mg-t-10">Gerar PDF</a>
