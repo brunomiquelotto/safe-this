@@ -28,6 +28,7 @@ GeneralFunctions.Format = function(mask, input) {
 
 window.onload = function() {
     Components.FormControlFile.PrepareInputFiles();
+    startCount();
 }
 
 function createElementFromHTML(htmlString) {
@@ -40,4 +41,30 @@ function createElementsFromHTML(htmlString) {
 	var div = document.createElement('div');
 	div.innerHTML = htmlString.trim();
 	return div.childNodes;	
+}
+
+function startCount(){
+    var h2 = document.getElementsByClassName('count');
+    for(var i = 0; i < h2.length; i++){
+        countData(h2[i]);
+    }
+}
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+
+async function countData(element){
+    let h2 = element;
+    for (var i = h2.dataset.start; i <= h2.dataset.end; i++) { 
+        if(h2.dataset.end > 50){
+            h2.innerText = '+ ' + parseInt(i/2);
+            await sleep(12);
+        }else{
+            h2.innerText = i; 
+            await sleep(40);
+        }
+    }
+
 }

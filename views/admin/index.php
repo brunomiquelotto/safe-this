@@ -4,26 +4,25 @@
     <div class="card-count info">
         <div>
             <i class="fa fa-building"></i>
-            <h2>10</h2>
-            <h3>Setores Cadastrados</h3>        
+            <h2 class="count" data-start="0" data-end="<?=$this->model->places;?>">0</h2>
+            <h3>Locais Cadastrados</h3>        
         </div>
     </div>
     <div class="card-count success">
         <div>
             <i class="fa fa-list"></i>
-            <h2>10</h2>
+            <h2 class="count" data-start="0" data-end="<?=$this->model->ocurrences;?>">0</h2>
             <h3>Ocorrências Cadastradas</h3>        
         </div>
     </div>
     <div class="card-count danger">
         <div>
             <i class="fa fa-user"></i>
-            <h2>10</h2>
-            <h3>Setores Cadastrados</h3>        
+            <h2 class="count" data-start="0" data-end="<?=$this->model->users;?>">0</h2>
+            <h3>Usuários Cadastrados</h3>        
         </div>
     </div>
 </div>
-
 <div class="center-all mg-t-50">
     <h3 class="bolder">Últimas Ocorrências Cadastradas</h3>
 </div>
@@ -32,55 +31,24 @@
     <table class="table">
         <thead>
             <tr>
-                <th>Solicitante</th>
+                <th>#</th>
                 <th>Descrição</th>
                 <th>Local</th>
                 <th>Status</th>
-                <th>Nível de Urgência</th>
+                <th>Prioridade</th>
                 <th>Aberto Em</th>
             </tr>
         </thead>
         <tbody>
+            <?php foreach ($this->model->ocurrencesInfo as $ocurrences):?>
             <tr>
-                <td>Bruno Miquelotto</td>
-                <td>Testou</td>
-                <td>Centralzão Meu pau na sua mão</td>
-                <td>Em Andamento</td>
-                <td>Alto</td>
-                <td>05/04/2018</td>
+                <td><?=$ocurrences['Id']?></td>
+                <td><?=$ocurrences['Description']?></td>
+                <td><?=$ocurrences['Place']?></td>
+                <td><?=$ocurrences['Status']?></td>
+                <td><?=$ocurrences['Priority']?></td>
+                <td><?=date('d/m/Y', strtotime($ocurrences['Opening_Date']));?></td>
             </tr> 
-            <tr>
-                <td>Bruno Miquelotto</td>
-                <td>HIHIHIHI PROBLEMINHA</td>
-                <td>Centralzão Meu pau na sua mão</td>
-                <td>Em Andamento</td>
-                <td>Alto</td>
-                <td>05/04/2018</td>
-            </tr> 
-            <tr>
-                <td>Bruno Miquelotto</td>
-                <td>HIHIHIHI PROBLEMINHA</td>
-                <td>Centralzão Meu pau na sua mão</td>
-                <td>Em Andamento</td>
-                <td>Alto</td>
-                <td>05/04/2018</td>
-            </tr>
-            <tr>
-                <td>Bruno Miquelotto</td>
-                <td>HIHIHIHI PROBLEMINHA</td>
-                <td>Centralzão Meu pau na sua mão</td>
-                <td>Em Andamento</td>
-                <td>Alto</td>
-                <td>05/04/2018</td>
-            </tr>
-            <tr>
-                <td>Bruno Miquelotto</td>
-                <td>HIHIHIHI PROBLEMINHA</td>
-                <td>Centralzão Meu pau na sua mão</td>
-                <td>Em Andamento</td>
-                <td>Alto</td>
-                <td>05/04/2018</td>
-            </tr>
-        </tbody> 
+            <?php endforeach;?> 
     </table>
 </div>

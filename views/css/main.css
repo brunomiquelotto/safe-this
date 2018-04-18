@@ -30,7 +30,7 @@
     display: inline-block;
     overflow: hidden;
     border-radius: 5px;
-    
+    cursor: pointer;
 }
 
 .card-count.info {

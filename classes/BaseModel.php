@@ -42,6 +42,10 @@ class BaseModel implements ArrayAccess
         $db = new DB();
         return $db->query('SELECT * FROM ' . static::$table . ' WHERE ' . $conditions)->fetchAll();
     }
+    public static function orderByWithLimit($columns,$orientation, $limit) {
+        $db = new DB();
+        return $db->query('SELECT * FROM ' . static::$table . ' ORDER BY '.$columns . ' ' . $orientation .' LIMIT '.$limit)->fetchAll() ;
+    }
 
     public static function find($id) {
         $db = new DB();
