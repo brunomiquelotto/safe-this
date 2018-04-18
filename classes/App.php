@@ -17,8 +17,8 @@
             $this->get_url_data();
             
             if (!$this->controller) {
-                require_once ABSPATH . '/controllers/admin-controller.php';
-                $this->controller = new AdminController();
+                require_once ABSPATH . '/controllers/home-controller.php';
+                $this->controller = new HomeController();
                 $this->controller->index();
                 return;
             }
