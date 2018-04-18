@@ -14,8 +14,8 @@
         <tr>
             <td><?=$profile['Description']?></td>
             <td>
-                <a href="<?=HOME_URI?>/profiles/edit/<?=$profile['Profile_Id']?>">Editar</a>
-                <a href="<?=HOME_URI?>/profiles/delete/<?=$profile['Profile_Id']?>">Excluir</a>
+                <a href="<?=HOME_URI?>/profiles/edit/<?=$profile['Profile_Id']?>" class="button small info mg-t-10">Editar</a>
+                <a href="<?=HOME_URI?>/profiles/delete/<?=$profile['Profile_Id']?>" class="button small danger mg-t-10">Excluir</a>
             </td>
         </tr>
         <?php } ?>
