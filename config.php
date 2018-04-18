@@ -7,7 +7,7 @@ define('ABSPATH', dirname(__FILE__));
 define('UP_ABSPATH', ABSPATH . '/views/_uploads');
  
 // URL da home
-define( 'HOME_URI', 'http://localhost:81/safe-this');
+define( 'HOME_URI', 'http://localhost:80/safe-this');
  
 // Nome do host da base de dados
 define('HOSTNAME', 'localhost');

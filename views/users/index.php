@@ -18,8 +18,8 @@
             <td><?=$user['Email']?></td>
             <td><?=$user['Profile']?></td>
             <td>
-                <a href="<?=HOME_URI?>/users/edit/<?=$user['User_Id']?>">Editar</a>
-                <a href="<?=HOME_URI?>/users/delete/<?=$user['User_Id']?>">Excluir</a>
+                <a href="<?=HOME_URI?>/users/edit/<?=$user['User_Id']?>" class="button small info mg-t-10">Editar</a>
+                <a href="<?=HOME_URI?>/users/delete/<?=$user['User_Id']?>" class="button small danger mg-t-10">Excluir</a>
             </td>
         </tr>
         <?php } ?>
