@@ -1,5 +1,8 @@
-<a href="<?=HOME_URI?>/ocurrences" class="button warning ripple mg-t-10">Voltar</a>
-<h2>Registrar nova ocorrência</h2>
+<div class="center-all">
+    <h1>Registrar nova ocorrência</h1><a href="<?=HOME_URI?>/ocurrences" class="button back small">Voltar</a>
+</div>
+<hr>
+
 <div style="width:50%">
     <form action="<?=HOME_URI?>/ocurrences/save" method="post" enctype="Multipart/form-data">       
         <select class="form-control small" name="Sector_Id">
