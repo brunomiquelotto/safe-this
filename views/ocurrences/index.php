@@ -1,5 +1,5 @@
 <div class="center-all">
-	<h1>Últimas ocorrências</h1><a href="<?=HOME_URI?>/ocurrences/create" class="button new small">Novo</a>
+	<h1 class="title-size">Últimas ocorrências</h1><a href="<?=HOME_URI?>/ocurrences/create" class="button new small">Novo</a>
 </div>
 <hr>
 <br>

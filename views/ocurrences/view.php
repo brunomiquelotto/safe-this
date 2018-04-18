@@ -1,5 +1,5 @@
 <div class="center-all">
-	<h1>Visualização da Ocorrência</h1><a href="<?=HOME_URI?>/ocurrences" class="button back small">Voltar</a>
+	<h1 class="title-size">Visualização da Ocorrência</h1><a href="<?=HOME_URI?>/ocurrences" class="button back small">Voltar</a>
 </div>
 <hr>
 <br><h2>Detalhes</h2><br>	
