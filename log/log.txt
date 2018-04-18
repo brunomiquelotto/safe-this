@@ -521,6 +521,7 @@ Controller -> logincontroller Action -> index
 Controller -> logincontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
+<<<<<<< develop
 Controller -> admincontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
@@ -2088,11 +2089,18 @@ Controller -> admincontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> logincontroller Action -> index
+=======
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+>>>>>>> Home do usuario ao acessar o site, ainda não finalizado...
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> logincontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
+<<<<<<< develop
 Controller -> admincontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
@@ -2193,6 +2201,15 @@ Controller -> ocurrencescontroller Action -> create
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> ocurrencescontroller Action -> create
+=======
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+>>>>>>> Home do usuario ao acessar o site, ainda não finalizado...
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> logincontroller Action -> index
@@ -2213,6 +2230,7 @@ Controller -> logincontroller Action -> index
 Controller -> logincontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
+<<<<<<< develop
 Controller -> admincontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
@@ -2294,12 +2312,15 @@ Controller -> homecontroller Action -> index
 Controller -> admincontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
+=======
+>>>>>>> Home do usuario ao acessar o site, ainda não finalizado...
 Controller -> logincontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> logincontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
+<<<<<<< develop
 Controller -> admincontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
@@ -2340,6 +2361,12 @@ Controller -> profilescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> homecontroller Action -> index
+=======
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+>>>>>>> Home do usuario ao acessar o site, ainda não finalizado...
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> homecontroller Action -> index
@@ -2348,10 +2375,17 @@ Controller -> homecontroller Action -> index
 Controller -> homecontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
+<<<<<<< develop
 Controller -> homecontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> homecontroller Action -> index
+=======
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+>>>>>>> Home do usuario ao acessar o site, ainda não finalizado...
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> homecontroller Action -> index

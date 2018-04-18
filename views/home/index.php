@@ -1,87 +1,42 @@
-<div class="flex-container align-middles space-between">
-    <h1 class="page-title">Bem vindo ao Safe This</h1>
-</div>
-<div class="container-main mg-t-25">
-    <div class="card-count info">
-        <div>
-            <i class="fa fa-building"></i>
-            <h2>10</h2>
-            <h3>Setores Cadastrados</h3>        
+<style>
+    .bg-home{
+        background: url('/safe-this/views/img/bg-home.jpg') center top no-repeat;  
+        padding:329px 0px;      
+    }
+    .welcome-home{
+        width: 920px;
+        padding:30px;
+        background: rgba(255,255,255,0.8);
+        border-radius:8px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .row{
+        width:100%;
+        float: left;
+    }
+    .welcome-home-buttons, .welcome-home-buttons{
+        width:50%;
+        float: left;
+    }
+</style>
+<section class="bg-home">
+    
+    <div class="welcome-home">
+        <div class="welcome-home-title main-inner">
+            <h1>SEJA BEM VINDO</h1>
         </div>
+        <div class="welcome-home-logo">
+            <img src="\safe-this\views\img\logo-black.png" alt="" width="500">
+        </div>   
+        <div class="row">
+            <div class="welcome-home-buttons">
+                <a href=""><button class="button success">CADASTRAR OCORRÊNCIA</button></a>
+            </div>
+            <div class="welcome-home-buttons">
+                <a href=""><button class="button success">LISTAR OCORRÊNCIAS</button></a>
+            </div>
+        </div>     
     </div>
-    <div class="card-count success">
-        <div>
-            <i class="fa fa-list"></i>
-            <h2>10</h2>
-            <h3>Ocorrências Cadastradas</h3>        
-        </div>
-    </div>
-    <div class="card-count danger">
-        <div>
-            <i class="fa fa-user"></i>
-            <h2>10</h2>
-            <h3>Setores Cadastrados</h3>        
-        </div>
-    </div>
-</div>
+</section>
 
-<div class="center-all mg-t-50">
-    <h3 class="bolder">Últimas Ocorrências Cadastradas</h3>
-</div>
-
-<div class="mg-t-10">
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Solicitante</th>
-                <th>Descrição</th>
-                <th>Local</th>
-                <th>Status</th>
-                <th>Nível de Urgência</th>
-                <th>Aberto Em</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Bruno Miquelotto</td>
-                <td>HIHIHIHI PROBLEMINHA</td>
-                <td>Centralzão Meu pau na sua mão</td>
-                <td>Em Andamento</td>
-                <td>Alto</td>
-                <td>05/04/2018</td>
-            </tr> 
-            <tr>
-                <td>Bruno Miquelotto</td>
-                <td>HIHIHIHI PROBLEMINHA</td>
-                <td>Centralzão Meu pau na sua mão</td>
-                <td>Em Andamento</td>
-                <td>Alto</td>
-                <td>05/04/2018</td>
-            </tr> 
-            <tr>
-                <td>Bruno Miquelotto</td>
-                <td>HIHIHIHI PROBLEMINHA</td>
-                <td>Centralzão Meu pau na sua mão</td>
-                <td>Em Andamento</td>
-                <td>Alto</td>
-                <td>05/04/2018</td>
-            </tr>
-            <tr>
-                <td>Bruno Miquelotto</td>
-                <td>HIHIHIHI PROBLEMINHA</td>
-                <td>Centralzão Meu pau na sua mão</td>
-                <td>Em Andamento</td>
-                <td>Alto</td>
-                <td>05/04/2018</td>
-            </tr>
-            <tr>
-                <td>Bruno Miquelotto</td>
-                <td>HIHIHIHI PROBLEMINHA</td>
-                <td>Centralzão Meu pau na sua mão</td>
-                <td>Em Andamento</td>
-                <td>Alto</td>
-                <td>05/04/2018</td>
-            </tr>
-        </tbody> 
-    </table>
-</div>
