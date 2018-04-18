@@ -26,6 +26,10 @@ class OcurrencesController extends MainController {
         $this->load_page('ocurrences/index.php');
     }
 
+    public function view() {
+        $this->load_page('ocurrences/view.php');
+    }
+
     public function create() {
         $this->title = "Nova Ocorrência";
         $this->model->ocurrences = VwSectorListInfoModel::all();
