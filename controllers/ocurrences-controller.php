@@ -60,7 +60,7 @@ class OcurrencesController extends MainController {
         for ($i = 0; $i < count($_FILES['Image']['name']); $i++) {
             $this->save_file($initial_status_result->id, $_FILES['Image']['name'][$i], $_FILES['Image']['tmp_name'][$i], $dirToSavePics);
         }
-        $this->set_message('Ocorrência Registrada Com Sucesso');
+        $this->set_message('Ocorrência registrada com sucesso', 'success');
         $this->goto_page(HOME_URI . '/ocurrences');
     }
 
