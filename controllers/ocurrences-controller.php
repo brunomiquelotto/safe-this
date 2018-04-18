@@ -21,6 +21,7 @@ class OcurrencesController extends MainController {
         }
         $this->title = 'Registro de Ocorrências';
         $this->model->edit_url = HOME_URI . '/Ocurrences/Edit/';
+        $this->model->visualize_url = HOME_URI . '/Ocurrences/View/';
         $this->model->ocurrences = VwOcurrencesModel::stmt_limit('Order By Opening_Date DESC', $this->model->limit);
         $this->load_page('ocurrences/index.php');
     }
