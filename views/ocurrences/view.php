@@ -1,6 +1,7 @@
-<h1>Visualização da ocorrência</h1>
+<div class="center-all">
+	<h1>Visualização da Ocorrência</h1><a href="<?=HOME_URI?>/ocurrences" class="button back small">Voltar</a>
+</div>
 <hr>
-
 <br><h2>Detalhes</h2><br>	
 <fieldset class="ocurrence-fieldset">
 	<legend><h3>Dados da ocorrência</h3></legend>
