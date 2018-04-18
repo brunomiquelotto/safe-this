@@ -90,6 +90,13 @@ class OcurrencesController extends MainController {
         $file = new OcurrenceFileModel($fileData);
         $file->save();
     }
+
+    public function edit() {
+        $this->ensure_is_logged();
+
+        $this->title = 'Editando a ocorrencia';
+        $this->load_page('ocurrences/edit.php');
+    }
 }
 
 
