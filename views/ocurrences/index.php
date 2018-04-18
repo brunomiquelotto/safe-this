@@ -25,7 +25,6 @@
 				<?php if ($this->logged_in): ?>
 				<th>Ações</th>
 				<?php endif ?>
-
 			</tr>
 		</thead>
 		<tbody>
@@ -35,12 +34,13 @@
 					<td><?=$ocurrence['Place']?></td>
 					<td><?=$ocurrence['Priority']?></td>
 					<td><?=date('d/m/Y H:i:s', strtotime($ocurrence['Opening_Date']))?></td>
-					<td><?=$ocurrence['Files']?></td>
-					<?php if ($this->logged_in): ?>
+					<td><?=$ocurrence['Files']?></td>					
 					<td>
+					<?php if ($this->logged_in): ?>
 						<a href="<?=$this->model->edit_url . $ocurrence['Id']?>" class="button success small">Editar</a>
-					</td>
 					<?php endif ?>
+						<a href="<?=$this->model->visualize_url . $ocurrence['Id']?>" class="button info small">Visualizar</a>
+					</td>
 				</tr>
 			<?php endforeach ?>
 		</tbody>
