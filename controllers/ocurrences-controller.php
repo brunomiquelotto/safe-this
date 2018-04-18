@@ -27,6 +27,10 @@ class OcurrencesController extends MainController {
     }
 
     public function view() {
+        $parameters = (func_num_args() >= 1) ? func_get_arg(0) : array();
+        if (!$parameters) {
+            $this->goto_page(HOME_URI . '/ocurrences/');
+        }
         $this->load_page('ocurrences/view.php');
     }
 
