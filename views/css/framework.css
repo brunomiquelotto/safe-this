@@ -80,7 +80,7 @@ a{
     float:left;
     width: 80%;
     height: calc(100vh - 53px);
-
+    color: #555;
 }
 .main-inner{
     width: 100%;
