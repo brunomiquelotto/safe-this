@@ -9,7 +9,9 @@ class OcurrencesController extends MainController {
         $this->load_model('OcurrencesModel');
         $this->load_model('OcurrenceUpdateModel');
         $this->load_model('OcurrenceStatusModel');
+        $this->load_model('OcurrencePriorityModel');
         $this->load_model('OcurrenceFileModel');
+        $this->load_model('PlaceModel');
         $this->load_model('VwOcurrencesModel');
     }
 
@@ -28,10 +30,47 @@ class OcurrencesController extends MainController {
 
     public function view() {
         $parameters = (func_num_args() >= 1) ? func_get_arg(0) : array();
-        if (!$parameters) {
+        if (!$parameters || !$parameters[0]) {
             $this->goto_page(HOME_URI . '/ocurrences/');
         }
+        
+        $id = $parameters[0];
+        $this->model->ocurrence = OcurrencesModel::find($id);
+        
+        if (!$this->model->ocurrence) {
+            $this->throw_404();
+        }
+
+        $this->model->ocurrence['Priority'] = $this->fill_priority($this->model->ocurrence['Ocurrence_Priority_Id']);
+        $this->model->ocurrence['Place'] = $this->fill_place($this->model->ocurrence['Sector_Id']);
+        $this->model->ocurrence['Pictures'] = $this->fill_pictures($this->model->ocurrence['Ocurrence_Id']);
+
+        // debug_variable($this->model->ocurrence);
+        // exit; 
         $this->load_page('ocurrences/view.php');
+    }
+
+    private function fill_priority($id) {
+        $priority = OcurrencePriorityModel::find($id);
+        if (!$priority) {
+            return "";
+        }
+        return $priority['Description'];
+    }
+
+    private function fill_place($id) {
+        $place = PlaceModel::find($id);
+        if (!$place) {
+            return "";
+        }
+        return $place['Name'];
+    }
+
+    private function fill_picture($id) {
+        $updates = OcurrenceUpdateModel::where('Ocurrence_Id = ' . $id);
+        if (!$updates) {
+            return [];
+        }
     }
 
     public function create() {
