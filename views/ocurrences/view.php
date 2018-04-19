@@ -29,23 +29,23 @@
 		<p class="form-group"><span style="font-weight: bold">Local:</span>  <?=$this->model->ocurrence['Place'] ?>.</p>
 
 		<p class="form-group"><span style="font-weight: bold">Data de abertura: </span> 
-			<?=date('d/m/Y H:i:s', strtotime($this->model->ocurrence['Opening_Date']))?>.
+			<?=$this->model->ocurrence['Opening_Date'] ? date('d/m/Y H:i:s', strtotime($this->model->ocurrence['Opening_Date'])) : "Não há" ?>. 
 		</p>
 
 		<p class="form-group"><span style="font-weight: bold">Data de fechamento: </span> 
-			<?=date('d/m/Y H:i:s', strtotime($this->model->ocurrence['Closing_Date']))?>.
+			<?=$this->model->ocurrence['Closing_Date'] ? date('d/m/Y H:i:s', strtotime($this->model->ocurrence['Closing_Date'])) : "Não há" ?>.
 		</p>
 
 </fieldset>
 
 <fieldset class="ocurrence-fieldset">
 	<legend><h3>Imagem da ocorrência</h3></legend>
-		<p class="form-group">
-			<center><span style="font-weight: bold">Casa do Silas</span></center>	
-			<a href="/safe-this/views/_uploads/1/img.jpg" >
-				<center><img src="<?=$this->model->ocurrence['Pictures'] ?>" class="ocurrence-image" alt="Descrição de Casa do Silas"></center>	
-			</a>
-		</p>	
+		<?php foreach($this->model->ocurrence['Pictures'] as $pic) { ?>
+            <figure>
+  				<img src="<?=$pic['src']?>" alt="<?=$pic['title']?>" width="304" height="228">
+  				<figcaption><?=$pic['title']?></figcaption>
+			</figure><br>    
+        <?php } ?>
 </fieldset>
 		
 <a href="<?=HOME_URI?>/ocurrences" class="button warning ripple mg-t-10">Voltar</a>
