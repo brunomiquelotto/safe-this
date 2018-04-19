@@ -1,8 +1,8 @@
-<h1>Últimas ocorrências</h1>
-<h3 class="mg-t-10">Para criar uma ocorrência, clique em novo!</h3>
-
-<a href="<?=HOME_URI?>/ocurrences/create" class="button success ripple mg-t-10">Novo</a>
-
+<div class="center-all">
+	<h1 class="title-size">Últimas ocorrências</h1><a href="<?=HOME_URI?>/ocurrences/create" class="button new small">Novo</a>
+</div>
+<hr>
+<br>
 <div class="mg-t-10">
 	<label>Quantidade a exibir</label>
 	<select class="form-control small" id="itemsToShow" onchange="changeUrl()">
@@ -11,7 +11,7 @@
 		<option value="25" <?=$this->model->limit == 25 ? 'selected' : ''?>>25</option>
 		<option value="50" <?=$this->model->limit == 50 ? 'selected' : ''?>>50</option>
 	</select>
-</div>
+</div><br><br>
 
 <div class="center-all">
 	<table class="table">
