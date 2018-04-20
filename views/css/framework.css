@@ -263,7 +263,7 @@ a.button {
     background-color: white;
     -webkit-box-shadow:  0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     -moz-box-shadow:  0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 14px 28px rgba(19, 107, 73, 0.62), 0 10px 10px rgba(0,0,0,0.22);
     z-index: 100;
     padding: 0;
     padding: 15px 10px 30px 10px;
@@ -420,4 +420,9 @@ a.button {
     padding-left: 0.75em;
     padding-right: 0.75em;
     border: 2px groove;
+}
+
+.view-title{
+    width: 100%;
+    background-color: #25861547;   
 }
