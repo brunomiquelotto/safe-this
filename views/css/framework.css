@@ -175,8 +175,6 @@ a.button {
 .button.back{
     background:#ffd600;
     color: white;
-    float:right;
-    margin-left: 25%;
     padding-bottom: 3px;
 }
 .button.primary {
@@ -240,14 +238,59 @@ a.button {
 
 .card {
     background-color: white;
-    -webkit-box-shadow:  0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    /*webkit-box-shadow:  0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     -moz-box-shadow:  0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    box-shadow: 0 14px 28px rgba(19, 107, 73, 0.62), 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 14px 28px rgba(19, 107, 73, 0.62), 0 10px 10px rgba(0,0,0,0.22);*/
+    box-shadow: 0 1px 1px 0 #999;
     z-index: 100;
     padding: 0;
     padding: 15px 10px 30px 10px;
     margin-bottom: 10px;
 }
+
+.card > header {
+    height: 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+.card.wrap > section {
+    flex-wrap: wrap;
+}
+
+.card.content-start > section {
+    justify-content: flex-start;
+}
+
+.card > section > .card-image {
+    width: calc(100% * (1/5) - 11px);
+    display: inline-block;
+    flex-grow: 1;
+    margin-left: 5px;
+}
+
+.card > section > .card-image img {
+    width: 160px;
+    height: 200px;
+}
+
+.card > section > .card-image figcaption {
+    font-size: 11px;
+    font-style: italic;
+}
+
+.card > section {
+    display: flex;
+}
+
+.card > section > div {
+    width: 50%;
+    margin-top: 10px;
+}
+
+.card > section > div > p {
+    margin-top: 5px;
+}
+
 
 .center-all {
     display: flex;
@@ -284,7 +327,7 @@ a.button {
 }
 
 .mg-t-10 { margin-top: 10px; }
-
+.mg-t-25 { margin-top: 25px; }
 .mg-t-50 { margin-top: 50px; }
 
 .display-block { display: block; }
@@ -336,19 +379,20 @@ a.button {
     margin-left:auto;
 }
 
-.ocurrence-fieldset{
-    display: block;
-    margin-top: 10px;
-    margin-left: 2px;
-    margin-right: 2px;
-    padding-top: 0.35em;
-    padding-bottom: 0.625em;
-    padding-left: 0.75em;
-    padding-right: 0.75em;
-    border: 2px groove;
+.flex-container {
+    display: flex;
 }
 
-.view-title{
+.flex-container.align-middles {
+    align-items: center;
+}
+
+.flex-container.space-between {
+    justify-content: space-between;;
+}
+
+
+.page-title {
     width: 100%;
-    background-color: #25861547;   
+    border-bottom: 1px solid #ccc;
 }
