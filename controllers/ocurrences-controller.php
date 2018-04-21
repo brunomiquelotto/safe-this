@@ -45,8 +45,6 @@ class OcurrencesController extends MainController {
         $this->model->ocurrence['Place'] = $this->fill_place($this->model->ocurrence['Sector_Id']);
         $this->model->ocurrence['Pictures'] = $this->fill_pictures($this->model->ocurrence['Ocurrence_Id']);
 
-        // debug_variable($this->model->ocurrence);
-        // exit; 
         $this->load_page('ocurrences/view.php');
     }
 
@@ -84,7 +82,6 @@ class OcurrencesController extends MainController {
             return array();
         }
         $files = OcurrenceFileModel::where('Ocurrence_Update_Id IN ('. $updateIds .')');
-        debug_variable('Ocurrence_Update_Id IN ('. $updateIds .')');
         $pictures = array();
         foreach($files as $file) {
             $pictures[] = array(

@@ -86,3 +86,36 @@
 .bolder{
     font-weight: bold;
 }
+
+
+.update-card {
+    min-height: 70px;
+    border-radius: 9px;
+    box-shadow: 0 1px 2px 1px #ccc;
+    padding: 5px 4px;
+}
+
+.update-card > header > .title {
+    color: #f13c32;
+    font-size: 18px;
+}
+
+.update-card > header >.subtitle {
+    color: #f13c32;
+    font-size: 12px;
+}
+
+.update-card > header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px dashed #f13c32;
+}
+
+.update-card > section {
+    margin-top: 10px;
+}
+
+.update-card > section > span {
+    font-size: 12px;
+}

@@ -1,65 +1,107 @@
-<div class="center-all">
-	<h1 class="title-size">Visualização da Ocorrência</h1><a href="<?=HOME_URI?>/ocurrences" class="button back small">Voltar</a>
+<div class="flex-container align-middles space-between">
+	<h1 class="page-title">Visualização da Ocorrência</h1>
+	<a href="<?=HOME_URI?>/ocurrences" class="button back small">Voltar</a>
 </div>
-<hr>
-<br><h2>Detalhes</h2><br>	
-<div class="card">
 
-	<div class="container">
-		<fieldset class="ocurrence-fieldset">
-			<legend><header class="view-title"><h3>Dados da ocorrência</h3></header></legend>
-
-				<p class="form-group"><span style="font-weight: bold">Local:</span> <?=$this->model->ocurrence['Place'] ?>.</p>
-
-				<p class="form-group"><span style="font-weight: bold">Descrição: </span>
-					 <?=$this->model->ocurrence['Description'] ?>
-				</p>
-
-		</fieldset>
-	</div>
+<div class="card mg-t-25">
+	<header>
+		<h3>Dados da ocorrência</h3>
+	</header>
+	<section>
+		<div>
+			<p>
+				<span style="font-weight: bold">Local:</span>
+				<?=$this->model->ocurrence['Place'] ?>.</p>
+			<p>
+				<span style="font-weight: bold">Descrição: </span>
+				 <?=$this->model->ocurrence['Description'] ?>
+			</p>
+			<p>
+				<span style="font-weight: bold">Email: </span> 
+				<?=$this->model->ocurrence['Reporter_Email'] ?>.
+			</p>
+			<p>
+				<span style="font-weight: bold">CPF: </span> 
+				<?=$this->model->ocurrence['Reporter_CPF'] ?>
+			</p>
+		</div>
+		<div>
+			<p>
+				<span style="font-weight: bold">Data de abertura: </span> 
+				<?=$this->model->ocurrence['Opening_Date'] ? date('d/m/Y H:i:s', strtotime($this->model->ocurrence['Opening_Date'])) : "Não há" ?>. 
+			</p>
+			<p>
+				<span style="font-weight: bold">Data de fechamento: </span> 
+				<?=$this->model->ocurrence['Closing_Date'] ? date('d/m/Y H:i:s', strtotime($this->model->ocurrence['Closing_Date'])) : "Não há" ?>.
+			</p>
+		</div>
+	</section>
 </div>
-<div class="card">
-	<div class="container">
-		<fieldset class="ocurrence-fieldset">
-			<legend><header class="view-title"><h3>Dados da Reporter</h3></header></legend>
 
-				<p class="form-group"><span style="font-weight: bold">Email:</span>  <?=$this->model->ocurrence['Reporter_Email'] ?>.</p>
-
-				<p class="form-group"><span style="font-weight: bold">CPF: </span>  <?=$this->model->ocurrence['Reporter_CPF'] ?>.</p>
-
-		</fieldset>
-	</div>
+<div class="card wrap">
+	<header>
+		<h3>Atualizações</h3>
+	</header>
+	<section>
+		<div class="update-card">
+			<header>
+				<span class="title">Em andamento</span>
+				<span class="subtitle">Responsável: Silas Caxias</span>	
+			</header>
+			<section>
+				<span class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+			</section>
+		</div>
+		<div class="update-card">
+			<header>
+				<span class="title">Em andamento</span>
+				<span class="subtitle">Responsável: Silas Caxias</span>	
+			</header>
+			<section>
+				<span class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+			</section>
+		</div>
+		<div class="update-card">
+			<header>
+				<span class="title">Em andamento</span>
+				<span class="subtitle">Responsável: Silas Caxias</span>	
+			</header>
+			<section>
+				<span class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+			</section>
+		</div>
+	</section>
 </div>
-<div class="card">
-	<div class="container">
-		<fieldset class="ocurrence-fieldset">
-			<legend><header class="view-title"><h3>Detalhes da ocorrência</h3></header></legend>
-
-				<p class="form-group"><span style="font-weight: bold">Local:</span>  <?=$this->model->ocurrence['Place'] ?>.</p>
-
-				<p class="form-group"><span style="font-weight: bold">Data de abertura: </span> 
-					<?=$this->model->ocurrence['Opening_Date'] ? date('d/m/Y H:i:s', strtotime($this->model->ocurrence['Opening_Date'])) : "Não há" ?>. 
-				</p>
-
-				<p class="form-group"><span style="font-weight: bold">Data de fechamento: </span> 
-					<?=$this->model->ocurrence['Closing_Date'] ? date('d/m/Y H:i:s', strtotime($this->model->ocurrence['Closing_Date'])) : "Não há" ?>.
-				</p>
-
-		</fieldset>
-	</div>
+				
+<div class="card wrap content-start">
+	<header>
+		<h3>Imagens da ocorrência</h3>
+	</header>
+	<section>
+		<?php foreach($this->model->ocurrence['Pictures'] as $pic) { ?>
+			<div class="card-image"">
+            	<figure>
+            		<a href="<?=$pic['src']?>" target="_blank">
+	  					<img src="<?=$pic['src']?>" alt="<?=$pic['title']?>">
+	  				</a>
+	  				<figcaption><?=$pic['title']?></figcaption>
+				</figure>
+			</div>
+		<?php } ?>
+	</section>
 </div>
-<div class="card">
-	<div class="container">
-		<fieldset class="ocurrence-fieldset">
-			<legend><header class="view-title"><h3>Imagens da ocorrência</h3></header></legend>
-				<?php foreach($this->model->ocurrence['Pictures'] as $pic) { ?>
-		            <figure>
-		  				<img src="<?=$pic['src']?>" alt="<?=$pic['title']?>" width="304" height="228">
-		  				<figcaption><?=$pic['title']?></figcaption>
-					</figure><br>    
-		        <?php } ?>
-		</fieldset>
-	</div>
-</div>
-		
-<a href="<?=HOME_URI?>/ocurrences" class="button warning ripple mg-t-10">Voltar</a>
