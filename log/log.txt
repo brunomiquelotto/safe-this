@@ -2390,3 +2390,48 @@ Controller -> logincontroller Action -> index
 <==== DEBUG ====>
 Controller -> homecontroller Action -> index
 <==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> exit
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> create
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> create
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
