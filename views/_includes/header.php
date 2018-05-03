@@ -22,6 +22,10 @@
         <h4>
             <a href="<?=HOME_URI?>/login/exit">Sair</a>
         </h4>
-        <?php endif;?>
+        <?php else:?>
+        <h4>
+            <a href="<?=HOME_URI?>/login/index">Login</a>
+        </h4>
+    <?php endif;?>
     </div>
 </header>
