@@ -1,5 +1,8 @@
-<a href="<?=HOME_URI?>/places" class="button warning ripple mg-t-10">Voltar</a>
-<h2>Alterar local</h2>
+<div class="flex-container align-middles space-between">
+    <h1 class="page-title">Alterar local</h1>
+    <a href="<?=HOME_URI?>/places" class="button back small">Voltar</a>
+</div>
+
 <div style="width:50%">
     <form action="<?=HOME_URI?>/places/save/<?=$this->model->place['Sector_Id']?>" enctype="multipart/form-data" method="post">
         <div class="form-group display-block">

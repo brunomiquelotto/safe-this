@@ -1,8 +1,9 @@
-<h2>Locais para ocorrências</h2>
+<div class="flex-container align-middles space-between">
+    <h1 class="page-title">Locais para ocorrências</h1>
+    <a href="<?=HOME_URI?>/places/create" class="button new small">Novo</a>
+</div>
 
-<a href="<?=HOME_URI?>/places/create" class="button success ripple mg-t-10">Novo</a>
-
-<div class="center-all">
+<div class="center-all mg-t-25">
     <table class="table">
         <thead>
             <tr>

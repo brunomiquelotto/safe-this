@@ -1,5 +1,8 @@
-<a href="<?=HOME_URI?>/places" class="button warning ripple mg-t-10">Voltar</a>
-<h2>Adicionar novo local </h2>
+<div class="flex-container align-middles space-between">
+    <h1 class="page-title">Adicionar novo local</h1>
+    <a href="<?=HOME_URI?>/places" class="button back small">Voltar</a>
+</div>
+
 <div style="width:50%">
     <form action="<?=HOME_URI?>/places/save" method="post" enctype="multipart/form-data">
         <div class="form-group display-block">

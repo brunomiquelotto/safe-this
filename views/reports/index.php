@@ -1,4 +1,6 @@
-<h1>Relatorios</h1>
+<div class="flex-container align-middles space-between">
+    <h1 class="page-title">Relatorios</h1>
+</div>
 
 <div>
     <div>

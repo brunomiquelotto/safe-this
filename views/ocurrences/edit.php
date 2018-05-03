@@ -1,8 +1,7 @@
-<div class="center-all">
-    <h1 class="title-size">Editar ocorrência</h1><a href="<?=HOME_URI?>/ocurrences" class="button back small">Voltar</a>
+<div class="flex-container align-middles space-between">
+    <h1 class="page-title">Editar ocorrência</h1>
+    <a href="<?=HOME_URI?>/ocurrences" class="button back small">Voltar</a>
 </div>
-<hr>
-<br>
 
 
 <div style="width:50%">

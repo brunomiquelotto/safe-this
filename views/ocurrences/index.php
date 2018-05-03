@@ -1,8 +1,8 @@
-<div class="center-all">
-	<h1 class="title-size">Últimas ocorrências</h1><a href="<?=HOME_URI?>/ocurrences/create" class="button new small">Novo</a>
+<div class="flex-container align-middles space-between">
+	<h1 class="page-title">Últimas ocorrências</h1>
+	<a href="<?=HOME_URI?>/ocurrences/create" class="button new small">Novo</a>
 </div>
-<hr>
-<br>
+
 <div class="mg-t-10">
 	<label>Quantidade a exibir</label>
 	<select class="form-control small" id="itemsToShow" onchange="changeUrl()">

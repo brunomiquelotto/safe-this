@@ -167,8 +167,6 @@ a.button {
 .button.new{
     background:#158e0d;
     color:white;
-    float:right;
-    margin-left: 25%;
     padding-bottom: 3px;
 }
 
