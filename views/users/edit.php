@@ -1,5 +1,8 @@
-<a href="<?=HOME_URI?>/users" class="button warning ripple mg-t-10">Voltar</a>
-<h2>Editar responsável</h2>
+<div class="flex-container align-middles space-between">
+    <h1 class="page-title">Editar responsável</h1>
+    <a href="<?=HOME_URI?>/users" class="button back small">Voltar</a>
+</div>
+
 <div style="width:50%">
     <form action="<?=HOME_URI?>/users/save/<?=$this->model->user['User_Id']?>" method="post">
         <div class="form-group">
