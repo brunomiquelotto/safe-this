@@ -221,11 +221,24 @@ a.button {
 }
 
 .button.small {
-    height: 25px;
-    padding-top: 4px;
+    height: 30px;
+    padding-top: 6px;
     min-width: 70px;
     padding-left: 10px;
     padding-right: 10px;
+}
+.button.small.cad {
+    margin-top: 1px;
+    height: 24px;
+    width: 35px;
+    min-width: 35px;
+    margin-left: 10px;
+    padding-left: 6px;
+    padding-right: 7px;
+    border-radius: 4px;
+    margin-bottom: 0px;
+    padding-top: 1px;
+    padding-bottom: 1px;
 }
 
 .ripple {
@@ -393,7 +406,7 @@ a.button {
 }
 
 .alert { 
-	height: auto;
+    height: auto;
 }
 
 .alert {
