@@ -468,3 +468,13 @@ a.button {
     width: 100%;
     border-bottom: 1px solid #ccc;
 }
+
+.icon-edit{
+    content: url("/safe-this/views/css/icons/edit.png");
+}
+.icon-visu{
+    content: url("/safe-this/views/css/icons/visualizar.png");
+}
+.icon-excluir{
+    content: url("/safe-this/views/css/icons/excluir.png");
+}

@@ -20,8 +20,8 @@
                 <td><?=$place['Open_Ocurrences']?></td>
                 <td><?=$place['Last_Ocurrence'] ? date('d/m/Y H:i:s', strtotime($place['Last_Ocurrence'])) : 'Não há' ?></td>
                 <td>
-                    <a href="<?=HOME_URI?>/places/edit/<?=$place['Sector_Id']?>" class="button info small">Editar</a>
-                    <a href="<?=HOME_URI?>/places/delete/<?=$place['Sector_Id']?>" class="button danger small" onclick="return confirm('Tem certeza que deseja deletar este registro?')">Excluir</a>
+                    <a href="<?=HOME_URI?>/places/edit/<?=$place['Sector_Id']?>" class="icon-edit">Editar</a>
+                    <a href="<?=HOME_URI?>/places/delete/<?=$place['Sector_Id']?>" class="icon-excluir" onclick="return confirm('Tem certeza que deseja deletar este registro?')">Excluir</a>
                 </td>
             </tr>
             <?php } ?>
