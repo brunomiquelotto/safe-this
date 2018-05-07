@@ -17,7 +17,7 @@
             <td><?=$profile['Description']?></td>
             <td>
                 <a href="<?=HOME_URI?>/profiles/edit/<?=$profile['Profile_Id']?>" class="button small info mg-t-10">Editar</a>
-                <a href="<?=HOME_URI?>/profiles/delete/<?=$profile['Profile_Id']?>" class="button small danger mg-t-10">Excluir</a>
+                <a href="<?=HOME_URI?>/profiles/delete/<?=$profile['Profile_Id']?>" class="button small danger mg-t-10" onclick="return confirm('Tem certeza que deseja deletar este registro?')">Excluir</a>
             </td>
         </tr>
         <?php } ?>
