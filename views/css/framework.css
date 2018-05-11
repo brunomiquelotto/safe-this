@@ -227,19 +227,6 @@ a.button {
     padding-left: 10px;
     padding-right: 10px;
 }
-.button.small.cad {
-    margin-top: 1px;
-    height: 24px;
-    width: 35px;
-    min-width: 35px;
-    margin-left: 10px;
-    padding-left: 6px;
-    padding-right: 7px;
-    border-radius: 4px;
-    margin-bottom: 0px;
-    padding-top: 1px;
-    padding-bottom: 1px;
-}
 
 .ripple {
     position: relative;
@@ -484,10 +471,14 @@ a.button {
 
 .icon-edit{
     content: url("/safe-this/views/css/icons/edit.png");
+    transform: scale(.85);
 }
 .icon-visu{
     content: url("/safe-this/views/css/icons/visualizar.png");
+    transform: scale(.90);
 }
+
+a.icon-visu {}
 .icon-excluir{
     content: url("/safe-this/views/css/icons/excluir.png");
 }
