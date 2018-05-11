@@ -23,9 +23,15 @@
             <a href="<?=HOME_URI?>/login/exit">Sair</a>
         </h4>
         <?php else:?>
-        <h4>
-            <a href="<?=HOME_URI?>/login/index">Login</a>
-        </h4>
-    <?php endif;?>
+           <?php if($_SERVER ['REQUEST_URI'] == "/safe-this/login"):?>
+                <h4>
+                    <a href="<?=HOME_URI?>/home">Home</a>
+                </h4>
+            <?php else:?>
+                <h4>
+                    <a href="<?=HOME_URI?>/login">Login</a>
+                </h4>
+            <?php endif;?>
+        <?php endif;?>
     </div>
 </header>

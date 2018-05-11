@@ -1,5 +1,3 @@
-<div class="flex-container align-middles space-between">
-	<h1 class="page-title">Bem vindo ao Safe This</h1>
 <h1>Bem vindo ao Safe This</h1>
 
 <div class="container-main">

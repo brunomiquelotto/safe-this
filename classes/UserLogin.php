@@ -99,7 +99,7 @@ class UserLogin
     }
     protected function goto_login() {
         if (defined('HOME_URI')) {
-            $login_uri  = HOME_URI . '/login/';
+            $login_uri  = HOME_URI . '/login';
             $_SESSION['goto_url'] = urlencode($_SERVER['REQUEST_URI']);
             echo '<meta http-equiv="Refresh" content="0; url=' . $login_uri . '">';
             echo '<script type="text/javascript">window.location.href = "' . $login_uri . '";</script>';
