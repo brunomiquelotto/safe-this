@@ -1,9 +1,11 @@
-<div class="flex-container align-middles space-between">
-    <h1 class="page-title">Registrar nova ocorrência</h1>
-    <a href="<?=HOME_URI?>/ocurrences" class="button back small">Voltar</a>
-</div>
+<div class="card" style="width: 50%;">
 
+<header class="flex-container align-middles space-between card-header">
+    <h1>Registrar nova ocorrência</h1>
+    <a href="<?=HOME_URI?>/ocurrences">Voltar</a>
+</header>
 
+<section class="card-content">
 <div style="width:50%">
     <form action="<?=HOME_URI?>/ocurrences/save" method="post" enctype="Multipart/form-data">       
         <select class="form-control small" name="Sector_Id">
@@ -42,6 +44,8 @@
         </div>        
     </form>
 </div>
+                </section>
+                </div>
 
 <script>
     var added = 1;

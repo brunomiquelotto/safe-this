@@ -1,9 +1,10 @@
-<div class="flex-container align-middles space-between">
-    <h1 class="page-title">Editar responsável</h1>
+<div class="card">
+<header class="card-header flex-container align-middles space-between">
+    <h1>Editar responsável</h1>
     <a href="<?=HOME_URI?>/users" class="button back small">Voltar</a>
-</div>
+</header>
 
-<div style="width:50%">
+<section class="card-content">
     <form action="<?=HOME_URI?>/users/save/<?=$this->model->user['User_Id']?>" method="post">
         <div class="form-group">
             <input type="text" name="Name" class="form-control large" placeholder="Nome" value="<?=$this->model->user['Name']?>">
@@ -25,4 +26,5 @@
             <input type="submit" value="Salvar" class="button success ripple"/>
         </div>
     </form>
+</section>
 </div>

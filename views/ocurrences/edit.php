@@ -7,11 +7,7 @@
 <div style="width:50%">
      <form action="<?=HOME_URI?>/ocurrences/save/<?=$this->model->ocurrences['Ocurrence_id']?>" enctype="multipart/form-data" method="post">    
         <div class="form-group">
-            <select class="form-control small" name="Ocurrence_Priority_Id"> 
-                <option value="0">Prioridade</option>
-                <option value="1">Alta</option>
-                <option value="2">Média</option>
-                <option value="3">Baixa</option>           
+            <select class="form-control small" name="Ocurrence_Priority_Id">
             </select>
         </div>
         <div class="form-group">

@@ -1,9 +1,10 @@
-<div class="flex-container align-middles space-between">
-    <h1 class="page-title">Locais para ocorrências</h1>
+<div class="card">
+<header class="card-header flex-container align-middles space-between">
+    <h1>Locais para ocorrências</h1>
     <a href="<?=HOME_URI?>/places/create" class="button new small">Novo</a>
-</div>
+</header>
 
-<div class="center-all mg-t-25">
+<section class="card-content center-all mg-t-25">
     <table class="table">
         <thead>
             <tr>
@@ -27,4 +28,5 @@
             <?php } ?>
         </tbody>
     </table>
+</section>
 </div>
