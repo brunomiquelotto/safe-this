@@ -12,6 +12,7 @@ class OcurrencesController extends MainController {
         $this->load_model('OcurrencePriorityModel');
         $this->load_model('OcurrenceFileModel');
         $this->load_model('PlaceModel');
+        $this->load_model('UserModel');
         $this->load_model('VwOcurrencesModel');
     }
 
@@ -165,9 +166,22 @@ class OcurrencesController extends MainController {
     }
 
     public function update() {
-        $this->ensure_is_logged();
-
         $this->title = 'Atualizando a ocorrencia';
+
+        $parameters = (func_num_args() >= 1 ) ? func_get_arg(0) : array();
+        if (!$parameters) {
+            $this->throw_404();
+        }
+        $id = $parameters[0];
+        $update = OcurrenceUpdateModel::where('Ocurrence_Id = '. $id);
+        if (!$update) {
+            $this->throw_404();
+        }
+        $this->model->responsible = UserModel::all();
+        $this->model->update = $update;
+        $this->model->status = OcurrenceStatusModel::all();
+        $this->model->priorities = OcurrencePriorityModel::all();
+
         $this->load_page('ocurrences/update.php');
     }
 }
