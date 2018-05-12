@@ -225,8 +225,8 @@ a.button {
 }
 
 .button.small {
-    height: 25px;
-    padding-top: 4px;
+    height: 30px;
+    padding-top: 6px;
     min-width: 70px;
     padding-left: 10px;
     padding-right: 10px;
@@ -400,7 +400,7 @@ a.button {
 }
 
 .alert { 
-	height: auto;
+    height: auto;
 }
 
 .alert {
@@ -514,4 +514,17 @@ a.button {
     background: #57c1a8;
     box-shadow:none;
     outline: none;
+}
+
+.icon-edit{
+    content: url("/safe-this/views/css/icons/edit.png");
+    transform: scale(.85);
+}
+.icon-visu{
+    content: url("/safe-this/views/css/icons/visualizar.png");
+    transform: scale(.90);
+}
+
+.icon-excluir{
+    content: url("/safe-this/views/css/icons/excluir.png");
 }
