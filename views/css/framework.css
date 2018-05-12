@@ -478,7 +478,6 @@ a.button {
     transform: scale(.90);
 }
 
-a.icon-visu {}
 .icon-excluir{
     content: url("/safe-this/views/css/icons/excluir.png");
 }
