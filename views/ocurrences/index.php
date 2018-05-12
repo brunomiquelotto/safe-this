@@ -37,7 +37,7 @@
 					<td><?=$ocurrence['Files']?></td>					
 					<td>
 					<?php if ($this->logged_in): ?>
-						<a href="<?=$this->model->edit_url . $ocurrence['Id']?>" class="button success small">Editar</a>
+						<a href="<?=$this->model->update_url . $ocurrence['Id']?>" class="button success small">Atualizar</a>
 					<?php endif ?>
 						<a href="<?=$this->model->visualize_url . $ocurrence['Id']?>" class="button info small">Visualizar</a>
 					</td>

@@ -22,7 +22,7 @@ class OcurrencesController extends MainController {
             $this->model->limit = $parameters[0];
         }
         $this->title = 'Registro de Ocorrências';
-        $this->model->edit_url = HOME_URI . '/Ocurrences/Edit/';
+        $this->model->update_url = HOME_URI . '/Ocurrences/update/';
         $this->model->visualize_url = HOME_URI . '/Ocurrences/View/';
         $this->model->ocurrences = VwOcurrencesModel::stmt_limit('Order By Opening_Date DESC', $this->model->limit);
         $this->load_page('ocurrences/index.php');
@@ -155,11 +155,11 @@ class OcurrencesController extends MainController {
         $file->save();
     }
 
-    public function edit() {
+    public function update() {
         $this->ensure_is_logged();
 
-        $this->title = 'Editando a ocorrencia';
-        $this->load_page('ocurrences/edit.php');
+        $this->title = 'Atualizando a ocorrencia';
+        $this->load_page('ocurrences/update.php');
     }
 }
 
