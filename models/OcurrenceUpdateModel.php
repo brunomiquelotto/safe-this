@@ -8,6 +8,7 @@ class OcurrenceUpdateModel extends BaseModel {
 		"Responsible",
 		"Status_Feedback",
 		"Ocurrence_Status_Id",
+		"Ocurrence_Priority_Id",
 		"Update_Date"
 	);
 }

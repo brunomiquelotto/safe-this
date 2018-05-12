@@ -83,7 +83,8 @@ class OcurrencesController extends MainController {
         $statusData = array(
             "Ocurrence_Id" => $id,
             "Status_Feedback" => "A ocorrência foi registrada",
-            "Ocurrence_Status_Id" => OcurrenceStatusModel::Statuses()->Waiting
+            "Ocurrence_Status_Id" => OcurrenceStatusModel::Statuses()->Waiting,
+            'Ocurrence_Priority_Id' => $data['Ocurrence_Priority_Id']
         );
         $initial_status = new OcurrenceUpdateModel($statusData);
         $initial_status_result = $initial_status->save();
@@ -128,7 +129,7 @@ class OcurrencesController extends MainController {
         $this->model->update = array(
             'Status_Feedback' => $this->model->statusTransition['Default_Message'],
             'Responsible' => $this->currentStatus['Responsible'],
-            'Priority' => $this->currentStatus['Ocurrence_Status_Id'],
+            'Priority' => $this->currentStatus['Ocurrence_Priority_Id'],
             'Next_Status' => $this->model->statusTransition['Next_Status']
         );
 
