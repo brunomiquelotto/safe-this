@@ -1,6 +1,4 @@
-<style>.main-content {
-    padding: 0;
-}</style>
+
 <section class="bg-home">
     
     <div class="welcome-home">

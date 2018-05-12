@@ -119,3 +119,21 @@
 .update-card > section > span {
     font-size: 12px;
 }
+
+section.bg-home {
+    height: calc(100vh - 50px);
+    display: flex;
+    align-items: center;
+    background-size: cover;
+}
+.welcome-home {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px;
+    border-radius: 5px; 
+}
+.welcome-home-buttons {
+    width: 50%;
+    float: left;
+}
