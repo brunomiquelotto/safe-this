@@ -8,7 +8,7 @@
     <form action="<?=HOME_URI?>/ocurrences/save" method="post" enctype="Multipart/form-data">       
         <select class="form-control small" name="Sector_Id">
             <option value="0">Selecione um Local</option>
-            <?php foreach($this->model->ocurrences as $place) { ?>
+            <?php foreach($this->model->places as $place) { ?>
                 <option value="<?=$place['Sector_Id']?>">
                     <?=$place['Name']?>
                 </option>

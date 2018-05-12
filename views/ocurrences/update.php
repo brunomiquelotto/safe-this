@@ -3,36 +3,32 @@
     <a href="<?=HOME_URI?>/ocurrences" class="button back small">Voltar</a>
 </div>
 
-
 <div style="width:50%">
-     <form action="<?=HOME_URI?>/ocurrences/save/<?=$this->model->ocurrences['Ocurrence_id']?>" enctype="multipart/form-data" method="post">    
+     <form action="<?=HOME_URI?>/ocurrences/updatestatus/<?=$this->model->ocurrence['Ocurrence_Id']?>" enctype="multipart/form-data" method="post">
+        <input type="hidden" value="<?=$this->model->update['Next_Status']?>" name="Ocurrence_Status_Id">
         <div class="form-group">
             <select class="form-control small" name="Ocurrence_Priority_Id"> 
-                <option value="0">Prioridade</option>
-                <option value="1">Alta</option>
-                <option value="2">Média</option>
-                <option value="3">Baixa</option>           
+                <option value="0">Prioridade</option>           
+                <?php foreach($this->model->priorities as $priort) { ?>
+                    <option value="<?=$priort['Ocurrence_Priority_Id']?>"
+                        <?=$priort['Ocurrence_Priority_Id'] == $this->model->update['Priority']? 'selected' : ''?>>
+                        <?=$priort['Description']?>
+                    </option>
+                <?php } ?>
             </select>
         </div>
          <div class="form-group">
-            <select class="form-control small" name="Ocurrence_Status_Id"> 
-                <option value="0">Status</option>
-                <option value="1">Aguardando Análise</option>
-                <option value="2">Rejeitado</option>
-                <option value="3">Aceito</option>      
-                <option value="3">Em andamento</option>    
-                <option value="3">Finalizado</option>      
-            </select>
-        </div>
-         <div class="form-group">
-            <textarea class="form-group" name="Status_Feedback">blablabla</textarea>
+            <textarea class="form-control" name="Status_Feedback" placeholder="Resposta ao solicitante"><?=$this->model->update['Status_Feedback']?></textarea>
         </div>
          <div class="form-group">
             <select class="form-control small" name="Responsible"> 
                 <option value="0">Responsavel</option>
-                <option value="1">Moderador Silas</option>
-                <option value="2">Atirador Silas</option>
-                <option value="3">Cara x</option>           
+                <?php foreach ($this->model->users as $user) { ?>
+                    <option value="<?=$user['User_Id']?>" 
+                        <?=$user['User_Id'] == $this->model->update['Responsible'] ? 'selected' : '' ?>>
+                        <?=$user['Name']?>
+                    </option>
+                <?php } ?>
             </select>
         </div>
         <div class="form-group" id="Images">
