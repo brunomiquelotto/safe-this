@@ -5,41 +5,34 @@
 
 
 <div style="width:50%">
-     <form action="<?=HOME_URI?>/ocurrences/save/<?=$this->model->ocurrences['Ocurrence_id']?>" enctype="multipart/form-data" method="post"> 
-         <div class="form-group">
-            <select class="form-control" name="Ocurrence_Priority_Id">
-                    <option value="0">Status</option>
-                <?php foreach($this->model->priorities as $pri) { ?>
-                    <?php ?>
-                    <option value="<?=$pri['Ocurrence_Priority_Id']?>" <?php if($this->model->update[0]["Ocurrence_Priority_Id"] == $pri['Ocurrence_Priority_Id']){echo "selected";}?> >
-                        <?=$pri['Description']?>                    
-                    </option>
-                <?php } ?>
+     <form action="<?=HOME_URI?>/ocurrences/save/<?=$this->model->ocurrences['Ocurrence_id']?>" enctype="multipart/form-data" method="post">    
+        <div class="form-group">
+            <select class="form-control small" name="Ocurrence_Priority_Id"> 
+                <option value="0">Prioridade</option>
+                <option value="1">Alta</option>
+                <option value="2">Média</option>
+                <option value="3">Baixa</option>           
             </select>
         </div>
          <div class="form-group">
-            <select class="form-control" name="Ocurrence_Status_Id">
-                    <option value="0">Status</option>
-                <?php foreach($this->model->status as $up) { ?>
-                    <?php ?>
-                    <option value="<?=$up['Ocurrence_Status_Id']?>" <?php if($this->model->update[0]["Ocurrence_Status_Id"] == $up['Ocurrence_Status_Id']){echo "selected";}?> >
-                        <?=$up['Description']?>                    
-                    </option>
-                <?php } ?>
+            <select class="form-control small" name="Ocurrence_Status_Id"> 
+                <option value="0">Status</option>
+                <option value="1">Aguardando Análise</option>
+                <option value="2">Rejeitado</option>
+                <option value="3">Aceito</option>      
+                <option value="3">Em andamento</option>    
+                <option value="3">Finalizado</option>      
             </select>
         </div>
          <div class="form-group">
-            <textarea class="form-group" name="Status_Feedback" style="width:300px;" placeholder="Dê um feedback!"></textarea>
+            <textarea class="form-group" name="Status_Feedback">blablabla</textarea>
         </div>
          <div class="form-group">
-             <select class="form-control" name="Responsible">
-                    <option value="0">Responsavel</option>
-                <?php foreach($this->model->responsible as $res) { ?>
-                    <?php ?>
-                    <option value="<?=$res['User_Id']?>">
-                        <?=$res['Name']?>
-                    </option>
-                <?php } ?>
+            <select class="form-control small" name="Responsible"> 
+                <option value="0">Responsavel</option>
+                <option value="1">Moderador Silas</option>
+                <option value="2">Atirador Silas</option>
+                <option value="3">Cara x</option>           
             </select>
         </div>
         <div class="form-group" id="Images">
