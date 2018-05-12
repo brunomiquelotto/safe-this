@@ -36,6 +36,7 @@ class OcurrencesController extends MainController {
         
         $id = $parameters[0];
         $this->model->ocurrence = OcurrencesModel::find($id);
+        $this->model->updates = OcurrenceUpdateModel::where('Ocurrence_Id = '. $id );
         
         if (!$this->model->ocurrence) {
             $this->throw_404();
@@ -44,6 +45,7 @@ class OcurrencesController extends MainController {
         $this->model->ocurrence['Priority'] = $this->fill_priority($this->model->ocurrence['Ocurrence_Priority_Id']);
         $this->model->ocurrence['Place'] = $this->fill_place($this->model->ocurrence['Sector_Id']);
         $this->model->ocurrence['Pictures'] = $this->fill_pictures($this->model->ocurrence['Ocurrence_Id']);
+
 
         $this->load_page('ocurrences/view.php');
     }
@@ -62,6 +64,13 @@ class OcurrencesController extends MainController {
             return "";
         }
         return $place['Name'];
+    }
+    private function fill_status($id) {
+        $status = OcurrenceStatusModel::find($id);
+        if (!$status) {
+            return "";
+        }
+        return $status['Description'];
     }
 
     private function fill_pictures($id) {

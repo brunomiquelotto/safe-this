@@ -21,7 +21,7 @@
             </select>
         </div>
          <div class="form-group">
-            <input type="textarea" name="Status_Feedback" class="form-control large" placeholder="Dê um feedback a ocorrência!">
+            <textarea class="form-group" name="Status_Feedback">blablabla</textarea>
         </div>
          <div class="form-group">
             <select class="form-control small" name="Responsible"> 
