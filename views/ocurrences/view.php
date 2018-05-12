@@ -1,7 +1,11 @@
 <div class="card">
 <header class="card-header flex-container align-middles space-between">
 	<h3>Visualização da Ocorrência</h1>
-	<a href="<?=HOME_URI?>/ocurrences" class="button back small">Voltar</a>
+	<a href="<?=$action['Url']?>" class="button small info" style="margin-right: 5px;">
+		<?=$action['Description']?>
+	</a>
+	<?php foreach($this->model->actions as $action) { ?>
+	<?php } ?>
 </header>
 
 <section class="card-content">
