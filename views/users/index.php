@@ -1,10 +1,9 @@
-<div class="flex-container align-middles space-between">
-    <h1 class="page-title">Tabela de Responsáveis</h1>
+<div class="card">
+<header class="card-header flex-container align-middles space-between">
+    <h1>Usuários</h1>
     <a href="<?=HOME_URI?>/users/create" class="button new small">Novo</a>
-</div>
-
-
-<div class="center-all mg-t-25">
+</header>
+<section class="card-content center-all">
     <table class="table">
         <thead>
             <tr>
@@ -26,4 +25,5 @@
         </tr>
         <?php } ?>
     </table>
+</section>
 </div>

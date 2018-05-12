@@ -1,13 +1,10 @@
-<div class="flex-container align-middles space-between">
-	<h1 class="page-title">Visualização da Ocorrência</h1>
+<div class="card">
+<header class="card-header flex-container align-middles space-between">
+	<h3>Visualização da Ocorrência</h1>
 	<a href="<?=HOME_URI?>/ocurrences" class="button back small">Voltar</a>
-</div>
+</header>
 
-<div class="card mg-t-25">
-	<header>
-		<h3>Dados da ocorrência</h3>
-	</header>
-	<section>
+<section class="card-content">
 		<div>
 			<p>
 				<span style="font-weight: bold">Local:</span>
@@ -39,10 +36,10 @@
 </div>
 
 <div class="card wrap">
-	<header>
+	<header class="card-header flex-container align-middles">
 		<h3>Atualizações</h3>
 	</header>
-	<section>
+	<section class="card-content">
 		<div class="update-card">
 			<header>
 				<span class="title">Em andamento</span>
@@ -88,11 +85,11 @@
 	</section>
 </div>
 				
-<div class="card wrap content-start">
-	<header>
+<div class="card">
+	<header class="card-header">
 		<h3>Imagens da ocorrência</h3>
 	</header>
-	<section>
+	<section class="card-content">
 		<?php foreach($this->model->ocurrence['Pictures'] as $pic) { ?>
 			<div class="card-image"">
             	<figure>

@@ -1,15 +1,15 @@
-<div class="flex-container align-middles space-between">
-    <h1 class="page-title">Perfis</h1>
+<div class="card">
+<header class="card-header flex-container align-middles space-between">
+    <h1>Perfis</h1>
     <a href="<?=HOME_URI?>/profiles/create" class="button new small">Novo</a>
-</div>
+</header>
 
-
-<div class="center-all mg-t-25">
+<section class="card-content center-all">
     <table class="table">
         <thead>
             <tr>
                 <th>Nome</th>
-                <th>Ações</th>
+                <th style="width:150px;">Ações</th>
             </tr>
         </thead>
         <?php foreach ($this->model->profiles as $profile) { ?>
@@ -22,4 +22,5 @@
         </tr>
         <?php } ?>
     </table>
+</section>
 </div>
