@@ -3527,3 +3527,30 @@ Controller -> ocurrencescontroller Action -> updatestatus
 <==== DEBUG ====>
 Controller -> ocurrencescontroller Action -> view
 <==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>

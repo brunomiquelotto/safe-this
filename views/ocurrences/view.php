@@ -26,18 +26,6 @@
 				<?=$this->model->ocurrence['Reporter_CPF'] ?>
 			</p>
 		</div>
-		<div>
-			<p>
-				<span style="font-weight: bold">Data de abertura: </span> 
-				<?=$this->model->ocurrence['Opening_Date'] ? date('d/m/Y H:i:s', strtotime($this->model->ocurrence['Opening_Date'])) : "Não há" ?>. 
-			</p>
-			<p>
-				<span style="font-weight: bold">Data de fechamento: </span> 
-				<?=$this->model->ocurrence['Closing_Date'] ? date('d/m/Y H:i:s', strtotime($this->model->ocurrence['Closing_Date'])) : "Não há" ?>.
-			</p>
-		</div>
-	</section>
-</div>
 
 <div class="card wrap">
 	<header class="card-header flex-container align-middles">
@@ -47,42 +35,47 @@
 		 <?php foreach($this->model->updates as $update) { ?>
 		<div class="update-card">
 			<header>
-
-				<span class="title">
-					<?php foreach ($this->model->status as $st) {
-							if($update['Ocurrence_Status_Id'] == $st['Ocurrence_Status_Id'])
-								echo $st['Description'];
-						}
-					?>
-					- <?=$this->model->ocurrence['Description']?></span>
-				<span class="subtitle">
-					<?php if(isset($update['Responsible'])){
-						foreach ($this->model->users as $user) {
-							if($user['User_Id'] == $update['Responsible'])
-								echo $user['Name'];
-						}
-					}else{
-
-						echo "Sem responsável!";
-					}?>
-						
-					</span>	
+				<h3>Atualizações</h3>
 			</header>
 			<section>
-				<span class="content">					
-					<?php if(isset($update['Status_Feedback'])){
-								echo $update['Status_Feedback'];
-							}else{
-								echo "Sem feedback!";
-							}
+				<?php foreach($this->model->updates as $update) { ?>
+					<div class="update-card">
+						<header>
+							<span class="title">
+								<?php foreach ($this->model->status as $st) {
+									if($update['Ocurrence_Status_Id'] == $st['Ocurrence_Status_Id'])
+										echo $st['Description'];
+								}
+								?>
+							</span>
+							<span class="subtitle">
+								<?php if(isset($update['Responsible'])){
+									foreach ($this->model->users as $user) {
+										if($user['User_Id'] == $update['Responsible'])
+											echo $user['Name'];
+									}
+								}else{
 
-					?>
-				</span>
-			</section>
-		</div>
-		<?php } ?>
-	</section>
-</div>
+									echo "Sem responsável!";
+								}?>
+
+							</span>
+							</header>
+							<section>
+								<span class="content">					
+									<?php if(isset($update['Status_Feedback'])){
+										echo $update['Status_Feedback'];
+									}else{
+										echo "Sem feedback!";
+									}
+
+									?>
+								</span>
+							</section>
+						</div>
+						<?php } ?>
+					</section>
+				</div>
 				
 <div class="card">
 	<header class="card-header">
