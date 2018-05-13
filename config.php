@@ -19,7 +19,7 @@ define('DB_NAME', 'safe_this_dev');
 define('DB_USER', 'root');
  
 // Senha do DB
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'root');
  
 // Charset da conexão PDO
 define('DB_CHARSET', 'utf8');
