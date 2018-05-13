@@ -47,13 +47,36 @@
 		 <?php foreach($this->model->updates as $update) { ?>
 		<div class="update-card">
 			<header>
-				<span class="title"><?=$update['Ocurrence_Status_Id']?></span>
-				<span class="subtitle"><?php=($update['Responsible'] ? "Sem resposável" : "$update['Responsible']")?></span>	
+
+				<span class="title">
+					<?php foreach ($this->model->status as $st) {
+							if($update['Ocurrence_Status_Id'] == $st['Ocurrence_Status_Id'])
+								echo $st['Description'];
+						}
+					?>
+					- <?=$this->model->ocurrence['Description']?></span>
+				<span class="subtitle">
+					<?php if(isset($update['Responsible'])){
+						foreach ($this->model->users as $user) {
+							if($user['User_Id'] == $update['Responsible'])
+								echo $user['Name'];
+						}
+					}else{
+
+						echo "Sem responsável!";
+					}?>
+						
+					</span>	
 			</header>
 			<section>
-				<span class="content">
-					
-					<?=$update['Status_Feedback']?>
+				<span class="content">					
+					<?php if(isset($update['Status_Feedback'])){
+								echo $update['Status_Feedback'];
+							}else{
+								echo "Sem feedback!";
+							}
+
+					?>
 				</span>
 			</section>
 		</div>
