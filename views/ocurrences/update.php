@@ -1,14 +1,15 @@
-<div class="flex-container align-middles space-between">
-    <h1 class="page-title">Atualização de ocorrência</h1>
-    <a href="<?=HOME_URI?>/ocurrences" class="button back small">Voltar</a>
-</div>
+<div class="card" style="width: 50%;">
+<header class="card-header flex-container align-middles space-between">
+    <h1>Atualização de ocorrência</h1>
+    <a href="<?=HOME_URI?>/ocurrences/view/<?=$this->model->ocurrence['Ocurrence_Id']?>" class="button back small">Voltar</a>
+</header>
 
-<div style="width:50%">
+<section class="card-content">
      <form action="<?=HOME_URI?>/ocurrences/updatestatus/<?=$this->model->ocurrence['Ocurrence_Id']?>" enctype="multipart/form-data" method="post">
         <input type="hidden" value="<?=$this->model->update['Next_Status']?>" name="Ocurrence_Status_Id">
         <div class="form-group">
             <select class="form-control small" name="Ocurrence_Priority_Id"> 
-                <option value="0">Prioridade</option>           
+                <option value="0">Prioridade</option>
                 <?php foreach($this->model->priorities as $priort) { ?>
                     <option value="<?=$priort['Ocurrence_Priority_Id']?>"
                         <?=$priort['Ocurrence_Priority_Id'] == $this->model->update['Priority']? 'selected' : ''?>>
@@ -39,4 +40,5 @@
             <input type="submit" value="Atualizar" class="button success ripple"/>
         </div>        
     </form>
+</div>
 </div>

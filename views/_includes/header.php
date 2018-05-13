@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title><?=$this->title?> - Safe This</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="<?=HOME_URI?>/views/css/framework.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="<?=HOME_URI?>/views/css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="<?=HOME_URI?>/views/css/framework.css?v=<?=uniqid()?>" />
+    <link rel="stylesheet" type="text/css" media="screen" href="<?=HOME_URI?>/views/css/main.css?v=<?=uniqid()?>" />
     <link rel="stylesheet" type="text/css" media="screen" href="<?=HOME_URI?>/views/css/fontawesome/fontawesome-all.min.css"/>      
-    <script src="<?=HOME_URI?>/views/js/main.js"></script>
+    <script src="<?=HOME_URI?>/views/js/main.js?v=<?=uniqid()?>"></script>
 </head>
 <body>
 

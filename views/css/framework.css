@@ -84,10 +84,11 @@ a{
 
 .main-content {
     padding: 10px 25px 5px 25px;
-    float:left;
-    width: 80%;
+    float: left;
+    width: 85%;
     height: calc(100vh - 53px);
     color: #555;
+    overflow-y: auto;
 }
 .main-inner{
     width: 100%;
@@ -166,11 +167,10 @@ a{
 
 .button {
     height: 35px;
-    border-radius: 35px;
+    border-radius: 4px;
     border: none;
     padding: 5px;
     cursor: pointer;
-    transition: box-shadow 0.4s;
     min-width: 100px;
     display: inline-block;
     font-size: 14px;
@@ -184,10 +184,7 @@ a.button {
 }
 
 
-.button:hover, .button:active, .button:focus {
-    box-shadow: 0px 2px 2px 1px #999;
-    outline: none;
-}
+
 
 .button.new{
     background:#158e0d;
@@ -222,6 +219,10 @@ a.button {
 .button.success {
     background:#158e0d;
     color:white;
+}
+
+.button:hover, .button:active, .button:focus {
+    outline: none;
 }
 
 .button.small {
@@ -278,6 +279,7 @@ a.button {
     background-color: #aaa;
     color:white;
     padding-left: 10px;
+    padding-right: 10px;
 }
 
 .card-header .button {
