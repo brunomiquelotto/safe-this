@@ -37,10 +37,7 @@
 							<td><?=date('d/m/Y H:i:s', strtotime($ocurrence['Opening_Date']))?></td>
 							<td><?=$ocurrence['Files']?></td>					
 							<td>
-								<?php if ($this->logged_in): ?>
-									<a href="<?=$this->model->edit_url . $ocurrence['Id']?>" class="button success small">Editar</a>
-								<?php endif ?>
-								<a href="<?=$this->model->visualize_url . $ocurrence['Id']?>" class="button info small">Visualizar</a>
+								<a href="<?=$this->model->visualize_url . $ocurrence['Id']?>" class="icon-visu">Visualizar</a>
 							</td>
 						</tr>
 					<?php endforeach ?>

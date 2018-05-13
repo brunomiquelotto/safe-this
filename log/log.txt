@@ -2465,10 +2465,91 @@ Controller -> homecontroller Action -> index
 <==== DEBUG ====>
 Controller -> homecontroller Action -> index
 <==== END DEBUG ====>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> exit
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
+=======
+>>>>>>> develop
 <==== DEBUG ====>
 Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
+<<<<<<< HEAD
 Controller -> homecontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
@@ -2509,23 +2590,74 @@ Controller -> logincontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> admincontroller Action -> index
+=======
+Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+>>>>>>> develop
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+<<<<<<< HEAD
 Controller -> Ocurrencescontroller Action -> Edit
+=======
+Controller -> ocurrencescontroller Action -> index
+>>>>>>> develop
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
+<<<<<<< HEAD
 Controller -> userscontroller Action -> index
+=======
+Controller -> ocurrencescontroller Action -> index
+>>>>>>> develop
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
+<<<<<<< HEAD
 Controller -> Ocurrencescontroller Action -> Edit
 <==== END DEBUG ====>
 <==== DEBUG ====>
@@ -2548,6 +2680,30 @@ Controller -> Ocurrencescontroller Action -> Edit
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> Ocurrencescontroller Action -> Edit
+=======
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+>>>>>>> develop
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> ocurrencescontroller Action -> index
@@ -2562,51 +2718,83 @@ Controller -> ocurrencescontroller Action -> index
 Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
+<<<<<<< HEAD
 Controller -> Ocurrencescontroller Action -> update
+=======
+Controller -> ocurrencescontroller Action -> index
+>>>>>>> develop
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
+<<<<<<< HEAD
 Controller -> Ocurrencescontroller Action -> update
+=======
+Controller -> ocurrencescontroller Action -> index
+>>>>>>> develop
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
+<<<<<<< HEAD
 Controller -> Ocurrencescontroller Action -> update
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> admincontroller Action -> index
+=======
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+>>>>>>> develop
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
+<<<<<<< HEAD
 Controller -> Ocurrencescontroller Action -> update
+=======
+Controller -> ocurrencescontroller Action -> index
+>>>>>>> develop
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
+<<<<<<< HEAD
 Controller -> Ocurrencescontroller Action -> View
+=======
+Controller -> ocurrencescontroller Action -> index
+>>>>>>> develop
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
+<<<<<<< HEAD
 Controller -> Ocurrencescontroller Action -> update
+=======
+Controller -> ocurrencescontroller Action -> index
+>>>>>>> develop
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
+<<<<<<< HEAD
 Controller -> Ocurrencescontroller Action -> View
+=======
+Controller -> ocurrencescontroller Action -> index
+>>>>>>> develop
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
+<<<<<<< HEAD
 Controller -> ocurrencescontroller Action -> create
 <==== END DEBUG ====>
 <==== DEBUG ====>
@@ -2614,12 +2802,25 @@ Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> Ocurrencescontroller Action -> update
+=======
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Edit
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+>>>>>>> develop
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
+<<<<<<< HEAD
 Controller -> Ocurrencescontroller Action -> View
+=======
+Controller -> ocurrencescontroller Action -> index
+>>>>>>> develop
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> ocurrencescontroller Action -> index
@@ -2628,6 +2829,7 @@ Controller -> ocurrencescontroller Action -> index
 Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
+<<<<<<< HEAD
 Controller -> userscontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
@@ -2638,105 +2840,8 @@ Controller -> userscontroller Action -> save
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> userscontroller Action -> index
-<==== END DEBUG ====>
-<==== DEBUG ====>
+=======
 Controller -> ocurrencescontroller Action -> index
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> index
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> index
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> index
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> index
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> index
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> index
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> index
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> index
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> index
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> ocurrencescontroller Action -> index
@@ -2745,24 +2850,225 @@ Controller -> ocurrencescontroller Action -> index
 Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
+Controller -> ocurrencescontroller Action -> index
+>>>>>>> develop
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
+<<<<<<< HEAD
 Controller -> Ocurrencescontroller Action -> View
+=======
+Controller -> ocurrencescontroller Action -> index
+>>>>>>> develop
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
+<<<<<<< HEAD
 Controller -> Ocurrencescontroller Action -> View
+=======
+Controller -> ocurrencescontroller Action -> index
+>>>>>>> develop
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
+<<<<<<< HEAD
+Controller -> Ocurrencescontroller Action -> View
+=======
+Controller -> ocurrencescontroller Action -> index
+>>>>>>> develop
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+<<<<<<< HEAD
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+=======
+Controller -> Ocurrencescontroller Action -> Edit
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Edit
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+>>>>>>> develop
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+<<<<<<< HEAD
+Controller -> Ocurrencescontroller Action -> View
+=======
+Controller -> ocurrencescontroller Action -> index
+>>>>>>> develop
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+<<<<<<< HEAD
+Controller -> Ocurrencescontroller Action -> View
+=======
+Controller -> ocurrencescontroller Action -> index
+>>>>>>> develop
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+<<<<<<< HEAD
+Controller -> Ocurrencescontroller Action -> View
+=======
+Controller -> ocurrencescontroller Action -> index
+>>>>>>> develop
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+<<<<<<< HEAD
+Controller -> Ocurrencescontroller Action -> View
+=======
+Controller -> ocurrencescontroller Action -> index
+>>>>>>> develop
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+<<<<<<< HEAD
+Controller -> Ocurrencescontroller Action -> View
+=======
+Controller -> ocurrencescontroller Action -> index
+>>>>>>> develop
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+<<<<<<< HEAD
+Controller -> Ocurrencescontroller Action -> View
+=======
+Controller -> ocurrencescontroller Action -> index
+>>>>>>> develop
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+<<<<<<< HEAD
+Controller -> Ocurrencescontroller Action -> View
+=======
+Controller -> ocurrencescontroller Action -> index
+>>>>>>> develop
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+<<<<<<< HEAD
+Controller -> Ocurrencescontroller Action -> View
+=======
+Controller -> ocurrencescontroller Action -> index
+>>>>>>> develop
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+<<<<<<< HEAD
+Controller -> Ocurrencescontroller Action -> View
+=======
+Controller -> ocurrencescontroller Action -> index
+>>>>>>> develop
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+<<<<<<< HEAD
 Controller -> Ocurrencescontroller Action -> View
 <==== END DEBUG ====>
 <==== DEBUG ====>
@@ -2782,17 +3088,46 @@ Controller -> Ocurrencescontroller Action -> Update
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> Ocurrencescontroller Action -> Update
+=======
+Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+>>>>>>> develop
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+<<<<<<< HEAD
 Controller -> ocurrencescontroller Action -> create
+=======
+Controller -> ocurrencescontroller Action -> index
+>>>>>>> develop
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
+<<<<<<< HEAD
 Controller -> Ocurrencescontroller Action -> update
 <==== END DEBUG ====>
 <==== DEBUG ====>
@@ -2842,8 +3177,7 @@ Controller -> Ocurrencescontroller Action -> update
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> Ocurrencescontroller Action -> update
-<==== END DEBUG ====>
-<==== DEBUG ====>
+=======
 Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
@@ -2883,6 +3217,65 @@ Controller -> ocurrencescontroller Action -> index
 Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+>>>>>>> develop
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+<<<<<<< HEAD
+=======
+Controller -> Ocurrencescontroller Action -> Edit
+<==== END DEBUG ====>
+<==== DEBUG ====>
+>>>>>>> develop
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+<<<<<<< HEAD
 Controller -> Ocurrencescontroller Action -> Update
 <==== END DEBUG ====>
 <==== DEBUG ====>
@@ -2908,11 +3301,39 @@ Controller -> Ocurrencescontroller Action -> View
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> Ocurrencescontroller Action -> View
+=======
+Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+>>>>>>> develop
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+<<<<<<< HEAD
 Controller -> Ocurrencescontroller Action -> View
 <==== END DEBUG ====>
 <==== DEBUG ====>
@@ -2938,38 +3359,87 @@ Controller -> Ocurrencescontroller Action -> Update
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> Ocurrencescontroller Action -> Update
+=======
+Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+>>>>>>> develop
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+<<<<<<< HEAD
 Controller -> Ocurrencescontroller Action -> View
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> Ocurrencescontroller Action -> Update
+=======
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+>>>>>>> develop
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
+<<<<<<< HEAD
 Controller -> Ocurrencescontroller Action -> View
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> Ocurrencescontroller Action -> Update
+=======
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+>>>>>>> develop
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
+<<<<<<< HEAD
 Controller -> Ocurrencescontroller Action -> View
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> Ocurrencescontroller Action -> Update
+=======
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+>>>>>>> develop
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
+<<<<<<< HEAD
 Controller -> Ocurrencescontroller Action -> View
 <==== END DEBUG ====>
 <==== DEBUG ====>
@@ -3097,249 +3567,11 @@ Controller -> Ocurrencescontroller Action -> Update
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
+=======
 Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> updatestatus
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> updatestatus
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
 Controller -> ocurrencescontroller Action -> index
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> index
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> index
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> updatestatus
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> index
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> index
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> updatestatus
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> view
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> index
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> updatestatus
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> view
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> view
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> view
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> view
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> view
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> view
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> view
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> view
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> index
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> updatestatus
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> view
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> updatestatus
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> updatestatus
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> updatestatus
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> updatestatus
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> updatestatus
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> updatestatus
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> updatestatus
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> updatestatus
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> updatestatus
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> updatestatus
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> view
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> updatestatus
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> view
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> updatestatus
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> view
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> view
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> ocurrencescontroller Action -> index
@@ -3348,7 +3580,10 @@ Controller -> ocurrencescontroller Action -> index
 Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> update
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> ocurrencescontroller Action -> index
@@ -3357,124 +3592,10 @@ Controller -> ocurrencescontroller Action -> index
 Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
 Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> create
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> save
-<==== END DEBUG ====>
-<==== DEBUG ====>
 Controller -> ocurrencescontroller Action -> index
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> updatestatus
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> updatestatus
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> updatestatus
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> view
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> updatestatus
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> view
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> updatestatus
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> view
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> index
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> create
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> save
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> index
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> index
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> create
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> save
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> index
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> index
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> create
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> save
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> create
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> save
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> index
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> updatestatus
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> view
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> ocurrencescontroller Action -> index
@@ -3507,262 +3628,52 @@ Controller -> ocurrencescontroller Action -> index
 Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> updatestatus
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> view
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> updatestatus
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> view
+Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
+Controller -> userscontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
+Controller -> admincontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
+Controller -> reportscontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
+Controller -> placescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
+Controller -> placescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
+Controller -> placescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
+Controller -> placescontroller Action -> edit
 <==== END DEBUG ====>
 <==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
+Controller -> placescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
+Controller -> userscontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
+Controller -> userscontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
+Controller -> userscontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
+Controller -> userscontroller Action -> edit
 <==== END DEBUG ====>
 <==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> index
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> index
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> view
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> view
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> view
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> view
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> view
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> view
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> view
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> view
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> index
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> create
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> save
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> index
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> View
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> updatestatus
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> view
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> Ocurrencescontroller Action -> Update
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> updatestatus
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> view
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> view
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> view
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> view
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> view
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> view
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> view
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> view
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> view
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> view
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> view
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> view
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> ocurrencescontroller Action -> view
-<==== END DEBUG ====>
-<==== DEBUG ====>
-Controller -> homecontroller Action -> index
+Controller -> userscontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> ocurrencescontroller Action -> index
@@ -3783,10 +3694,342 @@ Controller -> userscontroller Action -> index
 Controller -> profilescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
-Controller -> profilescontroller Action -> index
+Controller -> reportscontroller Action -> index
+>>>>>>> develop
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+<<<<<<< HEAD
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> updatestatus
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> updatestatus
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+=======
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> placescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> placescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> userscontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> profilescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> userscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> placescontroller Action -> index
+>>>>>>> develop
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+<<<<<<< HEAD
+Controller -> Ocurrencescontroller Action -> View
+=======
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+>>>>>>> develop
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+<<<<<<< HEAD
+Controller -> Ocurrencescontroller Action -> View
+=======
+Controller -> placescontroller Action -> index
+>>>>>>> develop
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+<<<<<<< HEAD
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> updatestatus
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> updatestatus
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> updatestatus
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> updatestatus
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> updatestatus
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> updatestatus
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> updatestatus
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> updatestatus
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> updatestatus
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> updatestatus
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> updatestatus
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> updatestatus
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> updatestatus
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> updatestatus
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> updatestatus
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> updatestatus
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+=======
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+>>>>>>> develop
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+<<<<<<< HEAD
+Controller -> Ocurrencescontroller Action -> update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+=======
+>>>>>>> develop
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+<<<<<<< HEAD
+Controller -> Ocurrencescontroller Action -> View
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> ocurrencescontroller Action -> index
@@ -3795,9 +4038,549 @@ Controller -> ocurrencescontroller Action -> index
 Controller -> ocurrencescontroller Action -> create
 <==== END DEBUG ====>
 <==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> save
+<==== END DEBUG ====>
+<==== DEBUG ====>
 Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> updatestatus
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> updatestatus
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> updatestatus
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> updatestatus
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> updatestatus
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> create
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> save
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> create
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> save
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> create
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> save
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> create
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> save
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> updatestatus
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+=======
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+>>>>>>> develop
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+<<<<<<< HEAD
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> updatestatus
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> updatestatus
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> create
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> save
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> updatestatus
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> Update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> updatestatus
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+=======
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+>>>>>>> develop
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+<<<<<<< HEAD
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> placescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> userscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> profilescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> profilescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> profilescontroller Action -> index
+=======
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+>>>>>>> develop
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+<<<<<<< HEAD
+Controller -> ocurrencescontroller Action -> create
+=======
+Controller -> ocurrencescontroller Action -> index
+>>>>>>> develop
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+<<<<<<< HEAD
 Controller -> Ocurrencescontroller Action -> View
 <==== END DEBUG ====>
 <==== DEBUG ====>
@@ -3862,6 +4645,11 @@ Controller -> placescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> admincontroller Action -> index
+=======
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> ocurrencescontroller Action -> index
@@ -3870,11 +4658,82 @@ Controller -> ocurrencescontroller Action -> index
 Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+>>>>>>> develop
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+<<<<<<< HEAD
 Controller -> homecontroller Action -> index
+=======
+Controller -> ocurrencescontroller Action -> index
+>>>>>>> develop
 <==== END DEBUG ====>
 <==== DEBUG ====>
 Controller -> ocurrencescontroller Action -> index
 <==== END DEBUG ====>
 <==== DEBUG ====>
+<<<<<<< HEAD
 Controller -> admincontroller Action -> index
 <==== END DEBUG ====>
+=======
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+>>>>>>> cadastros-icones
+>>>>>>> develop
