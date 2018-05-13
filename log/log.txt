@@ -3839,3 +3839,42 @@ Controller -> ocurrencescontroller Action -> updatestatus
 <==== DEBUG ====>
 Controller -> ocurrencescontroller Action -> view
 <==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> placescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> placescontroller Action -> edit
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> placescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> profilescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> placescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> placescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
