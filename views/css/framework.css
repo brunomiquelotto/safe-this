@@ -29,7 +29,8 @@ body {
 .header img{
     width: 200px;
     height: 80px;
-    padding-top: 10px;
+    padding-top: 12px;
+    padding-bottom: 1px;
 }
 .title-size{
     width: 50%;
@@ -66,7 +67,7 @@ a{
     color: #887a7a;
 }
 .sidebar li.active, .sidebar li:hover {
-    background: #136b49d1;
+    background: #136946;
     cursor: pointer;
     padding-left: 15px;
     box-shadow: 0 3px 3px 1px rgba(0,0,0, .3);
@@ -277,7 +278,7 @@ a.button {
 .card > header.card-header {
     height: 40px;
     border: none;
-    background-color: #aaa;
+    background-color: #136946;
     color:white;
     padding-left: 10px;
     padding-right: 10px;
@@ -482,16 +483,15 @@ a.button {
 /* Home style*/
 
 .bg-home{
-    background: url('/safe-this/views/img/bg-home.jpg') center top no-repeat;  
+    background: url('/safe-this/views/img/bg-home.jpg') center top no-repeat; 
 }
 .welcome-home{
     width: 920px;
-    padding:30px;
     background: rgba(255,255,255,0.8);
     border-radius:8px;
     margin: 0 auto;
     text-align: center;
-    height: 350px;
+    height: 300px;
 }
 .row{
     width:100%;
@@ -507,6 +507,7 @@ a.button {
     transition: background-color 0.8s;
     font-size: 18px;
     padding: 0px 20px;
+    margin-right: 3px;
     height: 50px;
     box-shadow:none;
 }
@@ -517,6 +518,11 @@ a.button {
     background: #57c1a8;
     box-shadow:none;
     outline: none;
+}
+.welcome-home-logo{
+   transform: scale(.90);
+
+
 }
 
 .icon-edit{

@@ -1,9 +1,9 @@
 
 <section class="bg-home">
     
-    <div class="welcome-home">
+    <div class="welcome-home" style="padding: 24px;">
         <div class="welcome-home-logo">
-            <img src="/safe-this/views/img/logo-black.png" alt="" width="500">
+            <img src="/safe-this/views/_includes/images/home/Logo_cinza.png" alt="" width="500">
         </div>   
         <div class="row">
             <div class="welcome-home-buttons">

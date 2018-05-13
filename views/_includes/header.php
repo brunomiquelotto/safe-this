@@ -15,7 +15,7 @@
 
 <header class="header">
     <a href="<?=HOME_URI?>/admin">
-        <img src="\safe-this\views\_includes\images\Logo.png" alt="Logotipo">
+        <img src="\safe-this\views\_includes\images\header\Logo.png" alt="Logotipo">
     </a>
     <div>
         <?php if($this->logged_in):?>

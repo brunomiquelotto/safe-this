@@ -2,7 +2,7 @@
     <header class="card-header flex-container align-middles space-between">
         <h1>Bem vindo ao Safe This</h1>
     </header>
-    <section class="card-content">
+    <section class="card-content" style="padding-left: 60px;">
         <div class="card-count info">
             <div>
                 <i class="fa fa-building"></i>

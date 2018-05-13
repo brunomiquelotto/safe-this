@@ -4809,3 +4809,585 @@ Controller -> profilescontroller Action -> index
 <==== DEBUG ====>
 Controller -> userscontroller Action -> index
 <==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> placescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> userscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> placescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> placescontroller Action -> edit
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> placescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> placescontroller Action -> edit
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> placescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> placescontroller Action -> edit
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> placescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> placescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> userscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> userscontroller Action -> edit
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> userscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> profilescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> userscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> placescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> profilescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> userscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> profilescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> placescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> userscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> profilescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> placescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> placescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> userscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> profilescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> placescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> userscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> profilescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> exit
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> profilescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> userscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> exit
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> homecontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> create
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> Ocurrencescontroller Action -> View
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> create
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> create
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> create
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> create
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> exit
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>

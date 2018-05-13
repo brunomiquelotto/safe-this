@@ -48,7 +48,7 @@ class MainController extends UserLogin
     }
 
     protected function throw_404() {
-        $this->load_view('_includes/404.php');
+        $this->load_view('_includes/404/404.php');
         exit;
     }
     

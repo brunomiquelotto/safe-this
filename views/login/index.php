@@ -1,6 +1,6 @@
-<div class="center-all" style="margin-top: 30px">
-    <div class="card" style="width: 40%">
-        <h3 style="text-align:center">Autenticação necessária</h3>
+<div class="center-all" style="margin-top: 30px;">
+    <div class="card" style="width: 40%;">
+        <h3 style="text-align:center;color:#544f4f; padding-top: 40px;" >Autenticação necessária</h3>
         <form method="post">
             <?php
                 if ($this->login_error) { ?>
@@ -17,7 +17,7 @@
                 </div>
             </div>
             <div></div>
-            <div class="center-all mg-t-10">
+            <div class="center-all mg-t-10" style="margin-bottom: 40px;">
                 <input type="submit" class="button primary" value="Entrar"/>
             </div>
         </form>
