@@ -522,12 +522,18 @@ a.button {
 .icon-edit{
     content: url("/safe-this/views/css/icons/edit.png");
     transform: scale(.85);
+    width: 20px;
+    height: 20px;
 }
 .icon-visu{
     content: url("/safe-this/views/css/icons/visualizar.png");
     transform: scale(.90);
+    width: 20px;
+    height: 20px;
 }
 
 .icon-excluir{
     content: url("/safe-this/views/css/icons/excluir.png");
+    width: 20px;
+    height: 20px;
 }
