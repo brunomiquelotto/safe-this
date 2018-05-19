@@ -5391,3 +5391,222 @@ Controller -> logincontroller Action -> index
 <==== DEBUG ====>
 Controller -> logincontroller Action -> index
 <==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> reportscontroller Action -> index
+<==== END DEBUG ====>

@@ -1,84 +1,54 @@
-<div class="flex-container align-middles space-between">
-    <h1 class="page-title">Relatorios</h1>
-</div>
+<div class="card">
+    <header class="card-header flex-container align-middles space-between">
+        <h1>Relatórios</h1>
+    </header>
+    <section class="card-content">
+        <div>
+            <form action="<?php echo HOME_URI ?>/reports/view" method="post">
+                <div class="form-group"> 
+                    <select class="form-control small" name="Sector_Id">
+                        <option value="0">Selecione um Local</option>
+                        <?php foreach($this->model->reports as $place): ?>
+                            <option value="<?=$place['Sector_Id']?>"> 
+                                <?=$place['Name']?>
+                            </option>
+                        <?php endforeach; ?>
+                    </select>              
 
-<div>
-    <div>
-        <div class="form-group">
-            <select class="form-control small" name="Sector_Id">
-                <option value="0">Selecione um Local</option>
-                <?php foreach($this->model->reports as $place) { ?>
-                    <option value="<?=$place['Sector_Id']?>">
-                        <?=$place['Name']?>
-                    </option>
-                <?php } ?>
-            </select> 
-            <select class="form-control small" name="Ocurrence_Status_Id">
-                <option value="0">Selecione um status</option>
-                <?php foreach($this->model->status as $place) { ?>
-                    <option value="<?=$place['Ocurrence_Status_Id']?>">
-                        <?=$place['Description']?>
-                    </option>
-                <?php } ?>
-            </select>
-            <input type="Date" class="form-control small" name="Opening_Date">
-            <input type="Date" class="form-control small" name="Closing_Date">
+                </div>
+                <input type="submit" class="button info ripple mg-t-10" value="Gerar Relatorio" />
+
+            </form>
         </div>
-        <a href="<?=HOME_URI?>/reports/view" class="button info ripple mg-t-10">Gerar Relatorio</a>
-        <a href="<?=HOME_URI?>/reports/download" class="button info ripple mg-t-10">Gerar PDF</a>
-        <a href="<?=HOME_URI?>/reports/view/complete" class="button info ripple mg-t-10">Gerar Relatorio Completo</a>
-    </div>
-    <?php if (!$this->model->showResults) { ?>
-        <label type="text">Clique em pesquisar para gerar relatorio</label>
-    <?php } ?>
-    <?php if ($this->model->showResults)  { ?>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Title 1</th>
-                <th>Title 2</th>
-                <th>Title 3</th>
-                <th>Title 4</th>
-                <th>Title 5</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Dados</td>
-                <td>Dados</td>
-                <td>Dados</td>
-                <td>Dados</td>
-                <td>Dados</td>
-            </tr>
-            <tr>
-                <td>Dados</td>
-                <td>Dados</td>
-                <td>Dados</td>
-                <td>Dados</td>
-                <td>Dados</td>
-            </tr>
-            <tr>
-                <td>Dados</td>
-                <td>Dados</td>
-                <td>Dados</td>
-                <td>Dados</td>
-                <td>Dados</td>
-            </tr>
-            <tr>
-                <td>Dados</td>
-                <td>Dados</td>
-                <td>Dados</td>
-                <td>Dados</td>
-                <td>Dados</td>
-            </tr>
-            <tr>
-                <td>Dados</td>
-                <td>Dados</td>
-                <td>Dados</td>
-                <td>Dados</td>
-                <td>Dados</td>
-            </tr>
-        </tbody>
-    </table>
-    <?php } ?>
+        <?php if (!$this->model->showResults): ?>
+            <label type="text">Clique em pesquisar para gerar relatorio</label>
+        <?php endif; ?>
+        <?php if ($this->model->showResults): ?>
+            <table class="table">
+                <thead>
+                    <tr> 
+                        <th>Local</th>
+                        <th>Aguardando</th>
+                        <th>Rejeitado </th>
+                        <th>Aceito</th>
+                        <th>Andamento</th>
+                        <th>Pronto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php foreach($this->model->showResults as $data): ?>
+                     <tr>
+                        <td><?=$data['Place']; ?></td>
+                        <td><?=$data['Aguardando']; ?></td>
+                        <td><?=$data['Rejeitado']; ?></td>
+                        <td><?=$data['Aceito']; ?></td>
+                        <td><?=$data['Andamento']; ?></td>
+                        <td><?=$data['Pronto']; ?></td>
+                    </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+    <?php endif; ?>
+</div>
+</section>
 </div>
