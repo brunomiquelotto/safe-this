@@ -41,7 +41,7 @@ class UserLogin
             $this->logout();
             return;
         }
-        $query = $this->db->query('SELECT * FROM TB_USERS WHERE Email = ? LIMIT 1', array($email));
+        $query = $this->db->query('SELECT * FROM tb_users WHERE Email = ? LIMIT 1', array($email));
         if (!$query) {
             $this->logged_in = false;
             $this->login_error = 'Erro, tente novamente mais tarde.';
@@ -70,7 +70,7 @@ class UserLogin
                 $_SESSION['userdata'] = $fetch;
                 $_SESSION['userdata']['Password'] = $password;
                 $_SESSION['userdata']['Session'] = $session_id;
-                $query = $this->db->query('UPDATE TB_USERS SET `Session` = ?, Last_Activity = CURRENT_TIMESTAMP WHERE User_Id = ?', array($session_id, $user_id));
+                $query = $this->db->query('UPDATE tb_users SET `Session` = ?, Last_Activity = CURRENT_TIMESTAMP WHERE User_Id = ?', array($session_id, $user_id));
             }
             $this->logged_in = true;
             $this->userdata = $_SESSION['userdata'];

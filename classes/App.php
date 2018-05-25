@@ -63,7 +63,7 @@
             } else return false;
             $user_id = $userdata['User_Id'];
             $db = new DB();
-            $query = $db->query('SELECT * FROM VW_USER_PROFILES WHERE User_Id = ? ', array($user_id));
+            $query = $db->query('SELECT * FROM vw_user_profiles WHERE User_Id = ? ', array($user_id));
             $result = $query->fetch(PDO::FETCH_ASSOC);
             if (!empty($result) && $result['FullAccess'] == 1) {
                 return true;

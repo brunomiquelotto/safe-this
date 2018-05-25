@@ -1,7 +1,7 @@
 <?php
 
 class UserModel extends BaseModel {
-    protected static $table = "TB_USERS";
+    protected static $table = "tb_users";
     protected static $primaryKey = "User_Id";
     protected $fields = array(
         'Name',

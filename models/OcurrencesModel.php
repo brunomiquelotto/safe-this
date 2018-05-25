@@ -1,7 +1,7 @@
 <?php
 
 class OcurrencesModel extends BaseModel {
-    protected static $table = 'TB_OCURRENCES';
+    protected static $table = 'tb_ocurrences';
     protected static $primaryKey = 'Ocurrence_Id';
     protected $fields = array(
         'Ocurrence_Id',

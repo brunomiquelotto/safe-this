@@ -1,6 +1,6 @@
 <?php 
 class OcurrenceUpdateModel extends BaseModel {
-	protected static $table = "TB_OCURRENCE_UPDATES";
+	protected static $table = "tb_ocurrence_updates";
 	protected static $primaryKey = "Ocurrence_Update_Id";
 	protected $fields = array(
 		"Ocurrence_Update_Id",

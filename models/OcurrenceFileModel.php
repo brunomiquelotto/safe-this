@@ -1,6 +1,6 @@
 <?php 
 	class OcurrenceFileModel extends BaseModel {
-		protected static $table = "TB_OCURRENCE_FILES";
+		protected static $table = "tb_ocurrence_files";
 		protected static $primaryKey = "Ocurrence_File_Id";
 		protected $fields = array(
 			'Ocurrence_File_Id',

@@ -22,7 +22,6 @@ class MainController extends UserLogin
 
     public function load_model($model_name = false) {
         if (!$model_name) return;
-        $model_name =  strtolower($model_name);
         $model_path = ABSPATH . '/models/' . $model_name . '.php';
         if (file_exists( $model_path)) {
             require_once $model_path;

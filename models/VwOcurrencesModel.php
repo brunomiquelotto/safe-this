@@ -1,7 +1,7 @@
 <?php
 
 class VwOcurrencesModel extends BaseModel {
-	protected static $table = "VW_OCURRENCES_TABLE";
+	protected static $table = "vw_ocurrences_table";
 	protected static $primaryKey = "Id";
 	protected $fields = array(
 		'Id',

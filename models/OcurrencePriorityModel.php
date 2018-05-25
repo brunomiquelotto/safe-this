@@ -1,6 +1,6 @@
 <?php 
 class OcurrencePriorityModel extends BaseModel {
-	protected static $table = "TB_OCURRENCE_PRIORITIES";
+	protected static $table = "tb_ocurrence_priorities";
 	protected static $primaryKey = "Ocurrence_Priority_Id";
 	protected $fields = array(
 		"Ocurrence_Priority_Id",

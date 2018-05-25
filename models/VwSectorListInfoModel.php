@@ -1,7 +1,7 @@
 <?php
 
 class VwSectorListInfoModel extends BaseModel {
-    protected static $table = "Vw_Sectors_List_Info";
+    protected static $table = "vw_sectors_list_info";
     protected static $primaryKey = null;
     protected $fields = array(
         'Sector_Id',
