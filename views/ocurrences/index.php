@@ -5,13 +5,24 @@
 	</header>
 	<section class="card-content">
 		<div class="mg-t-10">
-			<label>Quantidade a exibir</label>
-			<select class="form-control small" id="itemsToShow" onchange="changeUrl()">
-				<option value="5" <?=$this->model->limit == 5 ? 'selected' : ''?>>5</option>
-				<option value="10" <?=$this->model->limit == 10 ? 'selected' : ''?>>10</option>
-				<option value="25" <?=$this->model->limit == 25 ? 'selected' : ''?>>25</option>
-				<option value="50" <?=$this->model->limit == 50 ? 'selected' : ''?>>50</option>
-			</select>
+			<form method="post" ation="">
+				<label>Quantidade a exibir</label>
+				<select class="form-control small" id="itemsToShow" onchange="changeUrl()">
+					<option value="5" <?=$this->model->limit == 5 ? 'selected' : ''?>>5</option>
+					<option value="10" <?=$this->model->limit == 10 ? 'selected' : ''?>>10</option>
+					<option value="25" <?=$this->model->limit == 25 ? 'selected' : ''?>>25</option>
+					<option value="50" <?=$this->model->limit == 50 ? 'selected' : ''?>>50</option>
+				</select>
+				<label>Filtrar</label>
+			    <input type="text" class="form-control small" name="txtChoose"/>
+			    <select class="form-control small" name="Choose">
+					<option value="1">ID</option>
+					<option value="2">LOCAL</option>
+					<option value="3">PRIORIDADE</option>
+					<option value="4">DATA</option>
+				</select>
+			    <input type="submit" value="Pesquisar" class="button new small" name="btnEnviar">			   
+			</form>
 		</div><br><br>
 
 		<div class="center-all">

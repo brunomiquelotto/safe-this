@@ -43,7 +43,10 @@
 								<?php foreach ($this->model->status as $st) { 
 									if($update['Ocurrence_Status_Id'] == $st['Ocurrence_Status_Id'])
 										echo $st['Description'];
-								} ?>
+								} 
+								echo " - Prioridade: ".$this->model->ocurrence['Priority'];
+								?>
+								
 							</span>
 							<span class="subtitle">
 								<?php if(isset($update['Responsible'])){
@@ -58,7 +61,7 @@
 						</header>
 						<section>
 							<span class="content">					
-								<?= isset($update['Status_Feedback']) ? $update['Status_Feedback'] : "Sem feedback!" ?>
+								<?=$update['Status_Feedback']?>
 							</span>
 						</section>
 					</div>

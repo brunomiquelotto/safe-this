@@ -24,9 +24,36 @@ class OcurrencesController extends MainController {
             $this->model->limit = $parameters[0];
         }
         $this->title = 'Registro de Ocorrências';
-        $this->model->update_url = HOME_URI . '/Ocurrences/update/';
-        $this->model->visualize_url = HOME_URI . '/Ocurrences/View/';
+        $this->model->update_url = HOME_URI . '/ocurrences/update/';
+        $this->model->visualize_url = HOME_URI . '/ocurrences/view/';
         $this->model->ocurrences = VwOcurrencesModel::stmt_limit('Order By Opening_Date DESC', $this->model->limit);
+
+
+        if(isset($_POST['btnEnviar']))
+        {
+            $choose = $_POST['txtChoose'];
+
+
+            switch ($_POST['Choose']) {
+                case 1:
+                if(is_numeric($choose)){
+                    $this->model->ocurrences = VwOcurrencesModel::where('id = '. $choose);
+                }                
+                break;
+                case 2:
+                $this->model->ocurrences = VwOcurrencesModel::where("Place LIKE '%".$choose."%'");
+                break;
+                case 3:
+                $this->model->ocurrences = VwOcurrencesModel::where("Priority LIKE '%".$choose."%'");
+                break;
+                case 4:
+                echo "i equals 2";
+                break;
+            }
+
+        }
+
+
         $this->load_page('ocurrences/index.php');
     }
 
