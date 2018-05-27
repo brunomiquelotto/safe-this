@@ -18,10 +18,10 @@
 			    <select class="form-control small" name="Choose">
 					<option value="1">ID</option>
 					<option value="2">LOCAL</option>
-					<option value="3">PRIORIDADE</option>
-					<option value="4">DATA</option>
+					<option value="3">STATUS</option>
+					<option value="4">PRIORIDADE</option>
 				</select>
-			    <input type="submit" value="Pesquisar" class="button new small" name="btnEnviar">			   
+			    <input type="submit" value="Pesquisar" class="button new small" name="btnFiltro">			   
 			</form>
 		</div><br><br>
 

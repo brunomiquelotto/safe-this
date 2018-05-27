@@ -29,10 +29,9 @@ class OcurrencesController extends MainController {
         $this->model->ocurrences = VwOcurrencesModel::stmt_limit('Order By Opening_Date DESC', $this->model->limit);
 
 
-        if(isset($_POST['btnEnviar']))
+        if(isset($_POST['btnFiltro']) && isset($_POST['txtChoose']))
         {
             $choose = $_POST['txtChoose'];
-
 
             switch ($_POST['Choose']) {
                 case 1:
@@ -44,15 +43,13 @@ class OcurrencesController extends MainController {
                 $this->model->ocurrences = VwOcurrencesModel::where("Place LIKE '%".$choose."%'");
                 break;
                 case 3:
-                $this->model->ocurrences = VwOcurrencesModel::where("Priority LIKE '%".$choose."%'");
+                $this->model->ocurrences = VwOcurrencesModel::where("Status LIKE '%".$choose."%'");
                 break;
                 case 4:
-                echo "i equals 2";
+                $this->model->ocurrences = VwOcurrencesModel::where("Priority LIKE '%".$choose."%'");
                 break;
             }
-
         }
-
 
         $this->load_page('ocurrences/index.php');
     }
@@ -196,7 +193,7 @@ class OcurrencesController extends MainController {
         if (!$results) {
             return array();
         }
-        $url = HOME_URI . '/Ocurrences/Update/' . $this->model->ocurrence['Ocurrence_Id'] . '/';
+        $url = HOME_URI . '/ocurrences/Update/' . $this->model->ocurrence['Ocurrence_Id'] . '/';
         for($i = 0; $i < count($results); $i++) {
             $results[$i]["Url"] = $url . $results[$i]['OcurrenceStatusFlowId'];
         }
