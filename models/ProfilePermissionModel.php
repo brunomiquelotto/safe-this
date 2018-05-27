@@ -1,7 +1,7 @@
 <?php
 
 class ProfilePermissionModel extends BaseModel {
-    protected static $table = 'tb_profile_permission';
+    protected static $table = 'tb_profile_permissions';
     protected static $primaryKey = 'User_Permission_Id';
     protected $fields = array(
         'User_Permission_Id',

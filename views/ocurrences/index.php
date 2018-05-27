@@ -20,6 +20,7 @@
 					<tr>
 						<th>#</th>
 						<th>Local</th>
+						<th>Status</th>
 						<th>Prioridade</th>
 						<th>Data</th>
 						<th>N. Arquivos</th>
@@ -33,6 +34,7 @@
 						<tr>
 							<td><?=$ocurrence['Id']?></td>
 							<td><?=$ocurrence['Place']?></td>
+							<td><?=$ocurrence['Status']?></td>
 							<td><?=$ocurrence['Priority']?></td>
 							<td><?=date('d/m/Y H:i:s', strtotime($ocurrence['Opening_Date']))?></td>
 							<td><?=$ocurrence['Files']?></td>					
