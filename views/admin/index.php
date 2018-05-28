@@ -64,17 +64,6 @@
     <section class="card-content" style="padding-left: 60px;">
         
       <div id="div-chart"></div>
-
-<?php
-
-   $dataPoints = array(
-        array("y" => 7, "label" => "JAN- MARÇ"),
-        array("y" => 12,"label" => "ABR-JUNH"),
-        array("y" => 28,"label" => "JULH-SET"),
-        array("y" => 18,"label" => "OUT-DEZ")
-    );
-
-?>
     <!DOCTYPE html>
     <html>
     <head>
@@ -95,7 +84,7 @@
                     data: [{
                         type: "column",
                         yValueFormatString: "#,##0.## ocorrências",
-                        dataPoints: <?php echo json_encode($dataPoints,
+                        dataPoints: <?php echo json_encode($this->model->dataPoints,
                         JSON_NUMERIC_CHECK); ?>
                     }]
                 });
