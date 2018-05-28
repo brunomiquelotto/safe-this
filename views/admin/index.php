@@ -57,3 +57,64 @@
         </table>
     </div>
 </div>
+<div class="card">
+    <header class="card-header flex-container align-middles space-between">
+        <h1>Gráfico das Ocorrências</h1>
+    </header>
+    <section class="card-content" style="padding-left: 60px;">
+        
+      <div id="div-chart"></div>
+
+<?php
+
+   $dataPoints = array(
+        array("y" => 7, "label" => "JAN- MARÇ"),
+        array("y" => 12,"label" => "ABR-JUNH"),
+        array("y" => 28,"label" => "JULH-SET"),
+        array("y" => 18,"label" => "OUT-DEZ")
+    );
+
+?>
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ocorrências</title>
+     <script>
+            window.onload = function() {
+                
+                var chart = new CanvasJS.Chart("chartContainer", {
+                    animationEnabled: true,
+                    theme: "light2",
+                    title:{
+                        text: "Ocorrências por mês"
+                    },
+                    axisY: {
+                        title: "QTDE Ocorrências",
+                        },
+                    data: [{
+                        type: "column",
+                        yValueFormatString: "#,##0.## ocorrências",
+                        dataPoints: <?php echo json_encode($dataPoints,
+                        JSON_NUMERIC_CHECK); ?>
+                    }]
+                });
+                chart.render();
+            }
+        </script>
+    </head>
+    <body>
+        <div id="chartContainer" style="height: 370px;
+        width: 100%;"></div>
+
+    </body>
+    </html>
+    
+    
+    
+    
+    
+    
+    
+    </section>
+</div>

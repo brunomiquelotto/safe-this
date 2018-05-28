@@ -10,6 +10,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="<?=HOME_URI?>/views/css/main.css?v=<?=uniqid()?>" />
     <link rel="stylesheet" type="text/css" media="screen" href="<?=HOME_URI?>/views/css/fontawesome/fontawesome-all.min.css"/>      
     <script src="<?=HOME_URI?>/views/js/main.js?v=<?=uniqid()?>"></script>
+    <script src="<?=HOME_URI?>/views/_includes/lib_canvas/canvasjs.min.js?v=<?=uniqid()?>"></script>
+
 </head>
 <body>
 
