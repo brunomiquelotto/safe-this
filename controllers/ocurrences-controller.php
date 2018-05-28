@@ -35,19 +35,19 @@ class OcurrencesController extends MainController {
 
             switch ($_POST['Choose']) {
                 case 1:
-                if(is_numeric($choose)){
-                    $this->model->ocurrences = VwOcurrencesModel::where('id = '. $choose);
-                }                
-                break;
+                    if(is_numeric($choose)){
+                        $this->model->ocurrences = VwOcurrencesModel::where('id = '. $choose);
+                    }                
+                    break;
                 case 2:
-                $this->model->ocurrences = VwOcurrencesModel::where("Place LIKE '%".$choose."%'");
-                break;
+                    $this->model->ocurrences = VwOcurrencesModel::where("Place LIKE '%".$choose."%'");
+                    break;
                 case 3:
-                $this->model->ocurrences = VwOcurrencesModel::where("Status LIKE '%".$choose."%'");
-                break;
+                    $this->model->ocurrences = VwOcurrencesModel::where("Status LIKE '%".$choose."%'");
+                    break;
                 case 4:
-                $this->model->ocurrences = VwOcurrencesModel::where("Priority LIKE '%".$choose."%'");
-                break;
+                    $this->model->ocurrences = VwOcurrencesModel::where("Priority LIKE '%".$choose."%'");
+                    break;
             }
         }
 
@@ -96,15 +96,20 @@ class OcurrencesController extends MainController {
         }
 
         if (!OcurrencesModel::has_required_fields($data)) {
+            $this->set_message('Preencha todos os campos requeridos!', 'warning');
             $this->goto_page(HOME_URI . '/ocurrences/create');
+            exit;
         }
 
+        
         $ocurrence = new OcurrencesModel($data);
         $results = $ocurrence->save();
         if (!$results->id) {
+            $this->set_message('Houve um problema ao salvar a ocorrencia!', 'error');
             $this->goto_page(HOME_URI . '/ocurrences/create');
+            exit;
         }
-
+        
         $id = $results->id;
         $statusData = array(
             "Ocurrence_Id" => $id,
@@ -123,6 +128,7 @@ class OcurrencesController extends MainController {
         for ($i = 0; $i < count($_FILES['Image']['name']); $i++) {
             $this->save_file($initial_status_result->id, $_FILES['Image']['name'][$i], $_FILES['Image']['tmp_name'][$i], $dirToSavePics);
         }
+
         $this->set_message('Ocorrência registrada com sucesso', 'success');
         $this->goto_page(HOME_URI . '/ocurrences');
     }
