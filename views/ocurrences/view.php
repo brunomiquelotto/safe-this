@@ -1,6 +1,7 @@
 <div class="card">
 	<header class="card-header flex-container align-middles space-between">
 		<h3>Visualização da Ocorrência</h3>
+		 <?php if($this->logged_in):?>
 		<div>
 		<?php foreach($this->model->actions as $action) { ?>
 			<a href="<?=$action['Url']?>" class="button small info" style="margin-right: 5px;">
@@ -8,6 +9,7 @@
 			</a>
 		<?php } ?>
 		</div>
+	<?php endif; ?>
 	</header>
 
 		<section class="card-content">
