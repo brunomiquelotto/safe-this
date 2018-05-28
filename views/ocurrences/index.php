@@ -45,7 +45,20 @@
 						<tr>
 							<td><?=$ocurrence['Id']?></td>
 							<td><?=$ocurrence['Place']?></td>
-							<td><?=$ocurrence['Status']?></td>
+							<td>
+								<?foreach ($this->model->update as $update) {
+									if($update['Ocurrence_Id'] == $ocurrence['Id']){
+										foreach ($this->model->status as $status) {
+											if($update['Ocurrence_Status_Id'] == $status['Ocurrence_Status_Id']){
+												echo $status['Description'];	
+												break;	
+											}
+										}						
+										break;
+									}
+								}
+								?>
+							</td>
 							<td><?=$ocurrence['Priority']?></td>
 							<td><?=date('d/m/Y H:i:s', strtotime($ocurrence['Opening_Date']))?></td>
 							<td><?=$ocurrence['Files']?></td>					

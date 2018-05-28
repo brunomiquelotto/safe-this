@@ -115,6 +115,10 @@ public static function whereGroupByIndex() {
        FROM ' . static::$table . ' GROUP BY Place')->fetchAll();
 }   
 
+public static function orderByDesc($id) {
+    $db = new DB();
+    return $db->query('SELECT * FROM ' . static::$table . ' ORDER BY '.$id. ' DESC')->fetchAll() ;
+}
 
 public static function orderByWithLimit($columns,$orientation, $limit) {
     $db = new DB();

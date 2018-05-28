@@ -27,7 +27,9 @@ class OcurrencesController extends MainController {
         $this->model->update_url = HOME_URI . '/ocurrences/update/';
         $this->model->visualize_url = HOME_URI . '/ocurrences/view/';
         $this->model->ocurrences = VwOcurrencesModel::stmt_limit('Order By Opening_Date DESC', $this->model->limit);
-
+        $this->model->update = OcurrenceUpdateModel::orderByDesc('Ocurrence_Update_Id');
+        $this->model->status = OcurrenceStatusModel::all();
+        
 
         if(isset($_POST['btnFiltro']) && isset($_POST['txtChoose']))
         {

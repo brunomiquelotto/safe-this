@@ -10,6 +10,8 @@ class AdminController extends MainController
         $this->load_model('UserModel');
         $this->load_model('PlaceModel');
         $this->load_model('VwOcurrencesModel');
+        $this->load_model('OcurrenceUpdateModel');
+        $this->load_model('OcurrenceStatusModel');
     }
 
     public function index() {
@@ -23,6 +25,8 @@ class AdminController extends MainController
         $this->model->places = count($this->model->places);
         $this->model->users = count($this->model->users);
         $parameters = (func_num_args() >= 1 ) ? func_get_arg(0) : array();
+        $this->model->update = OcurrenceUpdateModel::orderByDesc('Ocurrence_Update_Id');
+        $this->model->status = OcurrenceStatusModel::all();
         $this->load_page('admin/index.php');
     }
 }
