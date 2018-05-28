@@ -41,6 +41,7 @@
                     <th>Status</th>
                     <th>Prioridade</th>
                     <th>Aberto Em</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
@@ -52,6 +53,9 @@
                     <td><?=$ocurrences['Status']?> </td>
                     <td><?=$ocurrences['Priority']?></td>
                     <td><?=date('d/m/Y', strtotime($ocurrences['Opening_Date']));?></td>
+                    <td>
+                        <a href="ocurrences/view/<?=$ocurrences['Id']?>">Visualizar</a>
+                    </td>
                 </tr>
                 <?php endforeach;?>
         </table>

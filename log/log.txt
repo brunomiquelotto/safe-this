@@ -6412,3 +6412,93 @@ Controller -> admincontroller Action -> index
 Controller -> ocurrencescontroller Action -> bymonth
 >>>>>>> finalização gráficos
 <==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> bymonth
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> bymonth
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> bymonth
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> bymonth
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> bymonth
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> bymonth
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> bymonth
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> bymonth
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> update
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> view
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> bymonth
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> logincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> admincontroller Action -> index
+<==== END DEBUG ====>
+<==== DEBUG ====>
+Controller -> ocurrencescontroller Action -> bymonth
+<==== END DEBUG ====>

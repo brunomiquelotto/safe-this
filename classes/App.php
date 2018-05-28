@@ -23,7 +23,7 @@
                 return;
             }
             
-            $controllerFileName = ABSPATH . '/controllers/' . $this->controller . '.php';
+            $controllerFileName = strtolower(ABSPATH . '/controllers/' . $this->controller . '.php');
             if (!file_exists($controllerFileName)) {
                 require_once ABSPATH . $this->not_found_page;
                 return;
@@ -43,13 +43,12 @@
             $action = $this->action ? $this->action : 'index';
 
             if ($this->controller->use_permission_system && !$this->has_permission($controllerName, $action)) {
-                echo 'voce n tem permissao bb';
+                echo 'Permissão invaĺida!';
                 //require_once ABSPATH . $this->permission_denied;
                 exit;
             }
             
             if (method_exists($this->controller, $action)) {
-                consolelog('Controller -> ' . $controllerName . ' Action -> ' . $action);
                 $this->controller->{$action}($this->parameters);
                 return;
             }
