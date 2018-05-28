@@ -12,6 +12,7 @@ class AdminController extends MainController
         $this->load_model('VwOcurrencesModel');
         $this->load_model('OcurrenceUpdateModel');
         $this->load_model('OcurrenceStatusModel');
+        $this->load_model('OcurrencePriorityModel');
     }
 
     public function index() {
@@ -27,6 +28,7 @@ class AdminController extends MainController
         $parameters = (func_num_args() >= 1 ) ? func_get_arg(0) : array();
         $this->model->update = OcurrenceUpdateModel::orderByDesc('Ocurrence_Update_Id');
         $this->model->status = OcurrenceStatusModel::all();
+        $this->model->priorities = OcurrencePriorityModel::all();
         $this->load_page('admin/index.php');
     }
 }

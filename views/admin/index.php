@@ -63,7 +63,20 @@
                         }
                         ?>
                     </td>
-                    <td><?=$ocurrences['Priority']?></td>
+                    <td>
+                        <?foreach ($this->model->update as $update) {
+                            if($update['Ocurrence_Id'] == $ocurrences['Id']){
+                                foreach ($this->model->priorities as $priorities) {
+                                    if($update['Ocurrence_Priority_Id'] == $priorities['Ocurrence_Priority_Id']){
+                                        echo $priorities['Description'];    
+                                        break;  
+                                    }
+                                }                       
+                                break;
+                            }
+                        }
+                        ?>
+                    </td>
                     <td><?=date('d/m/Y', strtotime($ocurrences['Opening_Date']));?></td>
                 </tr>
                 <?php endforeach;?>

@@ -56,10 +56,25 @@
 										}						
 										break;
 									}
+								}					
+									
+								
+								?>
+							</td>
+							<td>
+								<?foreach ($this->model->update as $update) {
+									if($update['Ocurrence_Id'] == $ocurrence['Id']){
+										foreach ($this->model->priorities as $priorities) {
+											if($update['Ocurrence_Priority_Id'] == $priorities['Ocurrence_Priority_Id']){
+												echo $priorities['Description'];	
+												break;	
+											}
+										}						
+										break;
+									}
 								}
 								?>
 							</td>
-							<td><?=$ocurrence['Priority']?></td>
 							<td><?=date('d/m/Y H:i:s', strtotime($ocurrence['Opening_Date']))?></td>
 							<td><?=$ocurrence['Files']?></td>					
 							<td>

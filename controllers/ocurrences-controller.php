@@ -29,6 +29,7 @@ class OcurrencesController extends MainController {
         $this->model->ocurrences = VwOcurrencesModel::stmt_limit('Order By Opening_Date DESC', $this->model->limit);
         $this->model->update = OcurrenceUpdateModel::orderByDesc('Ocurrence_Update_Id');
         $this->model->status = OcurrenceStatusModel::all();
+        $this->model->priorities = OcurrencePriorityModel::all();
         
 
         if(isset($_POST['btnFiltro']) && isset($_POST['txtChoose']))
