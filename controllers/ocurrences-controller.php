@@ -171,12 +171,16 @@ class OcurrencesController extends MainController {
 
     public function UpdateStatus() {
         $this->ensure_is_logged();
-        
         $parameters = (func_num_args() >= 1) ? func_get_arg(0) : array();
+        $ocurrenceId = $parameters[0];
+        if($_POST['Responsible'] == 0){
+            $this->set_message('Atualização falhou! Ao atualizar, informe um responsável!', 'warning');
+            $this->goto_page(HOME_URI . '/ocurrences/view/' . $ocurrenceId);
+            return;
+        }
         if (!$parameters || !$parameters[0]) {
             $this->goto_page(HOME_URI . '/ocurrences/');
         }
-        $ocurrenceId = $parameters[0];
         $ocurrence = OcurrencesModel::find($ocurrenceId);
         if (!$ocurrence) {
             $this->throw_404();
