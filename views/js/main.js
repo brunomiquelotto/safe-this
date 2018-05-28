@@ -29,6 +29,9 @@ GeneralFunctions.Format = function(mask, input) {
 window.onload = function() {
     Components.FormControlFile.PrepareInputFiles();
     startCount();
+    for(var i = 0; i < Components.FunctionsToLoad.length; i++) {
+        Components.FunctionsToLoad[i]();
+    }
 }
 
 function createElementFromHTML(htmlString) {
@@ -66,5 +69,10 @@ async function countData(element){
             await sleep(40);
         }
     }
+}
 
+Components.FunctionsToLoad = [];
+
+function onLoad(fn) {
+    Components.FunctionsToLoad.push(fn);
 }

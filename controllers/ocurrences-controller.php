@@ -14,6 +14,7 @@ class OcurrencesController extends MainController {
         $this->load_model('OcurrenceFileModel');
         $this->load_model('PlaceModel');
         $this->load_model('VwOcurrencesModel');
+        $this->load_model('VwOcurrencesByMonthModel');
         $this->load_model('VwOcurrencesUpdateModel');
         $this->load_model('UserModel');
     }
@@ -201,6 +202,27 @@ class OcurrencesController extends MainController {
         }
         $this->set_message('Ocorrência atualizada', 'success');
         $this->goto_page(HOME_URI . '/ocurrences/view/' . $ocurrenceId);
+    }
+
+    public function ByMonth() {
+        $this->ensure_is_logged();
+        $number_of_months = 12;
+        $data = VwOcurrencesByMonthModel::all();
+        if (count($data) > $number_of_months) {
+            array_slice($data, $number_of_months);
+        }
+        $dataPoints = array();
+        for ($i = count($data); $i > 0; $i--) {
+            $month = $data[$i-1];
+            $label = explode('-', $month['month'])[1];
+            $label = str_pad($label, 2, '0', STR_PAD_LEFT) . "/";
+            $label .= explode('-', $month['month'])[0];
+            $dataPoints[] = array(
+                'y' => (float)$month['qty'],
+                'label' => $label
+            );
+        }
+        echo json_encode(array($dataPoints));
     }
 
     private function fill_actions($current_status) {
