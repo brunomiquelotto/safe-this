@@ -14,6 +14,7 @@ class OcurrencesController extends MainController {
         $this->load_model('OcurrenceFileModel');
         $this->load_model('PlaceModel');
         $this->load_model('VwOcurrencesModel');
+        $this->load_model('VwOcurrencesUpdateModel');
         $this->load_model('UserModel');
     }
 
@@ -26,7 +27,9 @@ class OcurrencesController extends MainController {
         $this->title = 'Registro de Ocorrências';
         $this->model->update_url = HOME_URI . '/ocurrences/update/';
         $this->model->visualize_url = HOME_URI . '/ocurrences/view/';
-        $this->model->ocurrences = VwOcurrencesModel::stmt_limit('Order By Opening_Date DESC', $this->model->limit);
+
+        $this->model->ocurrences = VwOcurrencesUpdateModel::stmt_limit('GROUP BY Id ORDER BY Id DESC',$this->model->limit);
+
 
 
         if(isset($_POST['btnFiltro']) && isset($_POST['txtChoose']))
@@ -36,17 +39,17 @@ class OcurrencesController extends MainController {
             switch ($_POST['Choose']) {
                 case 1:
                 if(is_numeric($choose)){
-                    $this->model->ocurrences = VwOcurrencesModel::where('id = '. $choose);
+                    $this->model->ocurrences = VwOcurrencesUpdateModel::where('id = '. $choose);
                 }                
                 break;
                 case 2:
-                $this->model->ocurrences = VwOcurrencesModel::where("Place LIKE '%".$choose."%'");
+                $this->model->ocurrences = VwOcurrencesUpdateModel::where("Place LIKE '%".$choose."%'");
                 break;
                 case 3:
-                $this->model->ocurrences = VwOcurrencesModel::where("Status LIKE '%".$choose."%'");
+                $this->model->ocurrences = VwOcurrencesUpdateModel::where("Status LIKE '%".$choose."%'");
                 break;
                 case 4:
-                $this->model->ocurrences = VwOcurrencesModel::where("Priority LIKE '%".$choose."%'");
+                $this->model->ocurrences = VwOcurrencesUpdateModel::where("Priority LIKE '%".$choose."%'");
                 break;
             }
         }

@@ -10,6 +10,8 @@ class AdminController extends MainController
         $this->load_model('UserModel');
         $this->load_model('PlaceModel');
         $this->load_model('VwOcurrencesModel');
+        $this->load_model('VwOcurrencesUpdateModel');
+
     }
 
     public function index() {
@@ -18,7 +20,7 @@ class AdminController extends MainController
         $this->model->ocurrences = OcurrencesModel::where('Closing_Date IS NULL');
         $this->model->users = UserModel::all();
         $this->model->places = PlaceModel::all();
-        $this->model->ocurrencesInfo = VwOcurrencesModel::orderByWithLimit('Opening_Date','DESC', 5);
+        $this->model->ocurrencesInfo =  $this->model->ocurrence = VwOcurrencesUpdateModel::stmt_limit('GROUP BY Id ORDER BY Id DESC', 5);
         $this->model->ocurrences = count($this->model->ocurrences);
         $this->model->places = count($this->model->places);
         $this->model->users = count($this->model->users);

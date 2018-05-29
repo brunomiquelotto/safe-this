@@ -30,11 +30,11 @@
 				<thead>
 					<tr>
 						<th>#</th>
+						<th>Descrição</th>
 						<th>Local</th>
 						<th>Status</th>
 						<th>Prioridade</th>
 						<th>Data</th>
-						<th>N. Arquivos</th>
 						<?php if ($this->logged_in): ?>
 							<th>Ações</th>
 						<?php endif ?>
@@ -44,11 +44,11 @@
 					<?php foreach ($this->model->ocurrences as $ocurrence): ?>
 						<tr>
 							<td><?=$ocurrence['Id']?></td>
+							<td><?=$ocurrence['Description']?></td>
 							<td><?=$ocurrence['Place']?></td>
 							<td><?=$ocurrence['Status']?></td>
 							<td><?=$ocurrence['Priority']?></td>
-							<td><?=date('d/m/Y H:i:s', strtotime($ocurrence['Opening_Date']))?></td>
-							<td><?=$ocurrence['Files']?></td>					
+							<td><?=date('d/m/Y H:i:s', strtotime($ocurrence['Opening_Date']))?></td>				
 							<td>
 								<a href="<?=$this->model->visualize_url . $ocurrence['Id']?>" class="icon-visu">Visualizar</a>
 							</td>
