@@ -76,10 +76,8 @@ class OcurrencesController extends MainController {
         $this->model->ocurrence['Priority'] = $this->fill_priority($this->model->ocurrence['Ocurrence_Priority_Id']);
         $this->model->ocurrence['Place'] = $this->fill_place($this->model->ocurrence['Sector_Id']);
         $this->model->ocurrence['Pictures'] = $this->fill_pictures($this->model->ocurrence['Ocurrence_Id']);
-        $this->model->users = UserModel::all();
-        $this->model->status = OcurrenceStatusModel::all();
-        
-      
+        $this->model->ocurrences = VwOcurrencesUpdateModel::Where('Id = '.$id);
+    
         $this->load_page('ocurrences/view.php');
     }
 

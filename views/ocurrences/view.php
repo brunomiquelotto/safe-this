@@ -36,24 +36,17 @@
 				<h3>Atualizações</h3>
 			</header>
 			<section class="card-content">
-				<?php foreach($this->model->updates as $update) { ?>
+				<?php foreach($this->model->ocurrences as $oc) { ?>
 					<div class="update-card mg-t-10">
 						<header>
 							<span class="title">
-								<?php foreach ($this->model->status as $st) { 
-									if($update['Ocurrence_Status_Id'] == $st['Ocurrence_Status_Id'])
-										echo $st['Description'];
-								} 
-								echo " - Prioridade: ".$this->model->ocurrence['Priority'];
-								?>
+								<? echo $oc['Status']." - Prioridade: ".$oc['Priority']?>
 								
 							</span>
 							<span class="subtitle">
-								<?php if(isset($update['Responsible'])){
-									foreach ($this->model->users as $user) {
-										if($user['User_Id'] == $update['Responsible'])
-											echo $user['Name'];
-									}
+								<?php if(isset($oc['Responsible'])){
+									echo $oc['Responsible'];
+									
 								} else {
 									echo "Sem responsável!";
 								} ?>
@@ -61,7 +54,7 @@
 						</header>
 						<section>
 							<span class="content">					
-								<?=$update['Status_Feedback']?>
+								<?=$oc['Status_Feedback']?>
 							</span>
 						</section>
 					</div>
