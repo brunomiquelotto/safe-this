@@ -7,7 +7,7 @@ define('ABSPATH', dirname(__FILE__));
 define('UP_ABSPATH', ABSPATH . '/views/_uploads');
  
 // URL da home
-define( 'HOME_URI', 'http://localhost/safe-this');
+define( 'HOME_URI', 'http://localhost:80/safe-this');
  
 // Nome do host da base de dados
 define('HOSTNAME', 'localhost');
@@ -19,7 +19,7 @@ define('DB_NAME', 'safe_this_dev');
 define('DB_USER', 'root');
  
 // Senha do DB
-define('DB_PASSWORD', 'root');
+define('DB_PASSWORD', '');
  
 // Charset da conexão PDO
 define('DB_CHARSET', 'utf8');

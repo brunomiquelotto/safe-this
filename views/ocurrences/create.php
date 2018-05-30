@@ -2,7 +2,7 @@
 
     <header class="flex-container align-middles space-between card-header">
         <h1>Registrar nova ocorrência</h1>
-        <a href="<?=HOME_URI?>/ocurrences">Voltar</a>
+        <a href="<?=HOME_URI?>/ocurrences" class="button back small">Voltar</a>
     </header>
 
     <section class="card-content">
