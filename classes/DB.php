@@ -3,7 +3,7 @@ class DB
 {
     public $host = HOSTNAME,
         $db_name = DB_NAME,
-        $password = '',
+        $password = '100668120',
         $user = 'root',
         $charset = 'utf8',
         $pdo = null,
