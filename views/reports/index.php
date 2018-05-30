@@ -6,10 +6,10 @@
         <div>
             <form action="<?php echo HOME_URI ?>/reports/view" method="post">
                 <div class="form-group"> 
-                    <select class="form-control small" name="Sector_Id">
+                    <select class="form-control small" name="Place">
                         <option value="0">Selecione um Local</option>
                         <?php foreach($this->model->reports as $place): ?>
-                            <option value="<?=$place['Sector_Id']?>"> 
+                            <option value="<?=$place['Name']?>"> 
                                 <?=$place['Name']?>
                             </option>
                         <?php endforeach; ?>

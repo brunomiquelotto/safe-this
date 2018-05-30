@@ -61,26 +61,26 @@ public static function whereGroupBy($conditions) {
     $db = new DB();
     return $db->query('SELECT Place,
        COUNT(
-       CASE WHEN Ocurrence_Status_Id = 1 THEN 1 ELSE NULL
+       CASE WHEN Status = "Aguardando Análise" THEN 1 ELSE NULL
        END) as "Aguardando",
        COUNT(
        CASE WHEN 
-       Ocurrence_Status_Id = 2 THEN 1 ELSE NULL
+       Status = "Rejeitado" THEN 1 ELSE NULL
        END
        ) as "Rejeitado",
        COUNT(
        CASE WHEN 
-       Ocurrence_Status_Id = 3 THEN 1 ELSE NULL
+       Status = "Aceito" THEN 1 ELSE NULL
        END
        ) as "Aceito",
        COUNT(
        CASE WHEN 
-       Ocurrence_Status_Id = 4 THEN 1 ELSE NULL
+       Status = "Em andamento" THEN 1 ELSE NULL
        END
        ) as "Andamento",
        COUNT(
        CASE WHEN 
-       Ocurrence_Status_Id = 5 THEN 1 ELSE NULL
+       Status = "Finalizado" THEN 1 ELSE NULL
        END
        ) as "Pronto"
        FROM ' . static::$table . ' WHERE ' . $conditions. ' GROUP BY Place')->fetchAll();
@@ -90,26 +90,26 @@ public static function whereGroupByIndex() {
     $db = new DB();
     return $db->query('SELECT Place,
        COUNT(
-       CASE WHEN Ocurrence_Status_Id = 1 THEN 1 ELSE NULL
+       CASE WHEN Status = "Aguardando Análise" THEN 1 ELSE NULL
        END) as "Aguardando",
        COUNT(
        CASE WHEN 
-       Ocurrence_Status_Id = 2 THEN 1 ELSE NULL
+       Status = "Rejeitado" THEN 1 ELSE NULL
        END
        ) as "Rejeitado",
        COUNT(
        CASE WHEN 
-       Ocurrence_Status_Id = 3 THEN 1 ELSE NULL
+       Status = "Aceito" THEN 1 ELSE NULL
        END
        ) as "Aceito",
        COUNT(
        CASE WHEN 
-       Ocurrence_Status_Id = 4 THEN 1 ELSE NULL
+       Status = "Em andamento" THEN 1 ELSE NULL
        END
        ) as "Andamento",
        COUNT(
        CASE WHEN 
-       Ocurrence_Status_Id = 5 THEN 1 ELSE NULL
+       Status = "Finalizado" THEN 1 ELSE NULL
        END
        ) as "Pronto"
        FROM ' . static::$table . ' GROUP BY Place')->fetchAll();
