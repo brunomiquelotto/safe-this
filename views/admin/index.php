@@ -49,34 +49,8 @@
                     <td><?=$ocurrences['Id']?></td>
                     <td><?=$ocurrences['Description']?></td>
                     <td><?=$ocurrences['Place']?></td>
-                    <td>
-                        <?foreach ($this->model->update as $update) {
-                            if($update['Ocurrence_Id'] == $ocurrences['Id']){
-                                foreach ($this->model->status as $status) {
-                                    if($update['Ocurrence_Status_Id'] == $status['Ocurrence_Status_Id']){
-                                        echo $status['Description'];    
-                                        break;  
-                                    }
-                                }                       
-                                break;
-                            }
-                        }
-                        ?>
-                    </td>
-                    <td>
-                        <?foreach ($this->model->update as $update) {
-                            if($update['Ocurrence_Id'] == $ocurrences['Id']){
-                                foreach ($this->model->priorities as $priorities) {
-                                    if($update['Ocurrence_Priority_Id'] == $priorities['Ocurrence_Priority_Id']){
-                                        echo $priorities['Description'];    
-                                        break;  
-                                    }
-                                }                       
-                                break;
-                            }
-                        }
-                        ?>
-                    </td>
+                    <td><?=$ocurrences['Status']?> </td>
+                    <td><?=$ocurrences['Priority']?></td>
                     <td><?=date('d/m/Y', strtotime($ocurrences['Opening_Date']));?></td>
                 </tr>
                 <?php endforeach;?>

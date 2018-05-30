@@ -14,6 +14,7 @@ class OcurrencesController extends MainController {
         $this->load_model('OcurrenceFileModel');
         $this->load_model('PlaceModel');
         $this->load_model('VwOcurrencesModel');
+        $this->load_model('VwOcurrencesUpdateModel');
         $this->load_model('UserModel');
     }
 
@@ -26,11 +27,10 @@ class OcurrencesController extends MainController {
         $this->title = 'Registro de Ocorrências';
         $this->model->update_url = HOME_URI . '/ocurrences/update/';
         $this->model->visualize_url = HOME_URI . '/ocurrences/view/';
-        $this->model->ocurrences = VwOcurrencesModel::stmt_limit('Order By Opening_Date DESC', $this->model->limit);
-        $this->model->update = OcurrenceUpdateModel::orderByDesc('Ocurrence_Update_Id');
-        $this->model->status = OcurrenceStatusModel::all();
-        $this->model->priorities = OcurrencePriorityModel::all();
-        
+
+        $this->model->ocurrences = VwOcurrencesUpdateModel::stmt_limit('',$this->model->limit);
+
+
 
         if(isset($_POST['btnFiltro']) && isset($_POST['txtChoose']))
         {
@@ -38,19 +38,19 @@ class OcurrencesController extends MainController {
 
             switch ($_POST['Choose']) {
                 case 1:
-                    if(is_numeric($choose)){
-                        $this->model->ocurrences = VwOcurrencesModel::where('id = '. $choose);
-                    }                
-                    break;
+                if(is_numeric($choose)){
+                    $this->model->ocurrences = VwOcurrencesUpdateModel::where('Id = '. $choose);
+                }                
+                break;
                 case 2:
-                    $this->model->ocurrences = VwOcurrencesModel::where("Place LIKE '%".$choose."%'");
-                    break;
+                $this->model->ocurrences = VwOcurrencesUpdateModel::where("Place LIKE '%".$choose."%'");
+                break;
                 case 3:
-                    $this->model->ocurrences = VwOcurrencesModel::where("Status LIKE '%".$choose."%'");
-                    break;
+                $this->model->ocurrences = VwOcurrencesUpdateModel::where("Status LIKE '%".$choose."%'");
+                break;
                 case 4:
-                    $this->model->ocurrences = VwOcurrencesModel::where("Priority LIKE '%".$choose."%'");
-                    break;
+                $this->model->ocurrences = VwOcurrencesUpdateModel::where("Priority LIKE '%".$choose."%'");
+                break;
             }
         }
 
@@ -76,6 +76,8 @@ class OcurrencesController extends MainController {
         $this->model->ocurrence['Priority'] = $this->fill_priority($this->model->ocurrence['Ocurrence_Priority_Id']);
         $this->model->ocurrence['Place'] = $this->fill_place($this->model->ocurrence['Sector_Id']);
         $this->model->ocurrence['Pictures'] = $this->fill_pictures($this->model->ocurrence['Ocurrence_Id']);
+        $this->model->updates = OcurrenceUpdateModel::Where("Ocurrence_Id = ".$id);
+        $this->model->priorities = OcurrencePriorityModel::all();
         $this->model->users = UserModel::all();
         $this->model->status = OcurrenceStatusModel::all();
         

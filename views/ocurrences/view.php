@@ -44,7 +44,11 @@
 									if($update['Ocurrence_Status_Id'] == $st['Ocurrence_Status_Id'])
 										echo $st['Description'];
 								} 
-								echo " - Prioridade: ".$this->model->ocurrence['Priority'];
+
+								foreach ($this->model->priorities as $pri) {
+									if($update['Ocurrence_Priority_Id'] == $pri['Ocurrence_Priority_Id'])
+										echo " - Prioridade: ".$pri['Description'];									
+								}
 								?>
 								
 							</span>

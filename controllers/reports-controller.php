@@ -6,6 +6,7 @@ class ReportsController extends MainController {
         parent::__construct();
         $this->load_model('VwSectorListInfoModel');
         $this->load_model('VwOcurrencesModel');
+        $this->load_model('VwOcurrencesUpdateModel');
         $this->load_model('OcurrenceStatusModel');
         $this->load_model('OcurrencesModel');
         $this->load_model('ShowResultsModel');
@@ -17,7 +18,7 @@ class ReportsController extends MainController {
         $this->model = (object)array();
         $this->model->reports = VwSectorListInfoModel::all();
         $this->model->status = OcurrenceStatusModel::all();
-        $this->model->showResults = VwOcurrencesModel::whereGroupByIndex();
+        $this->model->showResults = VwOcurrencesUpdateModel::whereGroupByIndex();
         $this->load_page('reports/index.php');
     } 
 
@@ -30,13 +31,13 @@ class ReportsController extends MainController {
 
         if ($_POST){
             $query = null;
-            if(!empty($_POST['Sector_Id']))
-                $query =  "Place_Id = '".$_POST['Sector_Id']."'";
+            if(!empty($_POST['Place']))
+                $query =  "Place = '".$_POST['Place']."'";
 
             if ($query){ 
-                $this->model->showResults = VwOcurrencesModel::whereGroupBy($query); 
+                $this->model->showResults = VwOcurrencesUpdateModel::whereGroupBy($query); 
             }else{
-                $this->model->showResults = VwOcurrencesModel::whereGroupByIndex();
+                $this->model->showResults = VwOcurrencesUpdateModel::whereGroupByIndex();
             }   
             $this->load_page('reports/index.php');
         }
