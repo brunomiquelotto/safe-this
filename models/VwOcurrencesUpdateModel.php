@@ -4,14 +4,14 @@ class VwOcurrencesUpdateModel extends BaseModel {
 	protected static $table = "vw_ocurrences_update";
 	protected static $primaryKey = null;
 	protected $fields = array(
-		'Ocurrence_Id',
-		'Priority',
-		'Status',
+		'Id',
 		'Description',
-		'Place',
+		'Place',	
 		'Opening_Date',
-		'Files'
-
+		'Status_Feedback',
+		'Responsible',
+		'Priority',
+		'Status'
 	);
 }
 
