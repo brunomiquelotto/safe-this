@@ -5,9 +5,6 @@
 <aside class="sidebar">
     <ul>
         <li>
-            <a href="<?=HOME_URI?>/home">Home</a>
-        </li>
-        <li>
             <a href="<?=HOME_URI?>/ocurrences">Registro de Ocorrências</a>
         </li>
         <li>
