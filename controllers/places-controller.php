@@ -27,11 +27,11 @@ class PlacesController extends MainController {
         $parameters = (func_num_args() >= 1 ) ? func_get_arg(0) : array();
         $id = $parameters[0];
         $data = $_POST;
+        $data['Sector_Id'] = $id;
         if ($id) {
-            $data['Sector_Id'] = $id;
-            $this->update($data);
+            $results = $this->update($data);           
         } else {
-            $this->insert($data);
+            $results = $this->insert($data);
         }
         $this->set_message('Salvo com sucesso', 'success');
         $this->goto_page(HOME_URI . '/places/index');

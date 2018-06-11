@@ -7,7 +7,7 @@
     <section class="card-content">
         <form action="<?=HOME_URI?>/places/save/<?=$this->model->place['Sector_Id']?>" enctype="multipart/form-data" method="post">
             <div class="form-group display-block">
-                <input type="text" name="name" class="form-control" placeholder="Descrição do local" value="<?=$this->model->place['Name']?>">
+                <input type="text" name="Name" class="form-control" placeholder="Descrição do local" value="<?=$this->model->place['Name']?>">
             </div>
             <div class="form-group display-block">
                 <input type="file" name="Image" id="image" accept="image/png, image/jpeg" class="form-control-file" />

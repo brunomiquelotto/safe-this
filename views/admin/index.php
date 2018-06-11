@@ -48,7 +48,7 @@
                 <?php foreach ($this->model->ocurrencesInfo as $ocurrences): ?>
                 <tr>
                     <td><?=$ocurrences['Id']?></td>
-                    <td><?=$ocurrences['Description']?></td>
+                    <td class="td-desc"><?=$ocurrences['Description']?></td>
                     <td><?=$ocurrences['Place']?></td>
                     <td><?=$ocurrences['Status']?> </td>
                     <td><?=$ocurrences['Priority']?></td>
