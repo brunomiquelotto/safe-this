@@ -1,4 +1,4 @@
-<div class="card" style="width: 50%;">
+<div class="card card-center">
 <header class="card-header flex-container align-middles space-between">
     <h1>Atualização de ocorrência</h1>
     <a href="<?=HOME_URI?>/ocurrences/view/<?=$this->model->ocurrence['Ocurrence_Id']?>" class="button back small">Voltar</a>
