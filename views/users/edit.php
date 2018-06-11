@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card card-center">
 <header class="card-header flex-container align-middles space-between">
     <h1>Editar responsável</h1>
     <a href="<?=HOME_URI?>/users" class="button back small">Voltar</a>

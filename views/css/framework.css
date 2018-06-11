@@ -269,7 +269,10 @@ a.button {
     padding: 0;
     margin-bottom: 10px;
 }
-
+.card.card-center{
+    width: 50%; 
+    margin-left: 25%;
+}
 .card > header {
     height: 30px;
     border-bottom: 1px solid #ccc;

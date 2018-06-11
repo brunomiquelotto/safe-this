@@ -1,4 +1,4 @@
-<div class="card" style="width: 100%;">
+<div class="card card-center">
 
     <header class="flex-container align-middles space-between card-header">
         <h1>Registrar nova ocorrência</h1>

@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card" style="color: #666">
 	<header class="card-header flex-container align-middles space-between">
 		<h1>Últimas ocorrências</h1>
 		<a href="<?=HOME_URI?>/ocurrences/create" class="button new small">Novo</a>
