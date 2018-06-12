@@ -1,5 +1,5 @@
-<div class="center-all" style="margin-top: 30px;">
-    <div class="card" style="width: 40%;">
+<div class="center-all">
+    <div class="card login-card">
         <h3 style="text-align:center;color:#544f4f; padding-top: 40px;" >Autenticação necessária</h3>
         <form method="post">
             <?php

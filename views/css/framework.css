@@ -7,7 +7,7 @@
 }
 
 body {
- background-color: #ddd;
+   background-color: #ddd;
 }
 
 .header {
@@ -523,7 +523,7 @@ a.button {
     outline: none;
 }
 .welcome-home-logo{
-   transform: scale(.90);
+ transform: scale(.90);
 
 
 }
@@ -560,6 +560,12 @@ a.button {
 .card{
     width: 90%;
     margin:10px auto;
+}
+.card.login-card{
+    width: 40%;
+}
+.main-content .card-content .card-count {
+    width: 32%;
 }
 
 @media screen and (max-width: 768px) {
@@ -607,15 +613,24 @@ a.button {
     }
 
     .table{
-       border-collapse: collapse;
-       border-spacing: 0;
-       width: 100%;
-       border: 1px solid #ddd;  
-   }
-   th,td{
-     text-align: left;
-     padding: 8px;
+     border-collapse: collapse;
+     border-spacing: 0;
+     width: 100%;
+     border: 1px solid #ddd;  
  }
+ th,td{
+   text-align: left;
+   padding: 8px;
+}
+.card.login-card{
+    width: 90%;
+}
+.login-card .form-group{
+    width: 90%;
+}
+.login-card .form-group input{
+    width: 100%;
+}
 
 
 }
