@@ -16,7 +16,7 @@
 <body>
 
 <header class="header">
-    <a href="<?=HOME_URI?>/admin">
+    <a href="<?=HOME_URI?>/Home">
         <img src="\safe-this\views\_includes\images\header\Logo.png" alt="Logotipo">
     </a>
     <div>

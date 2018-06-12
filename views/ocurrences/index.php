@@ -15,7 +15,7 @@
 				</select>
 				<label>Filtrar</label>
 			    <input type="text" class="form-control small" name="txtChoose"/>
-			    <select class="form-control small" name="Choose">
+			    <select class="form-control small" name="Choose" style="width: 180px;">
 					<option value="1">ID</option>
 					<option value="2">LOCAL</option>
 					<option value="3">STATUS</option>

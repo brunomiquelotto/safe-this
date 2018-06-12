@@ -355,6 +355,10 @@ a.button {
 .table tbody tr td {
     text-align: left;
 }
+.table td{
+    padding-left: 5px;
+    padding-right: 5px;
+}
 
 .table tbody tr:nth-child(even) {
     background-color: rgba(0,0,0,.05);
