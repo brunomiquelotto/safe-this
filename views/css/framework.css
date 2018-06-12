@@ -7,7 +7,7 @@
 }
 
 body {
-     background-color: #ddd;
+ background-color: #ddd;
 }
 
 .header {
@@ -272,6 +272,7 @@ a.button {
 .card.card-center{
     width: 50%; 
     margin-left: 25%;
+    margin-top: 15px;
 }
 .card > header {
     height: 30px;
@@ -368,7 +369,7 @@ a.button {
 .form-control[type="radio"], .form-control[type="checkbox"] {
     display:none;
 }
- 
+
 .form-control[type="radio"] + label, .form-control[type="checkbox"] + label {
     cursor: pointer;
     user-select: none;
@@ -396,7 +397,7 @@ a.button {
     text-align: center;
     font-weight: bold;
 }
- 
+
 .form-control[type="radio"]:checked + label:after, .form-control[type="checkbox"]:checked + label:after {
     font-weight: bold;
 }
@@ -457,7 +458,7 @@ a.button {
 .alert.error:before {
     background-image: url('/safe-this/views/css/icons/error.png');
 }
-    
+
 
 .ocurrence-image{
     width: 300px;
@@ -494,7 +495,6 @@ a.button {
     border-radius:8px;
     margin: 0 auto;
     text-align: center;
-    height: 300px;
 }
 .row{
     width:100%;
@@ -552,4 +552,70 @@ a.button {
     text-overflow: ellipsis;
     white-space: nowrap;
     padding-left: 10px;
+}
+.card-content > div{
+    width: 100%;
+    margin: 0 auto;
+}
+.card{
+    width: 90%;
+    margin:10px auto;
+}
+
+@media screen and (max-width: 768px) {
+    .form-control.large {
+        width: 100%;
+        background: none;
+
+    }
+    .form-control.small{
+        width: 100%;
+        background: none;
+
+    }
+    .card.card-center{
+        width: 90%;
+        margin: 5%;
+    }
+    .card-content > div{
+        width:90%;
+        overflow-x: auto;
+    }
+    .flex-container h1{
+        font-size:16px;
+    }
+    .bg-home .welcome-home{
+        width: 95%;
+    }
+    
+    .welcome-home-logo img{
+        width: 100%;
+    }
+    .bg-home .welcome-home-buttons{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .button.home.button.success{
+        font-size:15px;
+    }
+    .card-content form * {
+        margin: 10px;
+    }
+
+    .td-desc{
+        white-space: inherit;
+    }
+
+    .table{
+       border-collapse: collapse;
+       border-spacing: 0;
+       width: 100%;
+       border: 1px solid #ddd;  
+   }
+   th,td{
+     text-align: left;
+     padding: 8px;
+ }
+
+
 }

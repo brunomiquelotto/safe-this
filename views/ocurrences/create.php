@@ -6,7 +6,7 @@
     </header>
 
     <section class="card-content">
-        <div style="width:50%">
+        <div>
             <form action="<?=HOME_URI?>/ocurrences/save" method="post" enctype="Multipart/form-data">       
                     <select class="form-control small" name="Sector_Id">
                     <option value="0">Selecione um Local</option>
